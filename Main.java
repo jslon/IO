@@ -2,6 +2,8 @@ import java.util.Vector;
 import java.util.Scanner;
 import java.util.Random;
 import java.lang.Math;
+import java.text.NumberFormat;
+import java.text.DecimalFormat;
 
 public class Main{
 	final int tamVentana = 8;
@@ -25,6 +27,7 @@ public class Main{
 
 	boolean EA, EB;
 	Random rn = new Random();
+	NumberFormat f; 
 
 	public Main(){
 		lma 	= 0;
@@ -46,11 +49,13 @@ public class Main{
 		secuenciaFrame = 0;
 		frameQueEspero = 0;
 
+		f = new DecimalFormat("#0.00");
+
 		System.out.println("Comienza simulacion.");
 		while(reloj < maxReloj){
 			
-			// Scanner scaner = new Scanner(System.in);
-			// String s = scaner.nextLine();
+			Scanner scaner = new Scanner(System.in);
+			String s = scaner.nextLine();
 			
 			EVENTOS e = evento_minimo();
 			switch(e){
@@ -82,7 +87,7 @@ public class Main{
 
 	public void llegaMensajeA(){
 		reloj = lma;
-		System.out.println(reloj + " Llega mensaje a A. id="+secuenciaMensaje);
+		System.out.println(f.format(reloj) + " Llega mensaje a A. id="+secuenciaMensaje);
 
 		Mensaje nMensaje = new Mensaje(secuenciaMensaje, "");
 		colaMensaje.add(nMensaje);
@@ -124,23 +129,28 @@ public class Main{
 
 	public void seLiberaA(){
 		reloj = la;
-		System.out.println(reloj + " Se libera A. id="+mensajeEnPreparacion.nSecuencia);
+		System.out.println(f.format(reloj) + " Se libera A. id="+mensajeEnPreparacion.nSecuencia);
 		mensajeEnPreparacion.necesitaEnviarse = false;
 		boolean sePierde; 
 		boolean vaConError;
 
 		//Calculo de probabilidades
-		r1 = rn.nextDouble()*100;
-		r2 = rn.nextDouble()*100;
+		int r1 = (int)(rn.nextDouble()*100);
+		sePierde  = (r1<50)?true:false;
 
-		(r1<10) sePierde = true : sePierde = false;
-		(r2<5) vaConError = true : vaConError = false;
+		if(sePierde)
+			System.out.println("El frame id=" + mensajeEnPreparacion.nSecuencia + " se va a perder");
 		
 		if(!sePierde){
 			// frame no se pierde
 
 			// calcular la prob de error
 			//boolean vaConError = false;
+			double r2 = rn.nextDouble()*100;
+			vaConError = (r2< 5);
+
+			if(vaConError)
+			System.out.println("El frame id=" + mensajeEnPreparacion.nSecuencia + " va con error.");
 
 			Frame nuevoFrame = new Frame(secuenciaFrame, vaConError, mensajeEnPreparacion.data);
 			secuenciaFrame++;
@@ -180,7 +190,7 @@ public class Main{
 
 	public void llegaFrameB(){
 		reloj = lfb;
-		System.out.println(reloj + " Llega Frame a B. id="+colaFrames.elementAt(0).nSecuencia);
+		System.out.println(f.format(reloj) + " Llega Frame a B. id="+colaFrames.elementAt(0).nSecuencia);
 		if(EB == false){
 			lb = reloj + estimarTiempoRevisaFrame() + 0.25;
 			EB = true;
@@ -198,7 +208,7 @@ public class Main{
 
 	public void seLiberaB(){
 		reloj = lb;
-		System.out.println(reloj + " Se libera B. id="+colaFrames.elementAt(0).nSecuencia);
+		System.out.println(f.format(reloj) + " Se libera B. id="+colaFrames.elementAt(0).nSecuencia);
 		Frame frame = colaFrames.elementAt(0);
 
 		if(frame.estaDanado){
@@ -218,7 +228,11 @@ public class Main{
 			}
 		}
 
-		boolean ackSePierde = false; // calcular prob
+		double r = rn.nextDouble()*100;
+		boolean ackSePierde = (r < 15);
+
+		if(ackSePierde)
+			System.out.println("El ack nAck=" + nAck + " se va a perder.");
 
 		if(!ackSePierde){
 			lacka = reloj + 1;
@@ -235,7 +249,7 @@ public class Main{
 
 	public void seVenceTimer(){
 		reloj = svt;
-		System.out.println(reloj + " Se vence timer. id="+secuenciaPrimerSVT);
+		System.out.println(f.format(reloj) + " Se vence timer. id="+secuenciaPrimerSVT);
 
 		for(int i = 0, s = colaMensaje.size(); i < tamVentana && i < s; i++){
 			Mensaje m = colaMensaje.elementAt(i);
@@ -252,12 +266,13 @@ public class Main{
 				mensajeEnPreparacion = proxMensaje;
 			}
 		}
+		svt = Integer.MAX_VALUE;
 
 	}
 
 	public void llegaACKA(){
 		reloj = lacka;
-		System.out.println(reloj + " Llega ACK a A. ack="+nAck);
+		System.out.println(f.format(reloj) + " Llega ACK a A. ack="+nAck);
 
 		boolean fin = false;
 		while(!fin && !colaMensaje.isEmpty()){
