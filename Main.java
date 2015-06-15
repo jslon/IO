@@ -5,7 +5,7 @@ import java.lang.Math;
 
 public class Main{
 	final int tamVentana = 8;
-	final int maxReloj = 300;
+	final int maxReloj = 60;
 	final int TIMER = 10; // tiempo del timer
 
 	double lma, lfb, la, lb, svt, lacka, reloj;
@@ -49,8 +49,8 @@ public class Main{
 		System.out.println("Comienza simulacion.");
 		while(reloj < maxReloj){
 			
-			Scanner scaner = new Scanner(System.in);
-			String s = scaner.nextLine();
+			// Scanner scaner = new Scanner(System.in);
+			// String s = scaner.nextLine();
 			
 			EVENTOS e = evento_minimo();
 			switch(e){
