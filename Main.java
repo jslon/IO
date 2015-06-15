@@ -1,4 +1,5 @@
 import java.util.Vector;
+import java.util.Scanner;
 
 public class Main{
 	final int tamVentana = 8;
@@ -44,20 +45,29 @@ public class Main{
 
 		System.out.println("Comienza simulacion.");
 		while(reloj < maxReloj){
+			
+			Scanner scaner = new Scanner(System.in);
+			String s = scaner.nextLine();
+			
 			EVENTOS e = evento_minimo();
 			switch(e){
 				case LMA:
 				llegaMensajeA();
 				break;
 				case LFB:
+				llegaFrameB();
 				break;
 				case LA:
+				seLiberaA();
 				break;
 				case LB:
+				seLiberaB();
 				break;
 				case SVT:
+				seVenceTimer();
 				break;
 				case LACKA:
+				llegaACKA();
 				break;
 				default:
 				break;
@@ -69,7 +79,7 @@ public class Main{
 
 	public void llegaMensajeA(){
 		reloj = lma;
-		System.out.println(reloj + " Llega mensaje a A.");
+		System.out.println(reloj + " Llega mensaje a A. id="+secuenciaMensaje);
 
 		Mensaje nMensaje = new Mensaje(secuenciaMensaje, "");
 		colaMensaje.add(nMensaje);
@@ -81,9 +91,9 @@ public class Main{
 
 			if(EA == false){
 				// proceso desocupado
-				//la = reloj + estimarTiempoPrepararMensaje() + 1;
-				//mensajeEnPreparacion = nMensaje;
-				//EA = true;
+				la = reloj + estimarTiempoPrepararMensaje() + 1;
+				mensajeEnPreparacion = nMensaje;
+				EA = true;
 			}
 		}
 
@@ -102,6 +112,7 @@ public class Main{
 
 	public void seLiberaA(){
 		reloj = la;
+		System.out.println(reloj + " Se libera A. id="+mensajeEnPreparacion.nSecuencia);
 		mensajeEnPreparacion.necesitaEnviarse = false;
 
 		boolean sePierde = false; // prob que frame se pierde
@@ -116,7 +127,7 @@ public class Main{
 			secuenciaFrame++;
 			colaFrames.add(nuevoFrame);
 
-			lfb = reloj+1;
+			lfb = reloj + 1;
 		}
 
 		double timer = reloj + TIMER;
@@ -150,19 +161,22 @@ public class Main{
 
 	public void llegaFrameB(){
 		reloj = lfb;
+		System.out.println(reloj + " Llega Frame a B. id="+colaFrames.elementAt(0).nSecuencia);
 		if(EB == false){
 			lb = reloj + estimarTiempoRevisaFrame() + 0.25;
 			EB = true;
 		}
+		lfb = Integer.MAX_VALUE;
 	}
 
 	public int estimarTiempoRevisaFrame(){
 		// f(x)=2x/5 2<=x<=3
-		return 0;
+		return 2;
 	}
 
 	public void seLiberaB(){
 		reloj = lb;
+		System.out.println(reloj + " Se libera B. id="+colaFrames.elementAt(0).nSecuencia);
 		Frame frame = colaFrames.elementAt(0);
 
 		if(frame.estaDanado){
@@ -188,6 +202,7 @@ public class Main{
 			lacka = reloj + 1;
 		}
 
+		colaFrames.remove(0);
 		if(colaFrames.size() > 0){
 			lb = reloj + estimarTiempoRevisaFrame() + 0.25;
 		}else{
@@ -197,6 +212,8 @@ public class Main{
 	}
 
 	public void seVenceTimer(){
+		reloj = svt;
+		System.out.println(reloj + " Se vence timer. id="+secuenciaPrimerSVT);
 
 		for(int i = 0, s = colaMensaje.size(); i < tamVentana && i < s; i++){
 			Mensaje m = colaMensaje.elementAt(i);
@@ -206,17 +223,22 @@ public class Main{
 		}
 		colaTimers.clear();
 
-		if(EA == false){
-			la = reloj + estimarTiempoPrepararMensaje() + 1;
-			EA = true;
+		Mensaje proxMensaje = buscarMensajeParaEnviar();
+		if(proxMensaje != null){
+			if(EA == false){
+				la = reloj + estimarTiempoPrepararMensaje() + 1;
+				mensajeEnPreparacion = proxMensaje;
+			}
 		}
 
 	}
 
 	public void llegaACKA(){
 		reloj = lacka;
+		System.out.println(reloj + " Llega ACK a A. ack="+nAck);
+
 		boolean fin = false;
-		while(!fin){
+		while(!fin && !colaMensaje.isEmpty()){
 			Mensaje m = colaMensaje.elementAt(0);
 			if(!colaMensaje.isEmpty() && m.nSecuencia < nAck){
 				eliminarTimer(m.nSecuencia);
@@ -225,6 +247,15 @@ public class Main{
 				fin = true;
 			}
 		}
+
+		Mensaje proxMensaje = buscarMensajeParaEnviar();
+		if(proxMensaje != null){
+			if(EA == false){
+				la = reloj + estimarTiempoPrepararMensaje() + 1;
+				mensajeEnPreparacion = proxMensaje;
+			}
+		}
+		lacka = Integer.MAX_VALUE;
 	}
 
 	public void eliminarTimer(int s){
