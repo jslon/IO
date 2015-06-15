@@ -1,5 +1,7 @@
 import java.util.Vector;
 import java.util.Scanner;
+import java.util.Random;
+import java.lang.Math;
 
 public class Main{
 	final int tamVentana = 8;
@@ -22,6 +24,7 @@ public class Main{
 	Vector<Frame>   colaFrames;
 
 	boolean EA, EB;
+	Random rn = new Random();
 
 	public Main(){
 		lma 	= 0;
@@ -100,14 +103,23 @@ public class Main{
 		lma = reloj + estimarTiempoNuevoMensaje();
 	}
 
-	public int estimarTiempoNuevoMensaje(){
+	public double estimarTiempoNuevoMensaje(){
 		// normal con media 25 y var 1
-		return 25;
+		double x, z, r1, r2;		
+		r1 = rn.nextDouble() ;
+		r2 = rn.nextDouble() ;
+		z=(Math.sqrt(-2*Math.log(r1)))*Math.sin(2*Math.PI*r2);
+		x=1*z+25; //x = varianza*z+media
+		return x;
 	}
 
-	public int estimarTiempoPrepararMensaje(){
+	public double estimarTiempoPrepararMensaje(){
 		// exponenencial con media 2
-		return 2;
+		int lambda = 2;
+		double x, r;
+		r = rn.nextDouble();
+		x = ((-Math.log(1-r))/lambda);
+		return x;
 	}
 
 	public void seLiberaA(){
@@ -169,9 +181,12 @@ public class Main{
 		lfb = Integer.MAX_VALUE;
 	}
 
-	public int estimarTiempoRevisaFrame(){
+	public double estimarTiempoRevisaFrame(){
 		// f(x)=2x/5 2<=x<=3
-		return 2;
+		double x, r;
+		r = rn.nextDouble();
+		x = Math.sqrt(5*r+4);		//x = (5r+4)ˆ1/2
+		return x;
 	}
 
 	public void seLiberaB(){
