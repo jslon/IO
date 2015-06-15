@@ -168,9 +168,12 @@ public class Main{
 		}
 	}
 
-	public int estimarTiempoRevisaFrame(){
+	public double estimarTiempoRevisaFrame(){
 		// f(x)=2x/5 2<=x<=3
-		return 0;
+		double x, r;
+		r = rn.nextDouble();
+		x = Math.sqrt(5*r+4);		//x = (5r+4)ˆ1/2
+		return x;
 	}
 
 	public void seLiberaB(){
