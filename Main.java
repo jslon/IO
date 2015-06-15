@@ -126,14 +126,21 @@ public class Main{
 		reloj = la;
 		System.out.println(reloj + " Se libera A. id="+mensajeEnPreparacion.nSecuencia);
 		mensajeEnPreparacion.necesitaEnviarse = false;
+		boolean sePierde; 
+		boolean vaConError;
 
-		boolean sePierde = false; // prob que frame se pierde
+		//Calculo de probabilidades
+		r1 = rn.nextDouble()*100;
+		r2 = rn.nextDouble()*100;
 
+		(r1<10) sePierde = true : sePierde = false;
+		(r2<5) vaConError = true : vaConError = false;
+		
 		if(!sePierde){
 			// frame no se pierde
 
 			// calcular la prob de error
-			boolean vaConError = false;
+			//boolean vaConError = false;
 
 			Frame nuevoFrame = new Frame(secuenciaFrame, vaConError, mensajeEnPreparacion.data);
 			secuenciaFrame++;
