@@ -156,7 +156,7 @@ public class Simulacion{
     tamanoPromedioColaA += colaTamanos.elementAt(i);
   }
   tamanoPromedioColaA = tamanoPromedioColaA/colaTamanos.size();
-  System.out.println("Tamano promedio de la cola A: "+tamanoPromedioColaA);
+  System.out.println("Tamano promedio de la cola A: "+ f.format(tamanoPromedioColaA));
   
    System.out.print("Cola Nacimientos: \t");
    for(int i = 0, s=colaNacimientos.size(); i<s;i++){
@@ -171,10 +171,10 @@ public class Simulacion{
    System.out.println();
     
   //Tiempo promedio de permanencia de mensajes en el sistema
-   for(int i = 0, s=colaNacimientos.size(); i<s; i++){
-     tiempoPromedioMsj += (colaNacimientos.elementAt(i) - colaNacimientos.elementAt(i));
+   for(int i = 0, s=colaMuertes.size(); i<s; i++){
+     tiempoPromedioMsj += (colaMuertes.elementAt(i) - colaNacimientos.elementAt(i));
    }
-   System.out.print("Tiempo promedio de permanencia de mensajes en el sistema: " + tiempoPromedioMsj);
+   System.out.print("Tiempo promedio de permanencia de mensajes en el sistema: " + f.format(tiempoPromedioMsj));
    
   colaMensaje.clear();
   colaFrames.clear();
