@@ -6,9 +6,12 @@ import java.text.NumberFormat;
 import java.text.DecimalFormat;
 
 public class Main{
+
+	final int maxReloj = 100;
+	final int TIMER = 6; // tiempo del timer
+
+	final int INFINITO = Integer.MAX_VALUE;
 	final int tamVentana = 8;
-	final int maxReloj = 60;
-	final int TIMER = 10; // tiempo del timer
 
 	double lma, lfb, la, lb, svt, lacka, reloj;
 	public enum EVENTOS {LMA, LFB, LA, LB, SVT, LACKA};
@@ -21,22 +24,26 @@ public class Main{
 	Vector<Timer>   colaTimers;
 
 	int nAck;
-	int secuenciaFrame;
 	int frameQueEspero;
 	Vector<Frame>   colaFrames;
 
+	// estados de los procesos que preparan frames
+	// y revisan frames
 	boolean EA, EB;
+
+	// utilidades
 	Random rn = new Random();
 	NumberFormat f; 
+	Scanner scaner;
 
-	public Main(){
+	public Main(boolean activarEnter){
 		lma 	= 0;
 		reloj 	= 0;
-		lfb 	= Integer.MAX_VALUE;
-		la 		= Integer.MAX_VALUE;
-		lb 		= Integer.MAX_VALUE;
-		lacka 	= Integer.MAX_VALUE;
-		svt 	= Integer.MAX_VALUE;
+		lfb 	= INFINITO;
+		la 		= INFINITO;
+		lb 		= INFINITO;
+		lacka 	= INFINITO;
+		svt 	= INFINITO;
 		
 		colaMensaje = new Vector<Mensaje>();
 		colaTimers  = new Vector<Timer>();
@@ -46,16 +53,18 @@ public class Main{
 		EB = false;
 
 		secuenciaMensaje = 0;
-		secuenciaFrame = 0;
 		frameQueEspero = 0;
 
 		f = new DecimalFormat("#0.00");
+		scaner = new Scanner(System.in);
 
 		System.out.println("Comienza simulacion.");
 		while(reloj < maxReloj){
 			
-			Scanner scaner = new Scanner(System.in);
-			String s = scaner.nextLine();
+			if(activarEnter){
+				String s = scaner.nextLine();
+			}
+				
 			
 			EVENTOS e = evento_minimo();
 			switch(e){
@@ -87,7 +96,7 @@ public class Main{
 
 	public void llegaMensajeA(){
 		reloj = lma;
-		System.out.println(f.format(reloj) + " Llega mensaje a A. id="+secuenciaMensaje);
+		System.out.println(f.format(reloj) + "\tLlega mensaje a A. id="+secuenciaMensaje);
 
 		Mensaje nMensaje = new Mensaje(secuenciaMensaje, "");
 		colaMensaje.add(nMensaje);
@@ -129,7 +138,7 @@ public class Main{
 
 	public void seLiberaA(){
 		reloj = la;
-		System.out.println(f.format(reloj) + " Se libera A. id="+mensajeEnPreparacion.nSecuencia);
+		System.out.println(f.format(reloj) + "\tSe libera A. id="+mensajeEnPreparacion.nSecuencia);
 		mensajeEnPreparacion.necesitaEnviarse = false;
 		boolean sePierde; 
 		boolean vaConError;
@@ -137,9 +146,6 @@ public class Main{
 		//Calculo de probabilidades
 		int r1 = (int)(rn.nextDouble()*100);
 		sePierde  = (r1<50)?true:false;
-
-		if(sePierde)
-			System.out.println("El frame id=" + mensajeEnPreparacion.nSecuencia + " se va a perder");
 		
 		if(!sePierde){
 			// frame no se pierde
@@ -152,15 +158,18 @@ public class Main{
 			if(vaConError)
 			System.out.println("El frame id=" + mensajeEnPreparacion.nSecuencia + " va con error.");
 
-			Frame nuevoFrame = new Frame(secuenciaFrame, vaConError, mensajeEnPreparacion.data);
-			secuenciaFrame++;
+			Frame nuevoFrame = new Frame(mensajeEnPreparacion.nSecuencia, vaConError, mensajeEnPreparacion.data);
+
 			colaFrames.add(nuevoFrame);
 
 			lfb = reloj + 1;
+
+		}else{
+			System.out.println("\tEl frame id=" + mensajeEnPreparacion.nSecuencia + " se va a perder");
 		}
 
 		double timer = reloj + TIMER;
-		if(svt == Integer.MAX_VALUE){
+		if(svt == INFINITO){
 			svt = timer;
 			secuenciaPrimerSVT = mensajeEnPreparacion.nSecuencia;
 		}else{
@@ -174,7 +183,7 @@ public class Main{
 			mensajeEnPreparacion = proxMensaje;
 		}else{
 			EA = false;
-			la = Integer.MAX_VALUE;
+			la = INFINITO;
 		}
 
 	}
@@ -190,12 +199,12 @@ public class Main{
 
 	public void llegaFrameB(){
 		reloj = lfb;
-		System.out.println(f.format(reloj) + " Llega Frame a B. id="+colaFrames.elementAt(0).nSecuencia);
+		System.out.println(f.format(reloj) + "\tLlega Frame a B. id="+colaFrames.elementAt(0).nSecuencia);
 		if(EB == false){
 			lb = reloj + estimarTiempoRevisaFrame() + 0.25;
 			EB = true;
 		}
-		lfb = Integer.MAX_VALUE;
+		lfb = INFINITO;
 	}
 
 	public double estimarTiempoRevisaFrame(){
@@ -208,34 +217,36 @@ public class Main{
 
 	public void seLiberaB(){
 		reloj = lb;
-		System.out.println(f.format(reloj) + " Se libera B. id="+colaFrames.elementAt(0).nSecuencia);
+		System.out.println(f.format(reloj) + "\tSe libera B. id="+colaFrames.elementAt(0).nSecuencia);
 		Frame frame = colaFrames.elementAt(0);
 
 		if(frame.estaDanado){
 			// viene con error
 			// enviar ack de la secuencia de este
+			System.out.println("\tEl frame "+frame.nSecuencia+" viene danado.");
 			nAck = frame.nSecuencia;
 		}else{
 			// si es el frame que estoy esperando
 			if(frame.nSecuencia == frameQueEspero){
 				// enviar ack siguiente
+				System.out.println("\tEl frame "+frame.nSecuencia+" es el que espero.");
 				nAck = frame.nSecuencia + 1;
 				frameQueEspero++;
 
 			}else{
 				// enviar ack de este
-				nAck = frame.nSecuencia;
+				System.out.println("\tEl frame "+frame.nSecuencia+" no es el que espero.");
+				nAck = frameQueEspero;
 			}
 		}
 
 		double r = rn.nextDouble()*100;
 		boolean ackSePierde = (r < 15);
 
-		if(ackSePierde)
-			System.out.println("El ack nAck=" + nAck + " se va a perder.");
-
 		if(!ackSePierde){
 			lacka = reloj + 1;
+		}else{
+			System.out.println("\tEl ack nAck=" + nAck + " se va a perder.");
 		}
 
 		colaFrames.remove(0);
@@ -243,17 +254,18 @@ public class Main{
 			lb = reloj + estimarTiempoRevisaFrame() + 0.25;
 		}else{
 			EB = false;
-			lb = Integer.MAX_VALUE;
+			lb = INFINITO;
 		}
 	}
 
 	public void seVenceTimer(){
 		reloj = svt;
-		System.out.println(f.format(reloj) + " Se vence timer. id="+secuenciaPrimerSVT);
+		System.out.println(f.format(reloj) + "\tSe vence timer. id="+secuenciaPrimerSVT);
 
 		for(int i = 0, s = colaMensaje.size(); i < tamVentana && i < s; i++){
 			Mensaje m = colaMensaje.elementAt(i);
 			if(m.nSecuencia >= secuenciaPrimerSVT){
+				System.out.println("\tDebo volver a enviar el id="+m.nSecuencia);
 				m.necesitaEnviarse = true;
 			}
 		}
@@ -262,27 +274,33 @@ public class Main{
 		Mensaje proxMensaje = buscarMensajeParaEnviar();
 		if(proxMensaje != null){
 			if(EA == false){
+				System.out.println("\tPreparo el reenvio de id="+proxMensaje.nSecuencia);
 				la = reloj + estimarTiempoPrepararMensaje() + 1;
 				mensajeEnPreparacion = proxMensaje;
 			}
 		}
-		svt = Integer.MAX_VALUE;
+		svt = INFINITO;
 
 	}
 
 	public void llegaACKA(){
 		reloj = lacka;
-		System.out.println(f.format(reloj) + " Llega ACK a A. ack="+nAck);
+		System.out.println(f.format(reloj) + "\tLlega ACK a A. ack="+nAck);
 
 		boolean fin = false;
 		while(!fin && !colaMensaje.isEmpty()){
 			Mensaje m = colaMensaje.elementAt(0);
 			if(!colaMensaje.isEmpty() && m.nSecuencia < nAck){
+				System.out.println("\tElimino el timer y saco de la cola al id="+m.nSecuencia);
 				eliminarTimer(m.nSecuencia);
 				colaMensaje.remove(0);
 			}else{
 				fin = true;
 			}
+		}
+
+		for(int i = 0, s=colaMensaje.size(); i<s; i++){
+			colaMensaje.elementAt(i).necesitaEnviarse = true;
 		}
 
 		Mensaje proxMensaje = buscarMensajeParaEnviar();
@@ -292,13 +310,13 @@ public class Main{
 				mensajeEnPreparacion = proxMensaje;
 			}
 		}
-		lacka = Integer.MAX_VALUE;
+		lacka = INFINITO;
 	}
 
 	public void eliminarTimer(int s){
 		if(secuenciaPrimerSVT == s){
 			if(colaTimers.isEmpty()){
-				svt = Integer.MAX_VALUE;
+				svt = INFINITO;
 			}else{
 				svt = colaTimers.elementAt(0).hora;
 				secuenciaPrimerSVT = colaTimers.elementAt(0).nSecuencia;
@@ -314,7 +332,7 @@ public class Main{
 	
 
 	public static void main(String args[]){
-		Main m = new Main();
+		Main m = new Main(false);
 	}
 
 	public EVENTOS evento_minimo(){
@@ -340,35 +358,3 @@ public class Main{
 	}
 
 }
-
-class Mensaje{
-	public Mensaje(int n, String d){
-		this.nSecuencia = n;
-		this.necesitaEnviarse = true;
-		this.data = d;
-	}
-	public int nSecuencia;
-	public boolean necesitaEnviarse;
-	public String data;
-}
-
-class Frame{
-	public Frame(int n, boolean e, String d){
-		this.nSecuencia = n;
-		this.estaDanado = e;
-		this.data = d;
-	}
-	public int nSecuencia;
-	public boolean estaDanado;
-	public String data;
-}
-
-class Timer{
-	public Timer(double h, int n){
-		this.hora = h;
-		this.nSecuencia = n;
-	}
-	public int nSecuencia;
-	public double hora;
-}
-
