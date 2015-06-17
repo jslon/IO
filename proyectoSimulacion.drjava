@@ -1,27 +1,31 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <drjava version="drjava-20140826-r5761">
-  <project autorefresh="false" root="" work="">
+  <project autorefresh="false" main="Main" root="" work="">
     <createjar file=""/>
     <source>
-      <file active="true" name="Main.java" package="" timestamp="16-Jun-2015 18:06:56">
-        <select from="839" to="839"/>
-        <scroll column="237" row="0"/>
+      <file active="true" name="Simulacion.java" package="" timestamp="16-Jun-2015 20:28:06">
+        <select from="4165" to="4165"/>
+        <scroll column="1710" row="0"/>
       </file>
-      <file name="Timer.java" package="" timestamp="16-Jun-2015 12:16:05">
-        <select from="839" to="839"/>
-        <scroll column="237" row="0"/>
+      <file name="Timer.java" package="" timestamp="16-Jun-2015 20:09:20">
+        <select from="4165" to="4165"/>
+        <scroll column="1710" row="0"/>
       </file>
-      <file name="Mensaje.java" package="" timestamp="16-Jun-2015 12:16:05">
-        <select from="839" to="839"/>
-        <scroll column="237" row="0"/>
+      <file name="Mensaje.java" package="" timestamp="16-Jun-2015 20:09:22">
+        <select from="4165" to="4165"/>
+        <scroll column="1710" row="0"/>
       </file>
-      <file name="Frame.java" package="" timestamp="16-Jun-2015 12:16:05">
-        <select from="839" to="839"/>
-        <scroll column="237" row="0"/>
+      <file name="Frame.java" package="" timestamp="16-Jun-2015 20:10:04">
+        <select from="4165" to="4165"/>
+        <scroll column="1710" row="0"/>
       </file>
-      <file name="Simulacion.java" package="" timestamp="16-Jun-2015 18:15:05">
-        <select from="839" to="839"/>
-        <scroll column="237" row="0"/>
+      <file name="Estadistica.java" package="" timestamp="16-Jun-2015 20:28:47">
+        <select from="4165" to="4165"/>
+        <scroll column="1710" row="0"/>
+      </file>
+      <file name="Main.java" package="" timestamp="16-Jun-2015 20:28:08">
+        <select from="4165" to="4165"/>
+        <scroll column="1710" row="0"/>
       </file>
     </source>
     <included/>
