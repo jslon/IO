@@ -41,7 +41,7 @@ public class Simulacion{
  Vector<Integer> framesRecibidos;  //control de frames recibidos
  Vector<Frame>   colaFrames;
  
- Vector<Integer> colaTamanos;      //Almacena los tama–os de la cola en cada iteraci—n para poder calcular los promedios
+ Vector<Integer> colaTamanos;      //Almacena los tamanos de la cola en cada iteracion para poder calcular los promedios
  Vector<Double>  colaNacimientos;  //Almacena los tiempos de nacimiento de cada mensaje en el sistema
  Vector<Double>  colaMuertes;      //Almacena los tiempos de muerte de cada mensaje en el sistema
  
@@ -146,18 +146,13 @@ public class Simulacion{
 
   }while(reloj < maxReloj);
 
+/*
   System.out.print("Cola de tamanos:\t");
   for(int i = 0, s=colaTamanos.size(); i<s;i++){
     System.out.print(colaTamanos.elementAt(i) + " ");
    }
   System.out.println();
-  
-  for(int i=0, s=colaTamanos.size(); i<s; i++){
-    tamanoPromedioColaA += colaTamanos.elementAt(i);
-  }
-  tamanoPromedioColaA = tamanoPromedioColaA/colaTamanos.size();
-  System.out.println("Tamano promedio de la cola A: "+ f.format(tamanoPromedioColaA));
-  
+
    System.out.print("Cola Nacimientos: \t");
    for(int i = 0, s=colaNacimientos.size(); i<s;i++){
     System.out.print(f.format(colaNacimientos.elementAt(i)) + " ");
@@ -169,12 +164,22 @@ public class Simulacion{
     System.out.print(f.format(colaMuertes.elementAt(i)) + " ");
    }
    System.out.println();
-    
+    */
+
+  //Tamano promedio de cola A
+   for(int i=0, s=colaTamanos.size(); i<s; i++){
+    tamanoPromedioColaA += colaTamanos.elementAt(i);
+  }
+  tamanoPromedioColaA = tamanoPromedioColaA/colaTamanos.size();
+  System.out.println("Tamano promedio de la cola A: "+ f.format(tamanoPromedioColaA));
+  
   //Tiempo promedio de permanencia de mensajes en el sistema
    for(int i = 0, s=colaMuertes.size(); i<s; i++){
      tiempoPromedioMsj += (colaMuertes.elementAt(i) - colaNacimientos.elementAt(i));
    }
-   System.out.print("Tiempo promedio de permanencia de mensajes en el sistema: " + f.format(tiempoPromedioMsj));
+   tiempoPromedioMsj = tiempoPromedioMsj/colaMuertes.size();
+   
+   System.out.println("Tiempo promedio de permanencia de mensajes en el sistema: " + f.format(tiempoPromedioMsj));
    
   colaMensaje.clear();
   colaFrames.clear();
