@@ -245,7 +245,7 @@ public class Simulacion{
       vaConError = (r2< rangoFrameVieneConError);
       
       if(vaConError)
-        System.out.println("El frame id=" + mensajeEnPreparacion.nSecuencia + " va con error.");
+        System.out.println("\tEl frame id=" + mensajeEnPreparacion.nSecuencia + " va con error.");
       
       Frame nuevoFrame = new Frame(mensajeEnPreparacion.nSecuencia, vaConError, mensajeEnPreparacion.data);
       
