@@ -438,9 +438,11 @@ public class Simulacion{
     secuenciaPrimerSVT = colaTimers.elementAt(0).nSecuencia;
    }
   }else{
-   for(int i=0, size=colaTimers.size(); i<size; i++){
+    boolean loBorre = false;
+   for(int i=0, size=colaTimers.size(); i<size&&!loBorre; i++){
     if(colaTimers.elementAt(i).nSecuencia == s){
      colaTimers.remove(i);
+     loBorre = true;
     }
    }
   }
