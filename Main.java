@@ -27,8 +27,8 @@ public class Main{
 
   Simulacion simulacion = new Simulacion(timer, relojMax, modoLento);
   */
-
-  Simulacion simulacion = new Simulacion(6, 100, false);
+  
+  Simulacion simulacion = new Simulacion(12, 2000, false);
 
   for (int i = 0; i < 1; i++) {
    simulacion.correrSimulacion();
@@ -36,10 +36,6 @@ public class Main{
   }
 
   //for()
-
-
-
-
 
   //Simulacion s = new Simulacion(false);
  
