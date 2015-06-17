@@ -133,9 +133,11 @@ public class Simulacion{
 
    System.out.println("\tFrames correctamente recibidos por B: "+framesRecibidos.size());
    System.out.print("\tUltimos frames recibidos por B: ");
-   for(int i = 0, s=framesRecibidos.size(); i<s && i<20;i++){
-    System.out.print(framesRecibidos.elementAt(i) + " ");
+   for(int i = 0, j = framesRecibidos.size()-1; i<20&&j>0;i++){
+    System.out.print(framesRecibidos.elementAt(j) + " ");
+    j--;
    }
+
    System.out.println("");
 
    if(ultimoAckEnviado>-1)
