@@ -50,11 +50,13 @@ public class Simulacion{
   Random       rn;
   NumberFormat f; 
   Scanner      scanner;
+  Archivo      archivoRegistros;
   
-  public Simulacion(int timer, int relojMax, boolean modoLento){
+  public Simulacion(int timer, int relojMax, boolean modoLento, Archivo archivoRegistros){
     this.timer = timer;
     this.maxReloj = relojMax;
     this.modoLento = modoLento;
+    this.archivoRegistros = archivoRegistros;
     
     rn = new Random();
     f = new DecimalFormat("#0.00");
@@ -90,7 +92,7 @@ public class Simulacion{
     mensajesEnviados = 0;
     tiemposTransmision = 0;
     
-    System.out.println("Comienza simulacion.\nTiempo\tInfo");
+    this.imprimir("Comienza simulacion.\nTiempo\tInfo");
     do{
       
       EVENTOS e = evento_minimo();
@@ -118,31 +120,32 @@ public class Simulacion{
       }
       
       // imprimir mas cosas aqui
-      System.out.println("");
+      this.imprimir("");
       
-      System.out.println("\tLongitud de la cola de A: "+colaMensaje.size());
-      System.out.print("\tCola de A: ");
+      this.imprimir("\tLongitud de la cola de A: "+colaMensaje.size());
+      String aux = "\tCola de A: ";
       for(int i = 0, s=colaMensaje.size(); i<s && i<20;i++){
-        System.out.print(colaMensaje.elementAt(i).nSecuencia + " ");
+        aux += colaMensaje.elementAt(i).nSecuencia + " ";
       }
-      System.out.println("");
+      this.imprimir(aux);
       
-      System.out.println("\tFrames correctamente recibidos por B: "+framesRecibidos.size());
-      System.out.print("\tUltimos frames recibidos por B: ");
+      this.imprimir("\tFrames correctamente recibidos por B: "+framesRecibidos.size());
+      
+      aux = "\tUltimos frames recibidos por B: ";
       for(int i = 0, j = framesRecibidos.size()-1; i<20&&j>0;i++){
-        System.out.print(framesRecibidos.elementAt(j) + " ");
+        aux += framesRecibidos.elementAt(j) + " ";
         j--;
       }
       
-      System.out.println("");
+      this.imprimir(aux);
       
       if(ultimoAckEnviado > -1)
-        System.out.println("\tUltimo ACK enviado: "+ultimoAckEnviado);
+        this.imprimir("\tUltimo ACK enviado: "+ultimoAckEnviado);
       
       if(ultimoAckRecibido > -1)
-        System.out.println("\tUltimo ACK recibido: "+ultimoAckRecibido);
+        this.imprimir("\tUltimo ACK recibido: "+ultimoAckRecibido);
       
-      System.out.println("\n");
+      this.imprimir("\n");
       
       if(modoLento){
         try {
@@ -153,11 +156,6 @@ public class Simulacion{
       }
       
     }while(reloj < maxReloj);
-
-    colaMensaje.clear();
-    colaFrames.clear();
-    colaTimers.clear();
-    framesRecibidos.clear();
     
     double tamanoPromedioColaA = 0.0;
     for(int i=0, s=colaTamanos.size(); i<s; i++){
@@ -175,13 +173,22 @@ public class Simulacion{
     double tiempoPromServicio = tiempoPromedioMsj - tiempoPromTrans;
     double eficiencia = tiempoPromTrans/tiempoPromServicio;
 
-    return new Estadistica(tamanoPromedioColaA, tiempoPromedioMsj, tiempoPromTrans, tiempoPromServicio, eficiencia);
+    Estadistica e = new Estadistica(tamanoPromedioColaA, tiempoPromedioMsj, tiempoPromTrans, tiempoPromServicio, eficiencia);
+    
+    colaMensaje.clear();
+    colaFrames.clear();
+    colaTimers.clear();
+    colaMuertes.clear();
+    colaNacimientos.clear();
+    framesRecibidos.clear();
+
+    return e;
     
   }
   
   public void llegaMensajeA(){
     reloj = lma;
-    System.out.println(f.format(reloj) + "\tLlega mensaje a A.");
+    this.imprimir(f.format(reloj) + "\tLlega mensaje a A.");
     
     Mensaje nMensaje = new Mensaje(secuenciaMensaje, "");
     colaMensaje.add(nMensaje);
@@ -230,7 +237,7 @@ public class Simulacion{
   
   public void seLiberaA(){
     reloj = la;
-    System.out.println(f.format(reloj) + "\tSe libera A.");
+    this.imprimir(f.format(reloj) + "\tSe libera A.");
     mensajeEnPreparacion.necesitaEnviarse = false;
     boolean sePierde; 
     boolean vaConError;
@@ -245,7 +252,7 @@ public class Simulacion{
       vaConError = (r2< rangoFrameVieneConError);
       
       if(vaConError)
-        System.out.println("\tEl frame id=" + mensajeEnPreparacion.nSecuencia + " va con error.");
+        this.imprimir("\tEl frame id=" + mensajeEnPreparacion.nSecuencia + " va con error.");
       
       Frame nuevoFrame = new Frame(mensajeEnPreparacion.nSecuencia, vaConError, mensajeEnPreparacion.data);
       
@@ -257,7 +264,7 @@ public class Simulacion{
       tiemposTransmision++; // segundo de propagacion
       
     }else{
-      System.out.println("\tEl frame id=" + mensajeEnPreparacion.nSecuencia + " se va a perder");
+      this.imprimir("\tEl frame id=" + mensajeEnPreparacion.nSecuencia + " se va a perder");
     }
     
     double timer = reloj + this.timer;
@@ -294,7 +301,7 @@ public class Simulacion{
   
   public void llegaFrameB(){
     reloj = lfb;
-    System.out.println(f.format(reloj) + "\tLlega Frame a B.");
+    this.imprimir(f.format(reloj) + "\tLlega Frame a B.");
     if(EB == false){
       lb = reloj + estimarTiempoRevisaFrame() + 0.25;
       EB = true;
@@ -312,26 +319,26 @@ public class Simulacion{
   
   public void seLiberaB(){
     reloj = lb;
-    System.out.println(f.format(reloj) + "\tSe libera B.");
+    this.imprimir(f.format(reloj) + "\tSe libera B.");
     Frame frame = colaFrames.elementAt(0);
     
     if(frame.estaDanado){
       // viene con error
       // enviar ack de la secuencia de este
-      System.out.println("\tEl frame "+frame.nSecuencia+" viene danado.");
+      this.imprimir("\tEl frame "+frame.nSecuencia+" viene danado.");
       nAck = frame.nSecuencia;
     }else{
       // si es el frame que estoy esperando
       if(frame.nSecuencia == frameQueEspero){
         // enviar ack siguiente
-        System.out.println("\tEl frame "+frame.nSecuencia+" es el que espero.");
+        this.imprimir("\tEl frame "+frame.nSecuencia+" es el que espero.");
         framesRecibidos.add(frame.nSecuencia);
         nAck = frame.nSecuencia + 1;
         frameQueEspero++;
         
       }else{
         // enviar ack de este
-        System.out.println("\tEl frame "+frame.nSecuencia+" no es el que espero.");
+        this.imprimir("\tEl frame "+frame.nSecuencia+" no es el que espero.");
         nAck = frameQueEspero;
       }
     }
@@ -343,7 +350,7 @@ public class Simulacion{
       ultimoAckEnviado = nAck;
       lacka = reloj + 1;
     }else{
-      System.out.println("\tEl ack nAck=" + nAck + " se va a perder.");
+      this.imprimir("\tEl ack nAck=" + nAck + " se va a perder.");
     }
     
     colaFrames.remove(0);
@@ -357,12 +364,12 @@ public class Simulacion{
   
   public void seVenceTimer(){
     reloj = svt;
-    System.out.println(f.format(reloj) + "\tSe vence timer.");
+    this.imprimir(f.format(reloj) + "\tSe vence timer.");
     
     for(int i = 0, s = colaMensaje.size(); i < tamVentana && i < s; i++){
       Mensaje m = colaMensaje.elementAt(i);
       if(m.nSecuencia >= secuenciaPrimerSVT){
-        System.out.println("\tDebo volver a enviar el id="+m.nSecuencia);
+        this.imprimir("\tDebo volver a enviar el id="+m.nSecuencia);
         m.necesitaEnviarse = true;
       }
     }
@@ -371,7 +378,7 @@ public class Simulacion{
     Mensaje proxMensaje = buscarMensajeParaEnviar();
     if(proxMensaje != null){
       if(EA == false){
-        System.out.println("\tPreparo el reenvio de id="+proxMensaje.nSecuencia);
+        this.imprimir("\tPreparo el reenvio de id="+proxMensaje.nSecuencia);
         double tiempoTrans = estimarTiempoPrepararMensaje();
         la = reloj + tiempoTrans + 1;
         mensajeEnPreparacion = proxMensaje;
@@ -385,14 +392,14 @@ public class Simulacion{
   
   public void llegaACKA(){
     reloj = lacka;
-    System.out.println(f.format(reloj) + "\tLlega ACK a A.");
+    this.imprimir(f.format(reloj) + "\tLlega ACK a A.");
     ultimoAckRecibido = nAck;
     
     boolean fin = false;
     while(!fin && !colaMensaje.isEmpty()){
       Mensaje m = colaMensaje.elementAt(0);
       if(!colaMensaje.isEmpty() && m.nSecuencia < nAck){
-        System.out.println("\tElimino el timer y saco de la cola al id="+m.nSecuencia);
+        this.imprimir("\tElimino el timer y saco de la cola al id="+m.nSecuencia);
         eliminarTimer(m.nSecuencia);
         colaMensaje.remove(0);
         colaTamanos.add(colaMensaje.size());
@@ -436,6 +443,11 @@ public class Simulacion{
         }
       }
     }
+  }
+
+  public void imprimir(String s){
+    System.out.println(s);
+    this.archivoRegistros.agregarSimulacion(s);
   }
   
   public EVENTOS evento_minimo(){
