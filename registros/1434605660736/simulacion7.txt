@@ -1,4 +1,4 @@
-Simulacion #6
+Simulacion #7
 Comienza simulacion.
 Tiempo	Info
 0.00	Llega mensaje a A.
@@ -9,7 +9,7 @@ Tiempo	Info
 	Ultimos frames recibidos por B: 
 
 
-1.70	Se libera A.
+1.02	Se libera A.
 
 	Longitud de la cola de A: 1
 	Cola de A: 0 
@@ -17,7 +17,7 @@ Tiempo	Info
 	Ultimos frames recibidos por B: 
 
 
-2.70	Llega Frame a B.
+2.02	Llega Frame a B.
 
 	Longitud de la cola de A: 1
 	Cola de A: 0 
@@ -25,132 +25,69 @@ Tiempo	Info
 	Ultimos frames recibidos por B: 
 
 
-5.09	Se libera B.
+4.38	Se libera B.
 	El frame 0 es el que espero.
-	El ack nAck=1 se va a perder.
 
 	Longitud de la cola de A: 1
 	Cola de A: 0 
 	Frames correctamente recibidos por B: 1
 	Ultimos frames recibidos por B: 
+	Ultimo ACK enviado: 1
 
 
-13.70	Se vence timer.
-	Debo volver a enviar el id=0
-	Preparo el reenvio de id=0
+5.38	Llega ACK a A.
+	Elimino el timer y saco de la cola al id=0
+
+	Longitud de la cola de A: 0
+	Cola de A: 
+	Frames correctamente recibidos por B: 1
+	Ultimos frames recibidos por B: 
+	Ultimo ACK enviado: 1
+	Ultimo ACK recibido: 1
+
+
+26.18	Llega mensaje a A.
 
 	Longitud de la cola de A: 1
-	Cola de A: 0 
+	Cola de A: 1 
 	Frames correctamente recibidos por B: 1
 	Ultimos frames recibidos por B: 
+	Ultimo ACK enviado: 1
+	Ultimo ACK recibido: 1
 
 
-14.85	Se libera A.
+27.99	Se libera A.
 
 	Longitud de la cola de A: 1
-	Cola de A: 0 
+	Cola de A: 1 
 	Frames correctamente recibidos por B: 1
 	Ultimos frames recibidos por B: 
+	Ultimo ACK enviado: 1
+	Ultimo ACK recibido: 1
 
 
-15.85	Llega Frame a B.
+28.99	Llega Frame a B.
 
 	Longitud de la cola de A: 1
-	Cola de A: 0 
+	Cola de A: 1 
 	Frames correctamente recibidos por B: 1
 	Ultimos frames recibidos por B: 
+	Ultimo ACK enviado: 1
+	Ultimo ACK recibido: 1
 
 
-18.50	Se libera B.
-	El frame 0 no es el que espero.
-	El ack nAck=1 se va a perder.
-
-	Longitud de la cola de A: 1
-	Cola de A: 0 
-	Frames correctamente recibidos por B: 1
-	Ultimos frames recibidos por B: 
-
-
-25.53	Llega mensaje a A.
-
-	Longitud de la cola de A: 2
-	Cola de A: 0 1 
-	Frames correctamente recibidos por B: 1
-	Ultimos frames recibidos por B: 
-
-
-26.54	Se libera A.
-
-	Longitud de la cola de A: 2
-	Cola de A: 0 1 
-	Frames correctamente recibidos por B: 1
-	Ultimos frames recibidos por B: 
-
-
-26.85	Se vence timer.
-	Debo volver a enviar el id=0
-	Debo volver a enviar el id=1
-	Preparo el reenvio de id=0
-
-	Longitud de la cola de A: 2
-	Cola de A: 0 1 
-	Frames correctamente recibidos por B: 1
-	Ultimos frames recibidos por B: 
-
-
-27.54	Llega Frame a B.
-
-	Longitud de la cola de A: 2
-	Cola de A: 0 1 
-	Frames correctamente recibidos por B: 1
-	Ultimos frames recibidos por B: 
-
-
-28.20	Se libera A.
-
-	Longitud de la cola de A: 2
-	Cola de A: 0 1 
-	Frames correctamente recibidos por B: 1
-	Ultimos frames recibidos por B: 
-
-
-29.20	Llega Frame a B.
-
-	Longitud de la cola de A: 2
-	Cola de A: 0 1 
-	Frames correctamente recibidos por B: 1
-	Ultimos frames recibidos por B: 
-
-
-30.08	Se libera A.
-
-	Longitud de la cola de A: 2
-	Cola de A: 0 1 
-	Frames correctamente recibidos por B: 1
-	Ultimos frames recibidos por B: 
-
-
-30.78	Se libera B.
+32.20	Se libera B.
 	El frame 1 es el que espero.
 
-	Longitud de la cola de A: 2
-	Cola de A: 0 1 
+	Longitud de la cola de A: 1
+	Cola de A: 1 
 	Frames correctamente recibidos por B: 2
 	Ultimos frames recibidos por B: 1 
 	Ultimo ACK enviado: 2
+	Ultimo ACK recibido: 1
 
 
-31.08	Llega Frame a B.
-
-	Longitud de la cola de A: 2
-	Cola de A: 0 1 
-	Frames correctamente recibidos por B: 2
-	Ultimos frames recibidos por B: 1 
-	Ultimo ACK enviado: 2
-
-
-31.78	Llega ACK a A.
-	Elimino el timer y saco de la cola al id=0
+33.20	Llega ACK a A.
 	Elimino el timer y saco de la cola al id=1
 
 	Longitud de la cola de A: 0
@@ -161,59 +98,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 2
 
 
-33.57	Se libera B.
-	El frame 0 no es el que espero.
-
-	Longitud de la cola de A: 0
-	Cola de A: 
-	Frames correctamente recibidos por B: 2
-	Ultimos frames recibidos por B: 1 
-	Ultimo ACK enviado: 2
-	Ultimo ACK recibido: 2
-
-
-34.57	Llega ACK a A.
-
-	Longitud de la cola de A: 0
-	Cola de A: 
-	Frames correctamente recibidos por B: 2
-	Ultimos frames recibidos por B: 1 
-	Ultimo ACK enviado: 2
-	Ultimo ACK recibido: 2
-
-
-36.66	Se libera B.
-	El frame 1 no es el que espero.
-
-	Longitud de la cola de A: 0
-	Cola de A: 
-	Frames correctamente recibidos por B: 2
-	Ultimos frames recibidos por B: 1 
-	Ultimo ACK enviado: 2
-	Ultimo ACK recibido: 2
-
-
-37.66	Llega ACK a A.
-
-	Longitud de la cola de A: 0
-	Cola de A: 
-	Frames correctamente recibidos por B: 2
-	Ultimos frames recibidos por B: 1 
-	Ultimo ACK enviado: 2
-	Ultimo ACK recibido: 2
-
-
-42.08	Se vence timer.
-
-	Longitud de la cola de A: 0
-	Cola de A: 
-	Frames correctamente recibidos por B: 2
-	Ultimos frames recibidos por B: 1 
-	Ultimo ACK enviado: 2
-	Ultimo ACK recibido: 2
-
-
-50.16	Llega mensaje a A.
+50.87	Llega mensaje a A.
 
 	Longitud de la cola de A: 1
 	Cola de A: 2 
@@ -223,7 +108,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 2
 
 
-51.40	Se libera A.
+53.93	Se libera A.
 
 	Longitud de la cola de A: 1
 	Cola de A: 2 
@@ -233,7 +118,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 2
 
 
-52.40	Llega Frame a B.
+54.93	Llega Frame a B.
 
 	Longitud de la cola de A: 1
 	Cola de A: 2 
@@ -243,8 +128,52 @@ Tiempo	Info
 	Ultimo ACK recibido: 2
 
 
-55.36	Se libera B.
+57.83	Se libera B.
 	El frame 2 es el que espero.
+	El ack nAck=3 se va a perder.
+
+	Longitud de la cola de A: 1
+	Cola de A: 2 
+	Frames correctamente recibidos por B: 3
+	Ultimos frames recibidos por B: 2 1 
+	Ultimo ACK enviado: 2
+	Ultimo ACK recibido: 2
+
+
+65.93	Se vence timer.
+	Debo volver a enviar el id=2
+	Preparo el reenvio de id=2
+
+	Longitud de la cola de A: 1
+	Cola de A: 2 
+	Frames correctamente recibidos por B: 3
+	Ultimos frames recibidos por B: 2 1 
+	Ultimo ACK enviado: 2
+	Ultimo ACK recibido: 2
+
+
+67.10	Se libera A.
+
+	Longitud de la cola de A: 1
+	Cola de A: 2 
+	Frames correctamente recibidos por B: 3
+	Ultimos frames recibidos por B: 2 1 
+	Ultimo ACK enviado: 2
+	Ultimo ACK recibido: 2
+
+
+68.10	Llega Frame a B.
+
+	Longitud de la cola de A: 1
+	Cola de A: 2 
+	Frames correctamente recibidos por B: 3
+	Ultimos frames recibidos por B: 2 1 
+	Ultimo ACK enviado: 2
+	Ultimo ACK recibido: 2
+
+
+70.58	Se libera B.
+	El frame 2 no es el que espero.
 
 	Longitud de la cola de A: 1
 	Cola de A: 2 
@@ -254,7 +183,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 2
 
 
-56.36	Llega ACK a A.
+71.58	Llega ACK a A.
 	Elimino el timer y saco de la cola al id=2
 
 	Longitud de la cola de A: 0
@@ -265,7 +194,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 3
 
 
-75.96	Llega mensaje a A.
+74.37	Llega mensaje a A.
 
 	Longitud de la cola de A: 1
 	Cola de A: 3 
@@ -275,7 +204,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 3
 
 
-78.36	Se libera A.
+75.69	Se libera A.
 
 	Longitud de la cola de A: 1
 	Cola de A: 3 
@@ -285,7 +214,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 3
 
 
-79.36	Llega Frame a B.
+76.69	Llega Frame a B.
 
 	Longitud de la cola de A: 1
 	Cola de A: 3 
@@ -295,7 +224,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 3
 
 
-82.01	Se libera B.
+79.37	Se libera B.
 	El frame 3 es el que espero.
 
 	Longitud de la cola de A: 1
@@ -306,7 +235,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 3
 
 
-83.01	Llega ACK a A.
+80.37	Llega ACK a A.
 	Elimino el timer y saco de la cola al id=3
 
 	Longitud de la cola de A: 0
@@ -317,7 +246,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 4
 
 
-101.16	Llega mensaje a A.
+100.32	Llega mensaje a A.
 
 	Longitud de la cola de A: 1
 	Cola de A: 4 
@@ -327,7 +256,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 4
 
 
-102.17	Se libera A.
+101.50	Se libera A.
 
 	Longitud de la cola de A: 1
 	Cola de A: 4 
@@ -337,7 +266,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 4
 
 
-103.17	Llega Frame a B.
+102.50	Llega Frame a B.
 
 	Longitud de la cola de A: 1
 	Cola de A: 4 
@@ -347,7 +276,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 4
 
 
-106.06	Se libera B.
+105.64	Se libera B.
 	El frame 4 es el que espero.
 
 	Longitud de la cola de A: 1
@@ -358,7 +287,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 4
 
 
-107.06	Llega ACK a A.
+106.64	Llega ACK a A.
 	Elimino el timer y saco de la cola al id=4
 
 	Longitud de la cola de A: 0
@@ -369,7 +298,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 5
 
 
-125.59	Llega mensaje a A.
+125.40	Llega mensaje a A.
 
 	Longitud de la cola de A: 1
 	Cola de A: 5 
@@ -379,7 +308,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 5
 
 
-126.73	Se libera A.
+126.63	Se libera A.
 
 	Longitud de la cola de A: 1
 	Cola de A: 5 
@@ -389,7 +318,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 5
 
 
-127.73	Llega Frame a B.
+127.63	Llega Frame a B.
 
 	Longitud de la cola de A: 1
 	Cola de A: 5 
@@ -399,7 +328,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 5
 
 
-130.83	Se libera B.
+130.05	Se libera B.
 	El frame 5 es el que espero.
 
 	Longitud de la cola de A: 1
@@ -410,7 +339,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 5
 
 
-131.83	Llega ACK a A.
+131.05	Llega ACK a A.
 	Elimino el timer y saco de la cola al id=5
 
 	Longitud de la cola de A: 0
@@ -421,7 +350,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 6
 
 
-151.67	Llega mensaje a A.
+149.55	Llega mensaje a A.
 
 	Longitud de la cola de A: 1
 	Cola de A: 6 
@@ -431,8 +360,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 6
 
 
-153.17	Se libera A.
-	El frame id=6 va con error.
+151.56	Se libera A.
 
 	Longitud de la cola de A: 1
 	Cola de A: 6 
@@ -442,7 +370,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 6
 
 
-154.17	Llega Frame a B.
+152.56	Llega Frame a B.
 
 	Longitud de la cola de A: 1
 	Cola de A: 6 
@@ -452,48 +380,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 6
 
 
-157.27	Se libera B.
-	El frame 6 viene danado.
-
-	Longitud de la cola de A: 1
-	Cola de A: 6 
-	Frames correctamente recibidos por B: 6
-	Ultimos frames recibidos por B: 5 4 3 2 1 
-	Ultimo ACK enviado: 6
-	Ultimo ACK recibido: 6
-
-
-158.27	Llega ACK a A.
-
-	Longitud de la cola de A: 1
-	Cola de A: 6 
-	Frames correctamente recibidos por B: 6
-	Ultimos frames recibidos por B: 5 4 3 2 1 
-	Ultimo ACK enviado: 6
-	Ultimo ACK recibido: 6
-
-
-159.31	Se libera A.
-
-	Longitud de la cola de A: 1
-	Cola de A: 6 
-	Frames correctamente recibidos por B: 6
-	Ultimos frames recibidos por B: 5 4 3 2 1 
-	Ultimo ACK enviado: 6
-	Ultimo ACK recibido: 6
-
-
-160.31	Llega Frame a B.
-
-	Longitud de la cola de A: 1
-	Cola de A: 6 
-	Frames correctamente recibidos por B: 6
-	Ultimos frames recibidos por B: 5 4 3 2 1 
-	Ultimo ACK enviado: 6
-	Ultimo ACK recibido: 6
-
-
-163.52	Se libera B.
+155.26	Se libera B.
 	El frame 6 es el que espero.
 
 	Longitud de la cola de A: 1
@@ -504,7 +391,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 6
 
 
-164.52	Llega ACK a A.
+156.26	Llega ACK a A.
 	Elimino el timer y saco de la cola al id=6
 
 	Longitud de la cola de A: 0
@@ -515,17 +402,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 7
 
 
-171.31	Se vence timer.
-
-	Longitud de la cola de A: 0
-	Cola de A: 
-	Frames correctamente recibidos por B: 7
-	Ultimos frames recibidos por B: 6 5 4 3 2 1 
-	Ultimo ACK enviado: 7
-	Ultimo ACK recibido: 7
-
-
-177.60	Llega mensaje a A.
+174.06	Llega mensaje a A.
 
 	Longitud de la cola de A: 1
 	Cola de A: 7 
@@ -535,7 +412,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 7
 
 
-179.41	Se libera A.
+175.32	Se libera A.
 
 	Longitud de la cola de A: 1
 	Cola de A: 7 
@@ -545,7 +422,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 7
 
 
-180.41	Llega Frame a B.
+176.32	Llega Frame a B.
 
 	Longitud de la cola de A: 1
 	Cola de A: 7 
@@ -555,7 +432,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 7
 
 
-182.84	Se libera B.
+178.64	Se libera B.
 	El frame 7 es el que espero.
 
 	Longitud de la cola de A: 1
@@ -566,7 +443,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 7
 
 
-183.84	Llega ACK a A.
+179.64	Llega ACK a A.
 	Elimino el timer y saco de la cola al id=7
 
 	Longitud de la cola de A: 0
@@ -577,7 +454,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 8
 
 
-204.81	Llega mensaje a A.
+199.38	Llega mensaje a A.
 
 	Longitud de la cola de A: 1
 	Cola de A: 8 
@@ -587,7 +464,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 8
 
 
-206.90	Se libera A.
+200.72	Se libera A.
 
 	Longitud de la cola de A: 1
 	Cola de A: 8 
@@ -597,7 +474,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 8
 
 
-207.90	Llega Frame a B.
+201.72	Llega Frame a B.
 
 	Longitud de la cola de A: 1
 	Cola de A: 8 
@@ -607,52 +484,8 @@ Tiempo	Info
 	Ultimo ACK recibido: 8
 
 
-211.00	Se libera B.
+204.91	Se libera B.
 	El frame 8 es el que espero.
-	El ack nAck=9 se va a perder.
-
-	Longitud de la cola de A: 1
-	Cola de A: 8 
-	Frames correctamente recibidos por B: 9
-	Ultimos frames recibidos por B: 8 7 6 5 4 3 2 1 
-	Ultimo ACK enviado: 8
-	Ultimo ACK recibido: 8
-
-
-218.90	Se vence timer.
-	Debo volver a enviar el id=8
-	Preparo el reenvio de id=8
-
-	Longitud de la cola de A: 1
-	Cola de A: 8 
-	Frames correctamente recibidos por B: 9
-	Ultimos frames recibidos por B: 8 7 6 5 4 3 2 1 
-	Ultimo ACK enviado: 8
-	Ultimo ACK recibido: 8
-
-
-219.99	Se libera A.
-
-	Longitud de la cola de A: 1
-	Cola de A: 8 
-	Frames correctamente recibidos por B: 9
-	Ultimos frames recibidos por B: 8 7 6 5 4 3 2 1 
-	Ultimo ACK enviado: 8
-	Ultimo ACK recibido: 8
-
-
-220.99	Llega Frame a B.
-
-	Longitud de la cola de A: 1
-	Cola de A: 8 
-	Frames correctamente recibidos por B: 9
-	Ultimos frames recibidos por B: 8 7 6 5 4 3 2 1 
-	Ultimo ACK enviado: 8
-	Ultimo ACK recibido: 8
-
-
-223.35	Se libera B.
-	El frame 8 no es el que espero.
 
 	Longitud de la cola de A: 1
 	Cola de A: 8 
@@ -662,7 +495,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 8
 
 
-224.35	Llega ACK a A.
+205.91	Llega ACK a A.
 	Elimino el timer y saco de la cola al id=8
 
 	Longitud de la cola de A: 0
@@ -673,7 +506,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 9
 
 
-230.32	Llega mensaje a A.
+224.02	Llega mensaje a A.
 
 	Longitud de la cola de A: 1
 	Cola de A: 9 
@@ -683,7 +516,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 9
 
 
-231.47	Se libera A.
+225.42	Se libera A.
 
 	Longitud de la cola de A: 1
 	Cola de A: 9 
@@ -693,7 +526,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 9
 
 
-232.47	Llega Frame a B.
+226.42	Llega Frame a B.
 
 	Longitud de la cola de A: 1
 	Cola de A: 9 
@@ -703,7 +536,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 9
 
 
-235.54	Se libera B.
+228.94	Se libera B.
 	El frame 9 es el que espero.
 
 	Longitud de la cola de A: 1
@@ -714,7 +547,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 9
 
 
-236.54	Llega ACK a A.
+229.94	Llega ACK a A.
 	Elimino el timer y saco de la cola al id=9
 
 	Longitud de la cola de A: 0
@@ -725,7 +558,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 10
 
 
-257.61	Llega mensaje a A.
+247.94	Llega mensaje a A.
 
 	Longitud de la cola de A: 1
 	Cola de A: 10 
@@ -735,8 +568,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 10
 
 
-258.67	Se libera A.
-	El frame id=10 se va a perder
+249.03	Se libera A.
 
 	Longitud de la cola de A: 1
 	Cola de A: 10 
@@ -746,40 +578,62 @@ Tiempo	Info
 	Ultimo ACK recibido: 10
 
 
-270.67	Se vence timer.
+250.03	Llega Frame a B.
+
+	Longitud de la cola de A: 1
+	Cola de A: 10 
+	Frames correctamente recibidos por B: 10
+	Ultimos frames recibidos por B: 9 8 7 6 5 4 3 2 1 
+	Ultimo ACK enviado: 10
+	Ultimo ACK recibido: 10
+
+
+252.49	Se libera B.
+	El frame 10 es el que espero.
+	El ack nAck=11 se va a perder.
+
+	Longitud de la cola de A: 1
+	Cola de A: 10 
+	Frames correctamente recibidos por B: 11
+	Ultimos frames recibidos por B: 10 9 8 7 6 5 4 3 2 1 
+	Ultimo ACK enviado: 10
+	Ultimo ACK recibido: 10
+
+
+261.03	Se vence timer.
 	Debo volver a enviar el id=10
 	Preparo el reenvio de id=10
 
 	Longitud de la cola de A: 1
 	Cola de A: 10 
-	Frames correctamente recibidos por B: 10
-	Ultimos frames recibidos por B: 9 8 7 6 5 4 3 2 1 
+	Frames correctamente recibidos por B: 11
+	Ultimos frames recibidos por B: 10 9 8 7 6 5 4 3 2 1 
 	Ultimo ACK enviado: 10
 	Ultimo ACK recibido: 10
 
 
-271.70	Se libera A.
+262.39	Se libera A.
 
 	Longitud de la cola de A: 1
 	Cola de A: 10 
-	Frames correctamente recibidos por B: 10
-	Ultimos frames recibidos por B: 9 8 7 6 5 4 3 2 1 
+	Frames correctamente recibidos por B: 11
+	Ultimos frames recibidos por B: 10 9 8 7 6 5 4 3 2 1 
 	Ultimo ACK enviado: 10
 	Ultimo ACK recibido: 10
 
 
-272.70	Llega Frame a B.
+263.39	Llega Frame a B.
 
 	Longitud de la cola de A: 1
 	Cola de A: 10 
-	Frames correctamente recibidos por B: 10
-	Ultimos frames recibidos por B: 9 8 7 6 5 4 3 2 1 
+	Frames correctamente recibidos por B: 11
+	Ultimos frames recibidos por B: 10 9 8 7 6 5 4 3 2 1 
 	Ultimo ACK enviado: 10
 	Ultimo ACK recibido: 10
 
 
-275.66	Se libera B.
-	El frame 10 es el que espero.
+265.87	Se libera B.
+	El frame 10 no es el que espero.
 
 	Longitud de la cola de A: 1
 	Cola de A: 10 
@@ -789,7 +643,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 10
 
 
-276.66	Llega ACK a A.
+266.87	Llega ACK a A.
 	Elimino el timer y saco de la cola al id=10
 
 	Longitud de la cola de A: 0
@@ -800,7 +654,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 11
 
 
-280.56	Llega mensaje a A.
+272.76	Llega mensaje a A.
 
 	Longitud de la cola de A: 1
 	Cola de A: 11 
@@ -810,7 +664,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 11
 
 
-281.65	Se libera A.
+273.84	Se libera A.
 
 	Longitud de la cola de A: 1
 	Cola de A: 11 
@@ -820,7 +674,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 11
 
 
-282.65	Llega Frame a B.
+274.84	Llega Frame a B.
 
 	Longitud de la cola de A: 1
 	Cola de A: 11 
@@ -830,7 +684,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 11
 
 
-285.10	Se libera B.
+277.85	Se libera B.
 	El frame 11 es el que espero.
 
 	Longitud de la cola de A: 1
@@ -841,7 +695,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 11
 
 
-286.10	Llega ACK a A.
+278.85	Llega ACK a A.
 	Elimino el timer y saco de la cola al id=11
 
 	Longitud de la cola de A: 0
@@ -852,7 +706,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 12
 
 
-305.38	Llega mensaje a A.
+297.24	Llega mensaje a A.
 
 	Longitud de la cola de A: 1
 	Cola de A: 12 
@@ -862,7 +716,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 12
 
 
-306.39	Se libera A.
+298.28	Se libera A.
 
 	Longitud de la cola de A: 1
 	Cola de A: 12 
@@ -872,7 +726,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 12
 
 
-307.39	Llega Frame a B.
+299.28	Llega Frame a B.
 
 	Longitud de la cola de A: 1
 	Cola de A: 12 
@@ -882,7 +736,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 12
 
 
-309.82	Se libera B.
+301.98	Se libera B.
 	El frame 12 es el que espero.
 
 	Longitud de la cola de A: 1
@@ -893,7 +747,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 12
 
 
-310.82	Llega ACK a A.
+302.98	Llega ACK a A.
 	Elimino el timer y saco de la cola al id=12
 
 	Longitud de la cola de A: 0
@@ -904,7 +758,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 13
 
 
-331.21	Llega mensaje a A.
+321.57	Llega mensaje a A.
 
 	Longitud de la cola de A: 1
 	Cola de A: 13 
@@ -914,7 +768,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 13
 
 
-332.56	Se libera A.
+323.61	Se libera A.
 
 	Longitud de la cola de A: 1
 	Cola de A: 13 
@@ -924,7 +778,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 13
 
 
-333.56	Llega Frame a B.
+324.61	Llega Frame a B.
 
 	Longitud de la cola de A: 1
 	Cola de A: 13 
@@ -934,7 +788,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 13
 
 
-336.70	Se libera B.
+326.92	Se libera B.
 	El frame 13 es el que espero.
 
 	Longitud de la cola de A: 1
@@ -945,7 +799,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 13
 
 
-337.70	Llega ACK a A.
+327.92	Llega ACK a A.
 	Elimino el timer y saco de la cola al id=13
 
 	Longitud de la cola de A: 0
@@ -956,7 +810,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 14
 
 
-356.62	Llega mensaje a A.
+345.42	Llega mensaje a A.
 
 	Longitud de la cola de A: 1
 	Cola de A: 14 
@@ -966,8 +820,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 14
 
 
-357.83	Se libera A.
-	El frame id=14 va con error.
+347.23	Se libera A.
 
 	Longitud de la cola de A: 1
 	Cola de A: 14 
@@ -977,7 +830,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 14
 
 
-358.83	Llega Frame a B.
+348.23	Llega Frame a B.
 
 	Longitud de la cola de A: 1
 	Cola de A: 14 
@@ -987,93 +840,8 @@ Tiempo	Info
 	Ultimo ACK recibido: 14
 
 
-361.10	Se libera B.
-	El frame 14 viene danado.
-
-	Longitud de la cola de A: 1
-	Cola de A: 14 
-	Frames correctamente recibidos por B: 14
-	Ultimos frames recibidos por B: 13 12 11 10 9 8 7 6 5 4 3 2 1 
-	Ultimo ACK enviado: 14
-	Ultimo ACK recibido: 14
-
-
-362.10	Llega ACK a A.
-
-	Longitud de la cola de A: 1
-	Cola de A: 14 
-	Frames correctamente recibidos por B: 14
-	Ultimos frames recibidos por B: 13 12 11 10 9 8 7 6 5 4 3 2 1 
-	Ultimo ACK enviado: 14
-	Ultimo ACK recibido: 14
-
-
-363.18	Se libera A.
-
-	Longitud de la cola de A: 1
-	Cola de A: 14 
-	Frames correctamente recibidos por B: 14
-	Ultimos frames recibidos por B: 13 12 11 10 9 8 7 6 5 4 3 2 1 
-	Ultimo ACK enviado: 14
-	Ultimo ACK recibido: 14
-
-
-364.18	Llega Frame a B.
-
-	Longitud de la cola de A: 1
-	Cola de A: 14 
-	Frames correctamente recibidos por B: 14
-	Ultimos frames recibidos por B: 13 12 11 10 9 8 7 6 5 4 3 2 1 
-	Ultimo ACK enviado: 14
-	Ultimo ACK recibido: 14
-
-
-367.41	Se libera B.
+351.08	Se libera B.
 	El frame 14 es el que espero.
-	El ack nAck=15 se va a perder.
-
-	Longitud de la cola de A: 1
-	Cola de A: 14 
-	Frames correctamente recibidos por B: 15
-	Ultimos frames recibidos por B: 14 13 12 11 10 9 8 7 6 5 4 3 2 1 
-	Ultimo ACK enviado: 14
-	Ultimo ACK recibido: 14
-
-
-369.83	Se vence timer.
-	Debo volver a enviar el id=14
-	Preparo el reenvio de id=14
-
-	Longitud de la cola de A: 1
-	Cola de A: 14 
-	Frames correctamente recibidos por B: 15
-	Ultimos frames recibidos por B: 14 13 12 11 10 9 8 7 6 5 4 3 2 1 
-	Ultimo ACK enviado: 14
-	Ultimo ACK recibido: 14
-
-
-372.77	Se libera A.
-
-	Longitud de la cola de A: 1
-	Cola de A: 14 
-	Frames correctamente recibidos por B: 15
-	Ultimos frames recibidos por B: 14 13 12 11 10 9 8 7 6 5 4 3 2 1 
-	Ultimo ACK enviado: 14
-	Ultimo ACK recibido: 14
-
-
-373.77	Llega Frame a B.
-
-	Longitud de la cola de A: 1
-	Cola de A: 14 
-	Frames correctamente recibidos por B: 15
-	Ultimos frames recibidos por B: 14 13 12 11 10 9 8 7 6 5 4 3 2 1 
-	Ultimo ACK enviado: 14
-	Ultimo ACK recibido: 14
-
-
-376.29	Se libera B.
-	El frame 14 no es el que espero.
 
 	Longitud de la cola de A: 1
 	Cola de A: 14 
@@ -1083,7 +851,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 14
 
 
-377.29	Llega ACK a A.
+352.08	Llega ACK a A.
 	Elimino el timer y saco de la cola al id=14
 
 	Longitud de la cola de A: 0
@@ -1094,7 +862,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 15
 
 
-382.38	Llega mensaje a A.
+372.82	Llega mensaje a A.
 
 	Longitud de la cola de A: 1
 	Cola de A: 15 
@@ -1104,7 +872,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 15
 
 
-384.53	Se libera A.
+373.89	Se libera A.
 
 	Longitud de la cola de A: 1
 	Cola de A: 15 
@@ -1114,7 +882,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 15
 
 
-385.53	Llega Frame a B.
+374.89	Llega Frame a B.
 
 	Longitud de la cola de A: 1
 	Cola de A: 15 
@@ -1124,7 +892,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 15
 
 
-387.80	Se libera B.
+377.30	Se libera B.
 	El frame 15 es el que espero.
 
 	Longitud de la cola de A: 1
@@ -1135,7 +903,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 15
 
 
-388.80	Llega ACK a A.
+378.30	Llega ACK a A.
 	Elimino el timer y saco de la cola al id=15
 
 	Longitud de la cola de A: 0
@@ -1146,7 +914,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 16
 
 
-406.23	Llega mensaje a A.
+396.78	Llega mensaje a A.
 
 	Longitud de la cola de A: 1
 	Cola de A: 16 
@@ -1156,7 +924,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 16
 
 
-408.25	Se libera A.
+398.17	Se libera A.
 
 	Longitud de la cola de A: 1
 	Cola de A: 16 
@@ -1166,7 +934,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 16
 
 
-409.25	Llega Frame a B.
+399.17	Llega Frame a B.
 
 	Longitud de la cola de A: 1
 	Cola de A: 16 
@@ -1176,7 +944,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 16
 
 
-412.40	Se libera B.
+402.33	Se libera B.
 	El frame 16 es el que espero.
 
 	Longitud de la cola de A: 1
@@ -1187,7 +955,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 16
 
 
-413.40	Llega ACK a A.
+403.33	Llega ACK a A.
 	Elimino el timer y saco de la cola al id=16
 
 	Longitud de la cola de A: 0
@@ -1198,7 +966,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 17
 
 
-429.37	Llega mensaje a A.
+420.82	Llega mensaje a A.
 
 	Longitud de la cola de A: 1
 	Cola de A: 17 
@@ -1208,7 +976,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 17
 
 
-430.43	Se libera A.
+421.88	Se libera A.
 
 	Longitud de la cola de A: 1
 	Cola de A: 17 
@@ -1218,7 +986,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 17
 
 
-431.43	Llega Frame a B.
+422.88	Llega Frame a B.
 
 	Longitud de la cola de A: 1
 	Cola de A: 17 
@@ -1228,7 +996,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 17
 
 
-434.30	Se libera B.
+425.33	Se libera B.
 	El frame 17 es el que espero.
 
 	Longitud de la cola de A: 1
@@ -1239,7 +1007,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 17
 
 
-435.30	Llega ACK a A.
+426.33	Llega ACK a A.
 	Elimino el timer y saco de la cola al id=17
 
 	Longitud de la cola de A: 0
@@ -1250,7 +1018,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 18
 
 
-453.28	Llega mensaje a A.
+446.19	Llega mensaje a A.
 
 	Longitud de la cola de A: 1
 	Cola de A: 18 
@@ -1260,7 +1028,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 18
 
 
-454.31	Se libera A.
+447.75	Se libera A.
 
 	Longitud de la cola de A: 1
 	Cola de A: 18 
@@ -1270,7 +1038,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 18
 
 
-455.31	Llega Frame a B.
+448.75	Llega Frame a B.
 
 	Longitud de la cola de A: 1
 	Cola de A: 18 
@@ -1280,7 +1048,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 18
 
 
-457.87	Se libera B.
+451.52	Se libera B.
 	El frame 18 es el que espero.
 
 	Longitud de la cola de A: 1
@@ -1291,7 +1059,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 18
 
 
-458.87	Llega ACK a A.
+452.52	Llega ACK a A.
 	Elimino el timer y saco de la cola al id=18
 
 	Longitud de la cola de A: 0
@@ -1302,7 +1070,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 19
 
 
-477.25	Llega mensaje a A.
+470.65	Llega mensaje a A.
 
 	Longitud de la cola de A: 1
 	Cola de A: 19 
@@ -1312,7 +1080,8 @@ Tiempo	Info
 	Ultimo ACK recibido: 19
 
 
-479.00	Se libera A.
+471.67	Se libera A.
+	El frame id=19 va con error.
 
 	Longitud de la cola de A: 1
 	Cola de A: 19 
@@ -1322,7 +1091,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 19
 
 
-480.00	Llega Frame a B.
+472.67	Llega Frame a B.
 
 	Longitud de la cola de A: 1
 	Cola de A: 19 
@@ -1332,7 +1101,51 @@ Tiempo	Info
 	Ultimo ACK recibido: 19
 
 
-482.84	Se libera B.
+475.85	Se libera B.
+	El frame 19 viene danado.
+	El ack nAck=19 se va a perder.
+
+	Longitud de la cola de A: 1
+	Cola de A: 19 
+	Frames correctamente recibidos por B: 19
+	Ultimos frames recibidos por B: 18 17 16 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 
+	Ultimo ACK enviado: 19
+	Ultimo ACK recibido: 19
+
+
+483.67	Se vence timer.
+	Debo volver a enviar el id=19
+	Preparo el reenvio de id=19
+
+	Longitud de la cola de A: 1
+	Cola de A: 19 
+	Frames correctamente recibidos por B: 19
+	Ultimos frames recibidos por B: 18 17 16 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 
+	Ultimo ACK enviado: 19
+	Ultimo ACK recibido: 19
+
+
+484.83	Se libera A.
+
+	Longitud de la cola de A: 1
+	Cola de A: 19 
+	Frames correctamente recibidos por B: 19
+	Ultimos frames recibidos por B: 18 17 16 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 
+	Ultimo ACK enviado: 19
+	Ultimo ACK recibido: 19
+
+
+485.83	Llega Frame a B.
+
+	Longitud de la cola de A: 1
+	Cola de A: 19 
+	Frames correctamente recibidos por B: 19
+	Ultimos frames recibidos por B: 18 17 16 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 
+	Ultimo ACK enviado: 19
+	Ultimo ACK recibido: 19
+
+
+488.58	Se libera B.
 	El frame 19 es el que espero.
 
 	Longitud de la cola de A: 1
@@ -1343,7 +1156,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 19
 
 
-483.84	Llega ACK a A.
+489.58	Llega ACK a A.
 	Elimino el timer y saco de la cola al id=19
 
 	Longitud de la cola de A: 0
@@ -1354,7 +1167,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 20
 
 
-501.84	Llega mensaje a A.
+493.97	Llega mensaje a A.
 
 	Longitud de la cola de A: 1
 	Cola de A: 20 
@@ -1364,7 +1177,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 20
 
 
-503.05	Se libera A.
+495.31	Se libera A.
 
 	Longitud de la cola de A: 1
 	Cola de A: 20 
@@ -1374,7 +1187,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 20
 
 
-504.05	Llega Frame a B.
+496.31	Llega Frame a B.
 
 	Longitud de la cola de A: 1
 	Cola de A: 20 
@@ -1384,7 +1197,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 20
 
 
-506.56	Se libera B.
+498.76	Se libera B.
 	El frame 20 es el que espero.
 
 	Longitud de la cola de A: 1
@@ -1395,7 +1208,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 20
 
 
-507.56	Llega ACK a A.
+499.76	Llega ACK a A.
 	Elimino el timer y saco de la cola al id=20
 
 	Longitud de la cola de A: 0
@@ -1406,7 +1219,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 21
 
 
-526.56	Llega mensaje a A.
+519.22	Llega mensaje a A.
 
 	Longitud de la cola de A: 1
 	Cola de A: 21 
@@ -1416,7 +1229,8 @@ Tiempo	Info
 	Ultimo ACK recibido: 21
 
 
-527.61	Se libera A.
+521.08	Se libera A.
+	El frame id=21 se va a perder
 
 	Longitud de la cola de A: 1
 	Cola de A: 21 
@@ -1426,7 +1240,9 @@ Tiempo	Info
 	Ultimo ACK recibido: 21
 
 
-528.61	Llega Frame a B.
+533.08	Se vence timer.
+	Debo volver a enviar el id=21
+	Preparo el reenvio de id=21
 
 	Longitud de la cola de A: 1
 	Cola de A: 21 
@@ -1436,7 +1252,27 @@ Tiempo	Info
 	Ultimo ACK recibido: 21
 
 
-531.77	Se libera B.
+534.63	Se libera A.
+
+	Longitud de la cola de A: 1
+	Cola de A: 21 
+	Frames correctamente recibidos por B: 21
+	Ultimos frames recibidos por B: 20 19 18 17 16 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 
+	Ultimo ACK enviado: 21
+	Ultimo ACK recibido: 21
+
+
+535.63	Llega Frame a B.
+
+	Longitud de la cola de A: 1
+	Cola de A: 21 
+	Frames correctamente recibidos por B: 21
+	Ultimos frames recibidos por B: 20 19 18 17 16 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 
+	Ultimo ACK enviado: 21
+	Ultimo ACK recibido: 21
+
+
+538.50	Se libera B.
 	El frame 21 es el que espero.
 
 	Longitud de la cola de A: 1
@@ -1447,7 +1283,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 21
 
 
-532.77	Llega ACK a A.
+539.50	Llega ACK a A.
 	Elimino el timer y saco de la cola al id=21
 
 	Longitud de la cola de A: 0
@@ -1458,7 +1294,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 22
 
 
-552.56	Llega mensaje a A.
+543.35	Llega mensaje a A.
 
 	Longitud de la cola de A: 1
 	Cola de A: 22 
@@ -1468,8 +1304,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 22
 
 
-553.99	Se libera A.
-	El frame id=22 va con error.
+547.66	Se libera A.
 
 	Longitud de la cola de A: 1
 	Cola de A: 22 
@@ -1479,7 +1314,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 22
 
 
-554.99	Llega Frame a B.
+548.66	Llega Frame a B.
 
 	Longitud de la cola de A: 1
 	Cola de A: 22 
@@ -1489,48 +1324,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 22
 
 
-557.72	Se libera B.
-	El frame 22 viene danado.
-
-	Longitud de la cola de A: 1
-	Cola de A: 22 
-	Frames correctamente recibidos por B: 22
-	Ultimos frames recibidos por B: 21 20 19 18 17 16 15 14 13 12 11 10 9 8 7 6 5 4 3 2 
-	Ultimo ACK enviado: 22
-	Ultimo ACK recibido: 22
-
-
-558.72	Llega ACK a A.
-
-	Longitud de la cola de A: 1
-	Cola de A: 22 
-	Frames correctamente recibidos por B: 22
-	Ultimos frames recibidos por B: 21 20 19 18 17 16 15 14 13 12 11 10 9 8 7 6 5 4 3 2 
-	Ultimo ACK enviado: 22
-	Ultimo ACK recibido: 22
-
-
-559.73	Se libera A.
-
-	Longitud de la cola de A: 1
-	Cola de A: 22 
-	Frames correctamente recibidos por B: 22
-	Ultimos frames recibidos por B: 21 20 19 18 17 16 15 14 13 12 11 10 9 8 7 6 5 4 3 2 
-	Ultimo ACK enviado: 22
-	Ultimo ACK recibido: 22
-
-
-560.73	Llega Frame a B.
-
-	Longitud de la cola de A: 1
-	Cola de A: 22 
-	Frames correctamente recibidos por B: 22
-	Ultimos frames recibidos por B: 21 20 19 18 17 16 15 14 13 12 11 10 9 8 7 6 5 4 3 2 
-	Ultimo ACK enviado: 22
-	Ultimo ACK recibido: 22
-
-
-563.90	Se libera B.
+551.65	Se libera B.
 	El frame 22 es el que espero.
 
 	Longitud de la cola de A: 1
@@ -1541,7 +1335,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 22
 
 
-564.90	Llega ACK a A.
+552.65	Llega ACK a A.
 	Elimino el timer y saco de la cola al id=22
 
 	Longitud de la cola de A: 0
@@ -1552,17 +1346,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 23
 
 
-571.73	Se vence timer.
-
-	Longitud de la cola de A: 0
-	Cola de A: 
-	Frames correctamente recibidos por B: 23
-	Ultimos frames recibidos por B: 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8 7 6 5 4 3 
-	Ultimo ACK enviado: 23
-	Ultimo ACK recibido: 23
-
-
-577.01	Llega mensaje a A.
+568.86	Llega mensaje a A.
 
 	Longitud de la cola de A: 1
 	Cola de A: 23 
@@ -1572,7 +1356,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 23
 
 
-578.21	Se libera A.
+570.47	Se libera A.
 
 	Longitud de la cola de A: 1
 	Cola de A: 23 
@@ -1582,7 +1366,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 23
 
 
-579.21	Llega Frame a B.
+571.47	Llega Frame a B.
 
 	Longitud de la cola de A: 1
 	Cola de A: 23 
@@ -1592,7 +1376,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 23
 
 
-582.06	Se libera B.
+574.23	Se libera B.
 	El frame 23 es el que espero.
 
 	Longitud de la cola de A: 1
@@ -1603,7 +1387,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 23
 
 
-583.06	Llega ACK a A.
+575.23	Llega ACK a A.
 	Elimino el timer y saco de la cola al id=23
 
 	Longitud de la cola de A: 0
@@ -1614,7 +1398,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 24
 
 
-601.98	Llega mensaje a A.
+593.75	Llega mensaje a A.
 
 	Longitud de la cola de A: 1
 	Cola de A: 24 
@@ -1624,7 +1408,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 24
 
 
-603.14	Se libera A.
+596.03	Se libera A.
 
 	Longitud de la cola de A: 1
 	Cola de A: 24 
@@ -1634,7 +1418,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 24
 
 
-604.14	Llega Frame a B.
+597.03	Llega Frame a B.
 
 	Longitud de la cola de A: 1
 	Cola de A: 24 
@@ -1644,7 +1428,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 24
 
 
-606.78	Se libera B.
+600.09	Se libera B.
 	El frame 24 es el que espero.
 
 	Longitud de la cola de A: 1
@@ -1655,7 +1439,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 24
 
 
-607.78	Llega ACK a A.
+601.09	Llega ACK a A.
 	Elimino el timer y saco de la cola al id=24
 
 	Longitud de la cola de A: 0
@@ -1666,7 +1450,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 25
 
 
-628.01	Llega mensaje a A.
+621.25	Llega mensaje a A.
 
 	Longitud de la cola de A: 1
 	Cola de A: 25 
@@ -1676,7 +1460,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 25
 
 
-630.81	Se libera A.
+622.72	Se libera A.
 
 	Longitud de la cola de A: 1
 	Cola de A: 25 
@@ -1686,7 +1470,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 25
 
 
-631.81	Llega Frame a B.
+623.72	Llega Frame a B.
 
 	Longitud de la cola de A: 1
 	Cola de A: 25 
@@ -1696,7 +1480,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 25
 
 
-634.86	Se libera B.
+626.51	Se libera B.
 	El frame 25 es el que espero.
 
 	Longitud de la cola de A: 1
@@ -1707,7 +1491,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 25
 
 
-635.86	Llega ACK a A.
+627.51	Llega ACK a A.
 	Elimino el timer y saco de la cola al id=25
 
 	Longitud de la cola de A: 0
@@ -1718,7 +1502,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 26
 
 
-654.42	Llega mensaje a A.
+644.16	Llega mensaje a A.
 
 	Longitud de la cola de A: 1
 	Cola de A: 26 
@@ -1728,7 +1512,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 26
 
 
-655.75	Se libera A.
+645.76	Se libera A.
 
 	Longitud de la cola de A: 1
 	Cola de A: 26 
@@ -1738,7 +1522,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 26
 
 
-656.75	Llega Frame a B.
+646.76	Llega Frame a B.
 
 	Longitud de la cola de A: 1
 	Cola de A: 26 
@@ -1748,8 +1532,52 @@ Tiempo	Info
 	Ultimo ACK recibido: 26
 
 
-659.74	Se libera B.
+649.57	Se libera B.
 	El frame 26 es el que espero.
+	El ack nAck=27 se va a perder.
+
+	Longitud de la cola de A: 1
+	Cola de A: 26 
+	Frames correctamente recibidos por B: 27
+	Ultimos frames recibidos por B: 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8 7 
+	Ultimo ACK enviado: 26
+	Ultimo ACK recibido: 26
+
+
+657.76	Se vence timer.
+	Debo volver a enviar el id=26
+	Preparo el reenvio de id=26
+
+	Longitud de la cola de A: 1
+	Cola de A: 26 
+	Frames correctamente recibidos por B: 27
+	Ultimos frames recibidos por B: 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8 7 
+	Ultimo ACK enviado: 26
+	Ultimo ACK recibido: 26
+
+
+659.91	Se libera A.
+
+	Longitud de la cola de A: 1
+	Cola de A: 26 
+	Frames correctamente recibidos por B: 27
+	Ultimos frames recibidos por B: 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8 7 
+	Ultimo ACK enviado: 26
+	Ultimo ACK recibido: 26
+
+
+660.91	Llega Frame a B.
+
+	Longitud de la cola de A: 1
+	Cola de A: 26 
+	Frames correctamente recibidos por B: 27
+	Ultimos frames recibidos por B: 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8 7 
+	Ultimo ACK enviado: 26
+	Ultimo ACK recibido: 26
+
+
+663.70	Se libera B.
+	El frame 26 no es el que espero.
 
 	Longitud de la cola de A: 1
 	Cola de A: 26 
@@ -1759,7 +1587,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 26
 
 
-660.74	Llega ACK a A.
+664.70	Llega ACK a A.
 	Elimino el timer y saco de la cola al id=26
 
 	Longitud de la cola de A: 0
@@ -1770,7 +1598,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 27
 
 
-678.85	Llega mensaje a A.
+670.14	Llega mensaje a A.
 
 	Longitud de la cola de A: 1
 	Cola de A: 27 
@@ -1780,8 +1608,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 27
 
 
-681.27	Se libera A.
-	El frame id=27 va con error.
+671.79	Se libera A.
 
 	Longitud de la cola de A: 1
 	Cola de A: 27 
@@ -1791,7 +1618,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 27
 
 
-682.27	Llega Frame a B.
+672.79	Llega Frame a B.
 
 	Longitud de la cola de A: 1
 	Cola de A: 27 
@@ -1801,48 +1628,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 27
 
 
-685.16	Se libera B.
-	El frame 27 viene danado.
-
-	Longitud de la cola de A: 1
-	Cola de A: 27 
-	Frames correctamente recibidos por B: 27
-	Ultimos frames recibidos por B: 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8 7 
-	Ultimo ACK enviado: 27
-	Ultimo ACK recibido: 27
-
-
-686.16	Llega ACK a A.
-
-	Longitud de la cola de A: 1
-	Cola de A: 27 
-	Frames correctamente recibidos por B: 27
-	Ultimos frames recibidos por B: 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8 7 
-	Ultimo ACK enviado: 27
-	Ultimo ACK recibido: 27
-
-
-687.29	Se libera A.
-
-	Longitud de la cola de A: 1
-	Cola de A: 27 
-	Frames correctamente recibidos por B: 27
-	Ultimos frames recibidos por B: 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8 7 
-	Ultimo ACK enviado: 27
-	Ultimo ACK recibido: 27
-
-
-688.29	Llega Frame a B.
-
-	Longitud de la cola de A: 1
-	Cola de A: 27 
-	Frames correctamente recibidos por B: 27
-	Ultimos frames recibidos por B: 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8 7 
-	Ultimo ACK enviado: 27
-	Ultimo ACK recibido: 27
-
-
-691.16	Se libera B.
+675.24	Se libera B.
 	El frame 27 es el que espero.
 
 	Longitud de la cola de A: 1
@@ -1853,7 +1639,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 27
 
 
-692.16	Llega ACK a A.
+676.24	Llega ACK a A.
 	Elimino el timer y saco de la cola al id=27
 
 	Longitud de la cola de A: 0
@@ -1864,17 +1650,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 28
 
 
-699.29	Se vence timer.
-
-	Longitud de la cola de A: 0
-	Cola de A: 
-	Frames correctamente recibidos por B: 28
-	Ultimos frames recibidos por B: 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8 
-	Ultimo ACK enviado: 28
-	Ultimo ACK recibido: 28
-
-
-704.92	Llega mensaje a A.
+694.91	Llega mensaje a A.
 
 	Longitud de la cola de A: 1
 	Cola de A: 28 
@@ -1884,7 +1660,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 28
 
 
-706.35	Se libera A.
+696.43	Se libera A.
 
 	Longitud de la cola de A: 1
 	Cola de A: 28 
@@ -1894,7 +1670,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 28
 
 
-707.35	Llega Frame a B.
+697.43	Llega Frame a B.
 
 	Longitud de la cola de A: 1
 	Cola de A: 28 
@@ -1904,8 +1680,52 @@ Tiempo	Info
 	Ultimo ACK recibido: 28
 
 
-709.63	Se libera B.
+700.62	Se libera B.
 	El frame 28 es el que espero.
+	El ack nAck=29 se va a perder.
+
+	Longitud de la cola de A: 1
+	Cola de A: 28 
+	Frames correctamente recibidos por B: 29
+	Ultimos frames recibidos por B: 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 
+	Ultimo ACK enviado: 28
+	Ultimo ACK recibido: 28
+
+
+708.43	Se vence timer.
+	Debo volver a enviar el id=28
+	Preparo el reenvio de id=28
+
+	Longitud de la cola de A: 1
+	Cola de A: 28 
+	Frames correctamente recibidos por B: 29
+	Ultimos frames recibidos por B: 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 
+	Ultimo ACK enviado: 28
+	Ultimo ACK recibido: 28
+
+
+710.80	Se libera A.
+
+	Longitud de la cola de A: 1
+	Cola de A: 28 
+	Frames correctamente recibidos por B: 29
+	Ultimos frames recibidos por B: 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 
+	Ultimo ACK enviado: 28
+	Ultimo ACK recibido: 28
+
+
+711.80	Llega Frame a B.
+
+	Longitud de la cola de A: 1
+	Cola de A: 28 
+	Frames correctamente recibidos por B: 29
+	Ultimos frames recibidos por B: 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 
+	Ultimo ACK enviado: 28
+	Ultimo ACK recibido: 28
+
+
+714.64	Se libera B.
+	El frame 28 no es el que espero.
 
 	Longitud de la cola de A: 1
 	Cola de A: 28 
@@ -1915,7 +1735,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 28
 
 
-710.63	Llega ACK a A.
+715.64	Llega ACK a A.
 	Elimino el timer y saco de la cola al id=28
 
 	Longitud de la cola de A: 0
@@ -1926,7 +1746,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 29
 
 
-728.87	Llega mensaje a A.
+720.73	Llega mensaje a A.
 
 	Longitud de la cola de A: 1
 	Cola de A: 29 
@@ -1936,7 +1756,8 @@ Tiempo	Info
 	Ultimo ACK recibido: 29
 
 
-731.86	Se libera A.
+722.38	Se libera A.
+	El frame id=29 va con error.
 
 	Longitud de la cola de A: 1
 	Cola de A: 29 
@@ -1946,7 +1767,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 29
 
 
-732.86	Llega Frame a B.
+723.38	Llega Frame a B.
 
 	Longitud de la cola de A: 1
 	Cola de A: 29 
@@ -1956,8 +1777,93 @@ Tiempo	Info
 	Ultimo ACK recibido: 29
 
 
-736.05	Se libera B.
+725.90	Se libera B.
+	El frame 29 viene danado.
+
+	Longitud de la cola de A: 1
+	Cola de A: 29 
+	Frames correctamente recibidos por B: 29
+	Ultimos frames recibidos por B: 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 
+	Ultimo ACK enviado: 29
+	Ultimo ACK recibido: 29
+
+
+726.90	Llega ACK a A.
+
+	Longitud de la cola de A: 1
+	Cola de A: 29 
+	Frames correctamente recibidos por B: 29
+	Ultimos frames recibidos por B: 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 
+	Ultimo ACK enviado: 29
+	Ultimo ACK recibido: 29
+
+
+728.01	Se libera A.
+
+	Longitud de la cola de A: 1
+	Cola de A: 29 
+	Frames correctamente recibidos por B: 29
+	Ultimos frames recibidos por B: 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 
+	Ultimo ACK enviado: 29
+	Ultimo ACK recibido: 29
+
+
+729.01	Llega Frame a B.
+
+	Longitud de la cola de A: 1
+	Cola de A: 29 
+	Frames correctamente recibidos por B: 29
+	Ultimos frames recibidos por B: 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 
+	Ultimo ACK enviado: 29
+	Ultimo ACK recibido: 29
+
+
+731.50	Se libera B.
 	El frame 29 es el que espero.
+	El ack nAck=30 se va a perder.
+
+	Longitud de la cola de A: 1
+	Cola de A: 29 
+	Frames correctamente recibidos por B: 30
+	Ultimos frames recibidos por B: 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 
+	Ultimo ACK enviado: 29
+	Ultimo ACK recibido: 29
+
+
+734.38	Se vence timer.
+	Debo volver a enviar el id=29
+	Preparo el reenvio de id=29
+
+	Longitud de la cola de A: 1
+	Cola de A: 29 
+	Frames correctamente recibidos por B: 30
+	Ultimos frames recibidos por B: 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 
+	Ultimo ACK enviado: 29
+	Ultimo ACK recibido: 29
+
+
+735.49	Se libera A.
+
+	Longitud de la cola de A: 1
+	Cola de A: 29 
+	Frames correctamente recibidos por B: 30
+	Ultimos frames recibidos por B: 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 
+	Ultimo ACK enviado: 29
+	Ultimo ACK recibido: 29
+
+
+736.49	Llega Frame a B.
+
+	Longitud de la cola de A: 1
+	Cola de A: 29 
+	Frames correctamente recibidos por B: 30
+	Ultimos frames recibidos por B: 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 
+	Ultimo ACK enviado: 29
+	Ultimo ACK recibido: 29
+
+
+738.97	Se libera B.
+	El frame 29 no es el que espero.
 
 	Longitud de la cola de A: 1
 	Cola de A: 29 
@@ -1967,7 +1873,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 29
 
 
-737.05	Llega ACK a A.
+739.97	Llega ACK a A.
 	Elimino el timer y saco de la cola al id=29
 
 	Longitud de la cola de A: 0
@@ -1978,7 +1884,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 30
 
 
-753.72	Llega mensaje a A.
+746.06	Llega mensaje a A.
 
 	Longitud de la cola de A: 1
 	Cola de A: 30 
@@ -1988,8 +1894,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 30
 
 
-755.11	Se libera A.
-	El frame id=30 se va a perder
+747.45	Se libera A.
 
 	Longitud de la cola de A: 1
 	Cola de A: 30 
@@ -1999,9 +1904,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 30
 
 
-767.11	Se vence timer.
-	Debo volver a enviar el id=30
-	Preparo el reenvio de id=30
+748.45	Llega Frame a B.
 
 	Longitud de la cola de A: 1
 	Cola de A: 30 
@@ -2011,135 +1914,70 @@ Tiempo	Info
 	Ultimo ACK recibido: 30
 
 
-768.29	Se libera A.
-
-	Longitud de la cola de A: 1
-	Cola de A: 30 
-	Frames correctamente recibidos por B: 30
-	Ultimos frames recibidos por B: 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 
-	Ultimo ACK enviado: 30
-	Ultimo ACK recibido: 30
-
-
-769.29	Llega Frame a B.
-
-	Longitud de la cola de A: 1
-	Cola de A: 30 
-	Frames correctamente recibidos por B: 30
-	Ultimos frames recibidos por B: 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 
-	Ultimo ACK enviado: 30
-	Ultimo ACK recibido: 30
-
-
-771.78	Se libera B.
+751.62	Se libera B.
 	El frame 30 es el que espero.
-	El ack nAck=31 se va a perder.
 
 	Longitud de la cola de A: 1
 	Cola de A: 30 
 	Frames correctamente recibidos por B: 31
 	Ultimos frames recibidos por B: 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 
-	Ultimo ACK enviado: 30
+	Ultimo ACK enviado: 31
 	Ultimo ACK recibido: 30
 
 
-778.23	Llega mensaje a A.
+752.62	Llega ACK a A.
+	Elimino el timer y saco de la cola al id=30
 
-	Longitud de la cola de A: 2
-	Cola de A: 30 31 
+	Longitud de la cola de A: 0
+	Cola de A: 
 	Frames correctamente recibidos por B: 31
 	Ultimos frames recibidos por B: 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 
-	Ultimo ACK enviado: 30
-	Ultimo ACK recibido: 30
+	Ultimo ACK enviado: 31
+	Ultimo ACK recibido: 31
 
 
-780.13	Se libera A.
+770.80	Llega mensaje a A.
 
-	Longitud de la cola de A: 2
-	Cola de A: 30 31 
+	Longitud de la cola de A: 1
+	Cola de A: 31 
 	Frames correctamente recibidos por B: 31
 	Ultimos frames recibidos por B: 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 
-	Ultimo ACK enviado: 30
-	Ultimo ACK recibido: 30
+	Ultimo ACK enviado: 31
+	Ultimo ACK recibido: 31
 
 
-780.29	Se vence timer.
-	Debo volver a enviar el id=30
-	Debo volver a enviar el id=31
-	Preparo el reenvio de id=30
+772.29	Se libera A.
 
-	Longitud de la cola de A: 2
-	Cola de A: 30 31 
+	Longitud de la cola de A: 1
+	Cola de A: 31 
 	Frames correctamente recibidos por B: 31
 	Ultimos frames recibidos por B: 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 
-	Ultimo ACK enviado: 30
-	Ultimo ACK recibido: 30
+	Ultimo ACK enviado: 31
+	Ultimo ACK recibido: 31
 
 
-781.13	Llega Frame a B.
+773.29	Llega Frame a B.
 
-	Longitud de la cola de A: 2
-	Cola de A: 30 31 
+	Longitud de la cola de A: 1
+	Cola de A: 31 
 	Frames correctamente recibidos por B: 31
 	Ultimos frames recibidos por B: 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 
-	Ultimo ACK enviado: 30
-	Ultimo ACK recibido: 30
+	Ultimo ACK enviado: 31
+	Ultimo ACK recibido: 31
 
 
-781.32	Se libera A.
-
-	Longitud de la cola de A: 2
-	Cola de A: 30 31 
-	Frames correctamente recibidos por B: 31
-	Ultimos frames recibidos por B: 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 
-	Ultimo ACK enviado: 30
-	Ultimo ACK recibido: 30
-
-
-782.32	Llega Frame a B.
-
-	Longitud de la cola de A: 2
-	Cola de A: 30 31 
-	Frames correctamente recibidos por B: 31
-	Ultimos frames recibidos por B: 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 
-	Ultimo ACK enviado: 30
-	Ultimo ACK recibido: 30
-
-
-783.05	Se libera A.
-	El frame id=31 va con error.
-
-	Longitud de la cola de A: 2
-	Cola de A: 30 31 
-	Frames correctamente recibidos por B: 31
-	Ultimos frames recibidos por B: 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 
-	Ultimo ACK enviado: 30
-	Ultimo ACK recibido: 30
-
-
-784.01	Se libera B.
+775.62	Se libera B.
 	El frame 31 es el que espero.
 
-	Longitud de la cola de A: 2
-	Cola de A: 30 31 
+	Longitud de la cola de A: 1
+	Cola de A: 31 
 	Frames correctamente recibidos por B: 32
 	Ultimos frames recibidos por B: 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 
 	Ultimo ACK enviado: 32
-	Ultimo ACK recibido: 30
+	Ultimo ACK recibido: 31
 
 
-784.05	Llega Frame a B.
-
-	Longitud de la cola de A: 2
-	Cola de A: 30 31 
-	Frames correctamente recibidos por B: 32
-	Ultimos frames recibidos por B: 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 
-	Ultimo ACK enviado: 32
-	Ultimo ACK recibido: 30
-
-
-785.01	Llega ACK a A.
-	Elimino el timer y saco de la cola al id=30
+776.62	Llega ACK a A.
 	Elimino el timer y saco de la cola al id=31
 
 	Longitud de la cola de A: 0
@@ -2150,50 +1988,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 32
 
 
-786.93	Se libera B.
-	El frame 30 no es el que espero.
-
-	Longitud de la cola de A: 0
-	Cola de A: 
-	Frames correctamente recibidos por B: 32
-	Ultimos frames recibidos por B: 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 
-	Ultimo ACK enviado: 32
-	Ultimo ACK recibido: 32
-
-
-787.93	Llega ACK a A.
-
-	Longitud de la cola de A: 0
-	Cola de A: 
-	Frames correctamente recibidos por B: 32
-	Ultimos frames recibidos por B: 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 
-	Ultimo ACK enviado: 32
-	Ultimo ACK recibido: 32
-
-
-789.58	Se libera B.
-	El frame 31 viene danado.
-	El ack nAck=31 se va a perder.
-
-	Longitud de la cola de A: 0
-	Cola de A: 
-	Frames correctamente recibidos por B: 32
-	Ultimos frames recibidos por B: 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 
-	Ultimo ACK enviado: 32
-	Ultimo ACK recibido: 32
-
-
-795.05	Se vence timer.
-
-	Longitud de la cola de A: 0
-	Cola de A: 
-	Frames correctamente recibidos por B: 32
-	Ultimos frames recibidos por B: 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 
-	Ultimo ACK enviado: 32
-	Ultimo ACK recibido: 32
-
-
-803.47	Llega mensaje a A.
+798.46	Llega mensaje a A.
 
 	Longitud de la cola de A: 1
 	Cola de A: 32 
@@ -2203,7 +1998,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 32
 
 
-804.99	Se libera A.
+800.21	Se libera A.
 
 	Longitud de la cola de A: 1
 	Cola de A: 32 
@@ -2213,7 +2008,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 32
 
 
-805.99	Llega Frame a B.
+801.21	Llega Frame a B.
 
 	Longitud de la cola de A: 1
 	Cola de A: 32 
@@ -2223,7 +2018,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 32
 
 
-808.70	Se libera B.
+804.31	Se libera B.
 	El frame 32 es el que espero.
 
 	Longitud de la cola de A: 1
@@ -2234,7 +2029,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 32
 
 
-809.70	Llega ACK a A.
+805.31	Llega ACK a A.
 	Elimino el timer y saco de la cola al id=32
 
 	Longitud de la cola de A: 0
@@ -2245,7 +2040,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 33
 
 
-827.80	Llega mensaje a A.
+823.56	Llega mensaje a A.
 
 	Longitud de la cola de A: 1
 	Cola de A: 33 
@@ -2255,7 +2050,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 33
 
 
-829.39	Se libera A.
+824.91	Se libera A.
 
 	Longitud de la cola de A: 1
 	Cola de A: 33 
@@ -2265,7 +2060,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 33
 
 
-830.39	Llega Frame a B.
+825.91	Llega Frame a B.
 
 	Longitud de la cola de A: 1
 	Cola de A: 33 
@@ -2275,7 +2070,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 33
 
 
-832.67	Se libera B.
+828.92	Se libera B.
 	El frame 33 es el que espero.
 
 	Longitud de la cola de A: 1
@@ -2286,7 +2081,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 33
 
 
-833.67	Llega ACK a A.
+829.92	Llega ACK a A.
 	Elimino el timer y saco de la cola al id=33
 
 	Longitud de la cola de A: 0
@@ -2297,7 +2092,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 34
 
 
-853.62	Llega mensaje a A.
+848.61	Llega mensaje a A.
 
 	Longitud de la cola de A: 1
 	Cola de A: 34 
@@ -2307,7 +2102,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 34
 
 
-855.24	Se libera A.
+850.92	Se libera A.
 
 	Longitud de la cola de A: 1
 	Cola de A: 34 
@@ -2317,7 +2112,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 34
 
 
-856.24	Llega Frame a B.
+851.92	Llega Frame a B.
 
 	Longitud de la cola de A: 1
 	Cola de A: 34 
@@ -2327,7 +2122,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 34
 
 
-859.00	Se libera B.
+854.58	Se libera B.
 	El frame 34 es el que espero.
 
 	Longitud de la cola de A: 1
@@ -2338,7 +2133,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 34
 
 
-860.00	Llega ACK a A.
+855.58	Llega ACK a A.
 	Elimino el timer y saco de la cola al id=34
 
 	Longitud de la cola de A: 0
@@ -2349,7 +2144,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 35
 
 
-879.00	Llega mensaje a A.
+873.27	Llega mensaje a A.
 
 	Longitud de la cola de A: 1
 	Cola de A: 35 
@@ -2359,7 +2154,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 35
 
 
-880.38	Se libera A.
+874.72	Se libera A.
 
 	Longitud de la cola de A: 1
 	Cola de A: 35 
@@ -2369,7 +2164,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 35
 
 
-881.38	Llega Frame a B.
+875.72	Llega Frame a B.
 
 	Longitud de la cola de A: 1
 	Cola de A: 35 
@@ -2379,7 +2174,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 35
 
 
-884.08	Se libera B.
+878.56	Se libera B.
 	El frame 35 es el que espero.
 
 	Longitud de la cola de A: 1
@@ -2390,7 +2185,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 35
 
 
-885.08	Llega ACK a A.
+879.56	Llega ACK a A.
 	Elimino el timer y saco de la cola al id=35
 
 	Longitud de la cola de A: 0
@@ -2401,7 +2196,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 36
 
 
-903.61	Llega mensaje a A.
+899.83	Llega mensaje a A.
 
 	Longitud de la cola de A: 1
 	Cola de A: 36 
@@ -2411,7 +2206,8 @@ Tiempo	Info
 	Ultimo ACK recibido: 36
 
 
-904.79	Se libera A.
+901.06	Se libera A.
+	El frame id=36 va con error.
 
 	Longitud de la cola de A: 1
 	Cola de A: 36 
@@ -2421,7 +2217,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 36
 
 
-905.79	Llega Frame a B.
+902.06	Llega Frame a B.
 
 	Longitud de la cola de A: 1
 	Cola de A: 36 
@@ -2431,70 +2227,200 @@ Tiempo	Info
 	Ultimo ACK recibido: 36
 
 
-908.54	Se libera B.
+905.05	Se libera B.
+	El frame 36 viene danado.
+
+	Longitud de la cola de A: 1
+	Cola de A: 36 
+	Frames correctamente recibidos por B: 36
+	Ultimos frames recibidos por B: 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 
+	Ultimo ACK enviado: 36
+	Ultimo ACK recibido: 36
+
+
+906.05	Llega ACK a A.
+
+	Longitud de la cola de A: 1
+	Cola de A: 36 
+	Frames correctamente recibidos por B: 36
+	Ultimos frames recibidos por B: 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 
+	Ultimo ACK enviado: 36
+	Ultimo ACK recibido: 36
+
+
+908.75	Se libera A.
+	El frame id=36 va con error.
+
+	Longitud de la cola de A: 1
+	Cola de A: 36 
+	Frames correctamente recibidos por B: 36
+	Ultimos frames recibidos por B: 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 
+	Ultimo ACK enviado: 36
+	Ultimo ACK recibido: 36
+
+
+909.75	Llega Frame a B.
+
+	Longitud de la cola de A: 1
+	Cola de A: 36 
+	Frames correctamente recibidos por B: 36
+	Ultimos frames recibidos por B: 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 
+	Ultimo ACK enviado: 36
+	Ultimo ACK recibido: 36
+
+
+912.88	Se libera B.
+	El frame 36 viene danado.
+
+	Longitud de la cola de A: 1
+	Cola de A: 36 
+	Frames correctamente recibidos por B: 36
+	Ultimos frames recibidos por B: 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 
+	Ultimo ACK enviado: 36
+	Ultimo ACK recibido: 36
+
+
+913.06	Se vence timer.
+	Debo volver a enviar el id=36
+	Preparo el reenvio de id=36
+
+	Longitud de la cola de A: 1
+	Cola de A: 36 
+	Frames correctamente recibidos por B: 36
+	Ultimos frames recibidos por B: 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 
+	Ultimo ACK enviado: 36
+	Ultimo ACK recibido: 36
+
+
+913.88	Llega ACK a A.
+
+	Longitud de la cola de A: 1
+	Cola de A: 36 
+	Frames correctamente recibidos por B: 36
+	Ultimos frames recibidos por B: 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 
+	Ultimo ACK enviado: 36
+	Ultimo ACK recibido: 36
+
+
+915.52	Se libera A.
+
+	Longitud de la cola de A: 1
+	Cola de A: 36 
+	Frames correctamente recibidos por B: 36
+	Ultimos frames recibidos por B: 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 
+	Ultimo ACK enviado: 36
+	Ultimo ACK recibido: 36
+
+
+916.52	Llega Frame a B.
+
+	Longitud de la cola de A: 1
+	Cola de A: 36 
+	Frames correctamente recibidos por B: 36
+	Ultimos frames recibidos por B: 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 
+	Ultimo ACK enviado: 36
+	Ultimo ACK recibido: 36
+
+
+919.30	Se libera B.
 	El frame 36 es el que espero.
+	El ack nAck=37 se va a perder.
 
 	Longitud de la cola de A: 1
 	Cola de A: 36 
 	Frames correctamente recibidos por B: 37
 	Ultimos frames recibidos por B: 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 
-	Ultimo ACK enviado: 37
+	Ultimo ACK enviado: 36
 	Ultimo ACK recibido: 36
 
 
-909.54	Llega ACK a A.
-	Elimino el timer y saco de la cola al id=36
+925.27	Llega mensaje a A.
 
-	Longitud de la cola de A: 0
-	Cola de A: 
+	Longitud de la cola de A: 2
+	Cola de A: 36 37 
 	Frames correctamente recibidos por B: 37
 	Ultimos frames recibidos por B: 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 
-	Ultimo ACK enviado: 37
-	Ultimo ACK recibido: 37
+	Ultimo ACK enviado: 36
+	Ultimo ACK recibido: 36
 
 
-928.09	Llega mensaje a A.
+926.48	Se libera A.
 
-	Longitud de la cola de A: 1
-	Cola de A: 37 
+	Longitud de la cola de A: 2
+	Cola de A: 36 37 
 	Frames correctamente recibidos por B: 37
 	Ultimos frames recibidos por B: 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 
-	Ultimo ACK enviado: 37
-	Ultimo ACK recibido: 37
+	Ultimo ACK enviado: 36
+	Ultimo ACK recibido: 36
 
 
-929.26	Se libera A.
+927.48	Llega Frame a B.
 
-	Longitud de la cola de A: 1
-	Cola de A: 37 
+	Longitud de la cola de A: 2
+	Cola de A: 36 37 
 	Frames correctamente recibidos por B: 37
 	Ultimos frames recibidos por B: 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 
-	Ultimo ACK enviado: 37
-	Ultimo ACK recibido: 37
+	Ultimo ACK enviado: 36
+	Ultimo ACK recibido: 36
 
 
-930.26	Llega Frame a B.
+927.52	Se vence timer.
+	Debo volver a enviar el id=36
+	Debo volver a enviar el id=37
+	Preparo el reenvio de id=36
 
-	Longitud de la cola de A: 1
-	Cola de A: 37 
+	Longitud de la cola de A: 2
+	Cola de A: 36 37 
 	Frames correctamente recibidos por B: 37
 	Ultimos frames recibidos por B: 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 
-	Ultimo ACK enviado: 37
-	Ultimo ACK recibido: 37
+	Ultimo ACK enviado: 36
+	Ultimo ACK recibido: 36
 
 
-932.72	Se libera B.
+928.65	Se libera A.
+	El frame id=36 va con error.
+
+	Longitud de la cola de A: 2
+	Cola de A: 36 37 
+	Frames correctamente recibidos por B: 37
+	Ultimos frames recibidos por B: 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 
+	Ultimo ACK enviado: 36
+	Ultimo ACK recibido: 36
+
+
+929.65	Llega Frame a B.
+
+	Longitud de la cola de A: 2
+	Cola de A: 36 37 
+	Frames correctamente recibidos por B: 37
+	Ultimos frames recibidos por B: 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 
+	Ultimo ACK enviado: 36
+	Ultimo ACK recibido: 36
+
+
+929.87	Se libera B.
 	El frame 37 es el que espero.
 
-	Longitud de la cola de A: 1
-	Cola de A: 37 
+	Longitud de la cola de A: 2
+	Cola de A: 36 37 
 	Frames correctamente recibidos por B: 38
 	Ultimos frames recibidos por B: 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 
 	Ultimo ACK enviado: 38
-	Ultimo ACK recibido: 37
+	Ultimo ACK recibido: 36
 
 
-933.72	Llega ACK a A.
+929.95	Se libera A.
+
+	Longitud de la cola de A: 2
+	Cola de A: 36 37 
+	Frames correctamente recibidos por B: 38
+	Ultimos frames recibidos por B: 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 
+	Ultimo ACK enviado: 38
+	Ultimo ACK recibido: 36
+
+
+930.87	Llega ACK a A.
+	Elimino el timer y saco de la cola al id=36
 	Elimino el timer y saco de la cola al id=37
 
 	Longitud de la cola de A: 0
@@ -2505,7 +2431,69 @@ Tiempo	Info
 	Ultimo ACK recibido: 38
 
 
-953.77	Llega mensaje a A.
+930.95	Llega Frame a B.
+
+	Longitud de la cola de A: 0
+	Cola de A: 
+	Frames correctamente recibidos por B: 38
+	Ultimos frames recibidos por B: 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 
+	Ultimo ACK enviado: 38
+	Ultimo ACK recibido: 38
+
+
+932.50	Se libera B.
+	El frame 36 viene danado.
+
+	Longitud de la cola de A: 0
+	Cola de A: 
+	Frames correctamente recibidos por B: 38
+	Ultimos frames recibidos por B: 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 
+	Ultimo ACK enviado: 36
+	Ultimo ACK recibido: 38
+
+
+933.50	Llega ACK a A.
+
+	Longitud de la cola de A: 0
+	Cola de A: 
+	Frames correctamente recibidos por B: 38
+	Ultimos frames recibidos por B: 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 
+	Ultimo ACK enviado: 36
+	Ultimo ACK recibido: 36
+
+
+935.22	Se libera B.
+	El frame 37 no es el que espero.
+
+	Longitud de la cola de A: 0
+	Cola de A: 
+	Frames correctamente recibidos por B: 38
+	Ultimos frames recibidos por B: 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 
+	Ultimo ACK enviado: 38
+	Ultimo ACK recibido: 36
+
+
+936.22	Llega ACK a A.
+
+	Longitud de la cola de A: 0
+	Cola de A: 
+	Frames correctamente recibidos por B: 38
+	Ultimos frames recibidos por B: 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 
+	Ultimo ACK enviado: 38
+	Ultimo ACK recibido: 38
+
+
+941.95	Se vence timer.
+
+	Longitud de la cola de A: 0
+	Cola de A: 
+	Frames correctamente recibidos por B: 38
+	Ultimos frames recibidos por B: 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 
+	Ultimo ACK enviado: 38
+	Ultimo ACK recibido: 38
+
+
+950.39	Llega mensaje a A.
 
 	Longitud de la cola de A: 1
 	Cola de A: 38 
@@ -2515,7 +2503,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 38
 
 
-955.86	Se libera A.
+951.47	Se libera A.
 
 	Longitud de la cola de A: 1
 	Cola de A: 38 
@@ -2525,7 +2513,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 38
 
 
-956.86	Llega Frame a B.
+952.47	Llega Frame a B.
 
 	Longitud de la cola de A: 1
 	Cola de A: 38 
@@ -2535,8 +2523,52 @@ Tiempo	Info
 	Ultimo ACK recibido: 38
 
 
-959.99	Se libera B.
+955.39	Se libera B.
 	El frame 38 es el que espero.
+	El ack nAck=39 se va a perder.
+
+	Longitud de la cola de A: 1
+	Cola de A: 38 
+	Frames correctamente recibidos por B: 39
+	Ultimos frames recibidos por B: 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 
+	Ultimo ACK enviado: 38
+	Ultimo ACK recibido: 38
+
+
+963.47	Se vence timer.
+	Debo volver a enviar el id=38
+	Preparo el reenvio de id=38
+
+	Longitud de la cola de A: 1
+	Cola de A: 38 
+	Frames correctamente recibidos por B: 39
+	Ultimos frames recibidos por B: 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 
+	Ultimo ACK enviado: 38
+	Ultimo ACK recibido: 38
+
+
+965.02	Se libera A.
+
+	Longitud de la cola de A: 1
+	Cola de A: 38 
+	Frames correctamente recibidos por B: 39
+	Ultimos frames recibidos por B: 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 
+	Ultimo ACK enviado: 38
+	Ultimo ACK recibido: 38
+
+
+966.02	Llega Frame a B.
+
+	Longitud de la cola de A: 1
+	Cola de A: 38 
+	Frames correctamente recibidos por B: 39
+	Ultimos frames recibidos por B: 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 
+	Ultimo ACK enviado: 38
+	Ultimo ACK recibido: 38
+
+
+968.57	Se libera B.
+	El frame 38 no es el que espero.
 
 	Longitud de la cola de A: 1
 	Cola de A: 38 
@@ -2546,7 +2578,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 38
 
 
-960.99	Llega ACK a A.
+969.57	Llega ACK a A.
 	Elimino el timer y saco de la cola al id=38
 
 	Longitud de la cola de A: 0
@@ -2557,7 +2589,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 39
 
 
-980.68	Llega mensaje a A.
+976.28	Llega mensaje a A.
 
 	Longitud de la cola de A: 1
 	Cola de A: 39 
@@ -2567,7 +2599,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 39
 
 
-981.71	Se libera A.
+978.65	Se libera A.
 
 	Longitud de la cola de A: 1
 	Cola de A: 39 
@@ -2577,7 +2609,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 39
 
 
-982.71	Llega Frame a B.
+979.65	Llega Frame a B.
 
 	Longitud de la cola de A: 1
 	Cola de A: 39 
@@ -2587,7 +2619,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 39
 
 
-985.61	Se libera B.
+982.28	Se libera B.
 	El frame 39 es el que espero.
 
 	Longitud de la cola de A: 1
@@ -2598,7 +2630,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 39
 
 
-986.61	Llega ACK a A.
+983.28	Llega ACK a A.
 	Elimino el timer y saco de la cola al id=39
 
 	Longitud de la cola de A: 0
@@ -2609,7 +2641,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 40
 
 
-1004.63	Llega mensaje a A.
+1000.07	Llega mensaje a A.
 
 	Longitud de la cola de A: 1
 	Cola de A: 40 
@@ -2619,190 +2651,272 @@ Tiempo	Info
 	Ultimo ACK recibido: 40
 
 
-1005.99	Se libera A.
-
-	Longitud de la cola de A: 1
-	Cola de A: 40 
-	Frames correctamente recibidos por B: 40
-	Ultimos frames recibidos por B: 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 
-	Ultimo ACK enviado: 40
-	Ultimo ACK recibido: 40
-
-
-1006.99	Llega Frame a B.
-
-	Longitud de la cola de A: 1
-	Cola de A: 40 
-	Frames correctamente recibidos por B: 40
-	Ultimos frames recibidos por B: 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 
-	Ultimo ACK enviado: 40
-	Ultimo ACK recibido: 40
-
-
-1009.61	Se libera B.
-	El frame 40 es el que espero.
-	El ack nAck=41 se va a perder.
-
-	Longitud de la cola de A: 1
-	Cola de A: 40 
-	Frames correctamente recibidos por B: 41
-	Ultimos frames recibidos por B: 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 
-	Ultimo ACK enviado: 40
-	Ultimo ACK recibido: 40
-
-
-1017.99	Se vence timer.
-	Debo volver a enviar el id=40
-	Preparo el reenvio de id=40
-
-	Longitud de la cola de A: 1
-	Cola de A: 40 
-	Frames correctamente recibidos por B: 41
-	Ultimos frames recibidos por B: 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 
-	Ultimo ACK enviado: 40
-	Ultimo ACK recibido: 40
-
-
-1019.14	Se libera A.
+1001.32	Se libera A.
 	El frame id=40 va con error.
 
 	Longitud de la cola de A: 1
 	Cola de A: 40 
-	Frames correctamente recibidos por B: 41
-	Ultimos frames recibidos por B: 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 
+	Frames correctamente recibidos por B: 40
+	Ultimos frames recibidos por B: 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 
 	Ultimo ACK enviado: 40
 	Ultimo ACK recibido: 40
 
 
-1020.14	Llega Frame a B.
+1002.32	Llega Frame a B.
 
 	Longitud de la cola de A: 1
 	Cola de A: 40 
-	Frames correctamente recibidos por B: 41
-	Ultimos frames recibidos por B: 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 
+	Frames correctamente recibidos por B: 40
+	Ultimos frames recibidos por B: 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 
 	Ultimo ACK enviado: 40
 	Ultimo ACK recibido: 40
 
 
-1023.04	Se libera B.
+1005.21	Se libera B.
 	El frame 40 viene danado.
-	El ack nAck=40 se va a perder.
+
+	Longitud de la cola de A: 1
+	Cola de A: 40 
+	Frames correctamente recibidos por B: 40
+	Ultimos frames recibidos por B: 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 
+	Ultimo ACK enviado: 40
+	Ultimo ACK recibido: 40
+
+
+1006.21	Llega ACK a A.
+
+	Longitud de la cola de A: 1
+	Cola de A: 40 
+	Frames correctamente recibidos por B: 40
+	Ultimos frames recibidos por B: 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 
+	Ultimo ACK enviado: 40
+	Ultimo ACK recibido: 40
+
+
+1007.22	Se libera A.
+
+	Longitud de la cola de A: 1
+	Cola de A: 40 
+	Frames correctamente recibidos por B: 40
+	Ultimos frames recibidos por B: 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 
+	Ultimo ACK enviado: 40
+	Ultimo ACK recibido: 40
+
+
+1008.22	Llega Frame a B.
+
+	Longitud de la cola de A: 1
+	Cola de A: 40 
+	Frames correctamente recibidos por B: 40
+	Ultimos frames recibidos por B: 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 
+	Ultimo ACK enviado: 40
+	Ultimo ACK recibido: 40
+
+
+1010.80	Se libera B.
+	El frame 40 es el que espero.
 
 	Longitud de la cola de A: 1
 	Cola de A: 40 
 	Frames correctamente recibidos por B: 41
 	Ultimos frames recibidos por B: 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 
-	Ultimo ACK enviado: 40
+	Ultimo ACK enviado: 41
 	Ultimo ACK recibido: 40
 
 
-1029.29	Llega mensaje a A.
+1011.80	Llega ACK a A.
+	Elimino el timer y saco de la cola al id=40
 
-	Longitud de la cola de A: 2
-	Cola de A: 40 41 
+	Longitud de la cola de A: 0
+	Cola de A: 
 	Frames correctamente recibidos por B: 41
 	Ultimos frames recibidos por B: 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 
-	Ultimo ACK enviado: 40
-	Ultimo ACK recibido: 40
+	Ultimo ACK enviado: 41
+	Ultimo ACK recibido: 41
 
 
-1031.14	Se vence timer.
-	Debo volver a enviar el id=40
-	Debo volver a enviar el id=41
+1019.22	Se vence timer.
 
-	Longitud de la cola de A: 2
-	Cola de A: 40 41 
+	Longitud de la cola de A: 0
+	Cola de A: 
 	Frames correctamente recibidos por B: 41
 	Ultimos frames recibidos por B: 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 
-	Ultimo ACK enviado: 40
-	Ultimo ACK recibido: 40
+	Ultimo ACK enviado: 41
+	Ultimo ACK recibido: 41
 
 
-1031.25	Se libera A.
+1025.21	Llega mensaje a A.
 
-	Longitud de la cola de A: 2
-	Cola de A: 40 41 
+	Longitud de la cola de A: 1
+	Cola de A: 41 
 	Frames correctamente recibidos por B: 41
 	Ultimos frames recibidos por B: 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 
-	Ultimo ACK enviado: 40
-	Ultimo ACK recibido: 40
+	Ultimo ACK enviado: 41
+	Ultimo ACK recibido: 41
 
 
-1032.25	Llega Frame a B.
+1026.43	Se libera A.
 
-	Longitud de la cola de A: 2
-	Cola de A: 40 41 
+	Longitud de la cola de A: 1
+	Cola de A: 41 
 	Frames correctamente recibidos por B: 41
 	Ultimos frames recibidos por B: 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 
-	Ultimo ACK enviado: 40
-	Ultimo ACK recibido: 40
+	Ultimo ACK enviado: 41
+	Ultimo ACK recibido: 41
 
 
-1032.92	Se libera A.
+1027.43	Llega Frame a B.
 
-	Longitud de la cola de A: 2
-	Cola de A: 40 41 
+	Longitud de la cola de A: 1
+	Cola de A: 41 
 	Frames correctamente recibidos por B: 41
 	Ultimos frames recibidos por B: 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 
-	Ultimo ACK enviado: 40
-	Ultimo ACK recibido: 40
+	Ultimo ACK enviado: 41
+	Ultimo ACK recibido: 41
 
 
-1033.92	Llega Frame a B.
-
-	Longitud de la cola de A: 2
-	Cola de A: 40 41 
-	Frames correctamente recibidos por B: 41
-	Ultimos frames recibidos por B: 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 
-	Ultimo ACK enviado: 40
-	Ultimo ACK recibido: 40
-
-
-1035.13	Se libera B.
+1029.79	Se libera B.
 	El frame 41 es el que espero.
+	El ack nAck=42 se va a perder.
+
+	Longitud de la cola de A: 1
+	Cola de A: 41 
+	Frames correctamente recibidos por B: 42
+	Ultimos frames recibidos por B: 41 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 
+	Ultimo ACK enviado: 41
+	Ultimo ACK recibido: 41
+
+
+1038.43	Se vence timer.
+	Debo volver a enviar el id=41
+	Preparo el reenvio de id=41
+
+	Longitud de la cola de A: 1
+	Cola de A: 41 
+	Frames correctamente recibidos por B: 42
+	Ultimos frames recibidos por B: 41 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 
+	Ultimo ACK enviado: 41
+	Ultimo ACK recibido: 41
+
+
+1039.60	Se libera A.
+	El frame id=41 se va a perder
+
+	Longitud de la cola de A: 1
+	Cola de A: 41 
+	Frames correctamente recibidos por B: 42
+	Ultimos frames recibidos por B: 41 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 
+	Ultimo ACK enviado: 41
+	Ultimo ACK recibido: 41
+
+
+1049.94	Llega mensaje a A.
 
 	Longitud de la cola de A: 2
-	Cola de A: 40 41 
+	Cola de A: 41 42 
+	Frames correctamente recibidos por B: 42
+	Ultimos frames recibidos por B: 41 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 
+	Ultimo ACK enviado: 41
+	Ultimo ACK recibido: 41
+
+
+1051.04	Se libera A.
+	El frame id=42 va con error.
+
+	Longitud de la cola de A: 2
+	Cola de A: 41 42 
+	Frames correctamente recibidos por B: 42
+	Ultimos frames recibidos por B: 41 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 
+	Ultimo ACK enviado: 41
+	Ultimo ACK recibido: 41
+
+
+1051.60	Se vence timer.
+	Debo volver a enviar el id=41
+	Debo volver a enviar el id=42
+	Preparo el reenvio de id=41
+
+	Longitud de la cola de A: 2
+	Cola de A: 41 42 
+	Frames correctamente recibidos por B: 42
+	Ultimos frames recibidos por B: 41 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 
+	Ultimo ACK enviado: 41
+	Ultimo ACK recibido: 41
+
+
+1052.04	Llega Frame a B.
+
+	Longitud de la cola de A: 2
+	Cola de A: 41 42 
+	Frames correctamente recibidos por B: 42
+	Ultimos frames recibidos por B: 41 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 
+	Ultimo ACK enviado: 41
+	Ultimo ACK recibido: 41
+
+
+1053.28	Se libera A.
+
+	Longitud de la cola de A: 2
+	Cola de A: 41 42 
+	Frames correctamente recibidos por B: 42
+	Ultimos frames recibidos por B: 41 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 
+	Ultimo ACK enviado: 41
+	Ultimo ACK recibido: 41
+
+
+1054.28	Llega Frame a B.
+
+	Longitud de la cola de A: 2
+	Cola de A: 41 42 
+	Frames correctamente recibidos por B: 42
+	Ultimos frames recibidos por B: 41 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 
+	Ultimo ACK enviado: 41
+	Ultimo ACK recibido: 41
+
+
+1054.55	Se libera A.
+
+	Longitud de la cola de A: 2
+	Cola de A: 41 42 
+	Frames correctamente recibidos por B: 42
+	Ultimos frames recibidos por B: 41 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 
+	Ultimo ACK enviado: 41
+	Ultimo ACK recibido: 41
+
+
+1055.16	Se libera B.
+	El frame 42 viene danado.
+
+	Longitud de la cola de A: 2
+	Cola de A: 41 42 
 	Frames correctamente recibidos por B: 42
 	Ultimos frames recibidos por B: 41 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 
 	Ultimo ACK enviado: 42
-	Ultimo ACK recibido: 40
+	Ultimo ACK recibido: 41
 
 
-1036.13	Llega ACK a A.
-	Elimino el timer y saco de la cola al id=40
+1055.55	Llega Frame a B.
+
+	Longitud de la cola de A: 2
+	Cola de A: 41 42 
+	Frames correctamente recibidos por B: 42
+	Ultimos frames recibidos por B: 41 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 
+	Ultimo ACK enviado: 42
+	Ultimo ACK recibido: 41
+
+
+1056.16	Llega ACK a A.
 	Elimino el timer y saco de la cola al id=41
 
-	Longitud de la cola de A: 0
-	Cola de A: 
+	Longitud de la cola de A: 1
+	Cola de A: 42 
 	Frames correctamente recibidos por B: 42
 	Ultimos frames recibidos por B: 41 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 
 	Ultimo ACK enviado: 42
 	Ultimo ACK recibido: 42
 
 
-1038.24	Se libera B.
-	El frame 40 no es el que espero.
-
-	Longitud de la cola de A: 0
-	Cola de A: 
-	Frames correctamente recibidos por B: 42
-	Ultimos frames recibidos por B: 41 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 
-	Ultimo ACK enviado: 42
-	Ultimo ACK recibido: 42
-
-
-1039.24	Llega ACK a A.
-
-	Longitud de la cola de A: 0
-	Cola de A: 
-	Frames correctamente recibidos por B: 42
-	Ultimos frames recibidos por B: 41 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 
-	Ultimo ACK enviado: 42
-	Ultimo ACK recibido: 42
-
-
-1053.46	Llega mensaje a A.
+1057.80	Se libera A.
 
 	Longitud de la cola de A: 1
 	Cola de A: 42 
@@ -2812,8 +2926,8 @@ Tiempo	Info
 	Ultimo ACK recibido: 42
 
 
-1055.33	Se libera A.
-	El frame id=42 va con error.
+1058.22	Se libera B.
+	El frame 41 no es el que espero.
 
 	Longitud de la cola de A: 1
 	Cola de A: 42 
@@ -2823,7 +2937,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 42
 
 
-1056.33	Llega Frame a B.
+1058.80	Llega Frame a B.
 
 	Longitud de la cola de A: 1
 	Cola de A: 42 
@@ -2833,8 +2947,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 42
 
 
-1058.90	Se libera B.
-	El frame 42 viene danado.
+1059.22	Llega ACK a A.
 
 	Longitud de la cola de A: 1
 	Cola de A: 42 
@@ -2844,7 +2957,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 42
 
 
-1059.90	Llega ACK a A.
+1060.53	Se libera A.
 
 	Longitud de la cola de A: 1
 	Cola de A: 42 
@@ -2854,199 +2967,174 @@ Tiempo	Info
 	Ultimo ACK recibido: 42
 
 
-1060.95	Se libera A.
-	El frame id=42 va con error.
-
-	Longitud de la cola de A: 1
-	Cola de A: 42 
-	Frames correctamente recibidos por B: 42
-	Ultimos frames recibidos por B: 41 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 
-	Ultimo ACK enviado: 42
-	Ultimo ACK recibido: 42
-
-
-1061.95	Llega Frame a B.
-
-	Longitud de la cola de A: 1
-	Cola de A: 42 
-	Frames correctamente recibidos por B: 42
-	Ultimos frames recibidos por B: 41 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 
-	Ultimo ACK enviado: 42
-	Ultimo ACK recibido: 42
-
-
-1064.85	Se libera B.
-	El frame 42 viene danado.
-
-	Longitud de la cola de A: 1
-	Cola de A: 42 
-	Frames correctamente recibidos por B: 42
-	Ultimos frames recibidos por B: 41 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 
-	Ultimo ACK enviado: 42
-	Ultimo ACK recibido: 42
-
-
-1065.85	Llega ACK a A.
-
-	Longitud de la cola de A: 1
-	Cola de A: 42 
-	Frames correctamente recibidos por B: 42
-	Ultimos frames recibidos por B: 41 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 
-	Ultimo ACK enviado: 42
-	Ultimo ACK recibido: 42
-
-
-1067.16	Se libera A.
-	El frame id=42 se va a perder
-
-	Longitud de la cola de A: 1
-	Cola de A: 42 
-	Frames correctamente recibidos por B: 42
-	Ultimos frames recibidos por B: 41 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 
-	Ultimo ACK enviado: 42
-	Ultimo ACK recibido: 42
-
-
-1067.33	Se vence timer.
-	Debo volver a enviar el id=42
-	Preparo el reenvio de id=42
-
-	Longitud de la cola de A: 1
-	Cola de A: 42 
-	Frames correctamente recibidos por B: 42
-	Ultimos frames recibidos por B: 41 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 
-	Ultimo ACK enviado: 42
-	Ultimo ACK recibido: 42
-
-
-1068.72	Se libera A.
-
-	Longitud de la cola de A: 1
-	Cola de A: 42 
-	Frames correctamente recibidos por B: 42
-	Ultimos frames recibidos por B: 41 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 
-	Ultimo ACK enviado: 42
-	Ultimo ACK recibido: 42
-
-
-1069.72	Llega Frame a B.
-
-	Longitud de la cola de A: 1
-	Cola de A: 42 
-	Frames correctamente recibidos por B: 42
-	Ultimos frames recibidos por B: 41 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 
-	Ultimo ACK enviado: 42
-	Ultimo ACK recibido: 42
-
-
-1072.97	Se libera B.
+1060.79	Se libera B.
 	El frame 42 es el que espero.
-	El ack nAck=43 se va a perder.
 
 	Longitud de la cola de A: 1
 	Cola de A: 42 
 	Frames correctamente recibidos por B: 43
 	Ultimos frames recibidos por B: 42 41 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 
-	Ultimo ACK enviado: 42
+	Ultimo ACK enviado: 43
 	Ultimo ACK recibido: 42
 
 
-1079.01	Llega mensaje a A.
+1061.53	Llega Frame a B.
 
-	Longitud de la cola de A: 2
-	Cola de A: 42 43 
+	Longitud de la cola de A: 1
+	Cola de A: 42 
 	Frames correctamente recibidos por B: 43
 	Ultimos frames recibidos por B: 42 41 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 
-	Ultimo ACK enviado: 42
+	Ultimo ACK enviado: 43
 	Ultimo ACK recibido: 42
 
 
-1080.18	Se libera A.
+1061.79	Llega ACK a A.
+	Elimino el timer y saco de la cola al id=42
 
-	Longitud de la cola de A: 2
-	Cola de A: 42 43 
+	Longitud de la cola de A: 0
+	Cola de A: 
 	Frames correctamente recibidos por B: 43
 	Ultimos frames recibidos por B: 42 41 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 
-	Ultimo ACK enviado: 42
-	Ultimo ACK recibido: 42
+	Ultimo ACK enviado: 43
+	Ultimo ACK recibido: 43
 
 
-1080.72	Se vence timer.
-	Debo volver a enviar el id=42
-	Debo volver a enviar el id=43
-	Preparo el reenvio de id=42
+1063.68	Se libera B.
+	El frame 42 no es el que espero.
 
-	Longitud de la cola de A: 2
-	Cola de A: 42 43 
+	Longitud de la cola de A: 0
+	Cola de A: 
 	Frames correctamente recibidos por B: 43
 	Ultimos frames recibidos por B: 42 41 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 
-	Ultimo ACK enviado: 42
-	Ultimo ACK recibido: 42
+	Ultimo ACK enviado: 43
+	Ultimo ACK recibido: 43
 
 
-1081.18	Llega Frame a B.
+1064.68	Llega ACK a A.
 
-	Longitud de la cola de A: 2
-	Cola de A: 42 43 
+	Longitud de la cola de A: 0
+	Cola de A: 
 	Frames correctamente recibidos por B: 43
 	Ultimos frames recibidos por B: 42 41 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 
-	Ultimo ACK enviado: 42
-	Ultimo ACK recibido: 42
+	Ultimo ACK enviado: 43
+	Ultimo ACK recibido: 43
 
 
-1081.76	Se libera A.
+1066.53	Se libera B.
+	El frame 42 no es el que espero.
 
-	Longitud de la cola de A: 2
-	Cola de A: 42 43 
+	Longitud de la cola de A: 0
+	Cola de A: 
 	Frames correctamente recibidos por B: 43
 	Ultimos frames recibidos por B: 42 41 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 
-	Ultimo ACK enviado: 42
-	Ultimo ACK recibido: 42
+	Ultimo ACK enviado: 43
+	Ultimo ACK recibido: 43
 
 
-1082.76	Llega Frame a B.
+1066.55	Se vence timer.
 
-	Longitud de la cola de A: 2
-	Cola de A: 42 43 
+	Longitud de la cola de A: 0
+	Cola de A: 
 	Frames correctamente recibidos por B: 43
 	Ultimos frames recibidos por B: 42 41 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 
-	Ultimo ACK enviado: 42
-	Ultimo ACK recibido: 42
+	Ultimo ACK enviado: 43
+	Ultimo ACK recibido: 43
 
 
-1083.41	Se libera A.
+1067.53	Llega ACK a A.
 
-	Longitud de la cola de A: 2
-	Cola de A: 42 43 
+	Longitud de la cola de A: 0
+	Cola de A: 
 	Frames correctamente recibidos por B: 43
 	Ultimos frames recibidos por B: 42 41 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 
-	Ultimo ACK enviado: 42
-	Ultimo ACK recibido: 42
+	Ultimo ACK enviado: 43
+	Ultimo ACK recibido: 43
 
 
-1083.43	Se libera B.
+1072.70	Llega mensaje a A.
+
+	Longitud de la cola de A: 1
+	Cola de A: 43 
+	Frames correctamente recibidos por B: 43
+	Ultimos frames recibidos por B: 42 41 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 
+	Ultimo ACK enviado: 43
+	Ultimo ACK recibido: 43
+
+
+1074.64	Se libera A.
+	El frame id=43 va con error.
+
+	Longitud de la cola de A: 1
+	Cola de A: 43 
+	Frames correctamente recibidos por B: 43
+	Ultimos frames recibidos por B: 42 41 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 
+	Ultimo ACK enviado: 43
+	Ultimo ACK recibido: 43
+
+
+1075.64	Llega Frame a B.
+
+	Longitud de la cola de A: 1
+	Cola de A: 43 
+	Frames correctamente recibidos por B: 43
+	Ultimos frames recibidos por B: 42 41 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 
+	Ultimo ACK enviado: 43
+	Ultimo ACK recibido: 43
+
+
+1078.85	Se libera B.
+	El frame 43 viene danado.
+
+	Longitud de la cola de A: 1
+	Cola de A: 43 
+	Frames correctamente recibidos por B: 43
+	Ultimos frames recibidos por B: 42 41 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 
+	Ultimo ACK enviado: 43
+	Ultimo ACK recibido: 43
+
+
+1079.85	Llega ACK a A.
+
+	Longitud de la cola de A: 1
+	Cola de A: 43 
+	Frames correctamente recibidos por B: 43
+	Ultimos frames recibidos por B: 42 41 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 
+	Ultimo ACK enviado: 43
+	Ultimo ACK recibido: 43
+
+
+1081.04	Se libera A.
+
+	Longitud de la cola de A: 1
+	Cola de A: 43 
+	Frames correctamente recibidos por B: 43
+	Ultimos frames recibidos por B: 42 41 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 
+	Ultimo ACK enviado: 43
+	Ultimo ACK recibido: 43
+
+
+1082.04	Llega Frame a B.
+
+	Longitud de la cola de A: 1
+	Cola de A: 43 
+	Frames correctamente recibidos por B: 43
+	Ultimos frames recibidos por B: 42 41 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 
+	Ultimo ACK enviado: 43
+	Ultimo ACK recibido: 43
+
+
+1085.25	Se libera B.
 	El frame 43 es el que espero.
 
-	Longitud de la cola de A: 2
-	Cola de A: 42 43 
+	Longitud de la cola de A: 1
+	Cola de A: 43 
 	Frames correctamente recibidos por B: 44
 	Ultimos frames recibidos por B: 43 42 41 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 
 	Ultimo ACK enviado: 44
-	Ultimo ACK recibido: 42
+	Ultimo ACK recibido: 43
 
 
-1084.41	Llega Frame a B.
-
-	Longitud de la cola de A: 2
-	Cola de A: 42 43 
-	Frames correctamente recibidos por B: 44
-	Ultimos frames recibidos por B: 43 42 41 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 
-	Ultimo ACK enviado: 44
-	Ultimo ACK recibido: 42
-
-
-1084.43	Llega ACK a A.
-	Elimino el timer y saco de la cola al id=42
+1086.25	Llega ACK a A.
 	Elimino el timer y saco de la cola al id=43
 
 	Longitud de la cola de A: 0
@@ -3057,8 +3145,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 44
 
 
-1086.27	Se libera B.
-	El frame 42 no es el que espero.
+1093.04	Se vence timer.
 
 	Longitud de la cola de A: 0
 	Cola de A: 
@@ -3068,48 +3155,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 44
 
 
-1087.27	Llega ACK a A.
-
-	Longitud de la cola de A: 0
-	Cola de A: 
-	Frames correctamente recibidos por B: 44
-	Ultimos frames recibidos por B: 43 42 41 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 
-	Ultimo ACK enviado: 44
-	Ultimo ACK recibido: 44
-
-
-1089.26	Se libera B.
-	El frame 43 no es el que espero.
-
-	Longitud de la cola de A: 0
-	Cola de A: 
-	Frames correctamente recibidos por B: 44
-	Ultimos frames recibidos por B: 43 42 41 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 
-	Ultimo ACK enviado: 44
-	Ultimo ACK recibido: 44
-
-
-1090.26	Llega ACK a A.
-
-	Longitud de la cola de A: 0
-	Cola de A: 
-	Frames correctamente recibidos por B: 44
-	Ultimos frames recibidos por B: 43 42 41 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 
-	Ultimo ACK enviado: 44
-	Ultimo ACK recibido: 44
-
-
-1095.41	Se vence timer.
-
-	Longitud de la cola de A: 0
-	Cola de A: 
-	Frames correctamente recibidos por B: 44
-	Ultimos frames recibidos por B: 43 42 41 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 
-	Ultimo ACK enviado: 44
-	Ultimo ACK recibido: 44
-
-
-1106.58	Llega mensaje a A.
+1097.45	Llega mensaje a A.
 
 	Longitud de la cola de A: 1
 	Cola de A: 44 
@@ -3119,8 +3165,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 44
 
 
-1107.76	Se libera A.
-	El frame id=44 va con error.
+1098.55	Se libera A.
 
 	Longitud de la cola de A: 1
 	Cola de A: 44 
@@ -3130,7 +3175,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 44
 
 
-1108.76	Llega Frame a B.
+1099.55	Llega Frame a B.
 
 	Longitud de la cola de A: 1
 	Cola de A: 44 
@@ -3140,48 +3185,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 44
 
 
-1111.75	Se libera B.
-	El frame 44 viene danado.
-
-	Longitud de la cola de A: 1
-	Cola de A: 44 
-	Frames correctamente recibidos por B: 44
-	Ultimos frames recibidos por B: 43 42 41 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 
-	Ultimo ACK enviado: 44
-	Ultimo ACK recibido: 44
-
-
-1112.75	Llega ACK a A.
-
-	Longitud de la cola de A: 1
-	Cola de A: 44 
-	Frames correctamente recibidos por B: 44
-	Ultimos frames recibidos por B: 43 42 41 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 
-	Ultimo ACK enviado: 44
-	Ultimo ACK recibido: 44
-
-
-1114.49	Se libera A.
-
-	Longitud de la cola de A: 1
-	Cola de A: 44 
-	Frames correctamente recibidos por B: 44
-	Ultimos frames recibidos por B: 43 42 41 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 
-	Ultimo ACK enviado: 44
-	Ultimo ACK recibido: 44
-
-
-1115.49	Llega Frame a B.
-
-	Longitud de la cola de A: 1
-	Cola de A: 44 
-	Frames correctamente recibidos por B: 44
-	Ultimos frames recibidos por B: 43 42 41 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 
-	Ultimo ACK enviado: 44
-	Ultimo ACK recibido: 44
-
-
-1118.58	Se libera B.
+1102.08	Se libera B.
 	El frame 44 es el que espero.
 
 	Longitud de la cola de A: 1
@@ -3192,7 +3196,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 44
 
 
-1119.58	Llega ACK a A.
+1103.08	Llega ACK a A.
 	Elimino el timer y saco de la cola al id=44
 
 	Longitud de la cola de A: 0
@@ -3203,17 +3207,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 45
 
 
-1126.49	Se vence timer.
-
-	Longitud de la cola de A: 0
-	Cola de A: 
-	Frames correctamente recibidos por B: 45
-	Ultimos frames recibidos por B: 44 43 42 41 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 
-	Ultimo ACK enviado: 45
-	Ultimo ACK recibido: 45
-
-
-1130.91	Llega mensaje a A.
+1121.71	Llega mensaje a A.
 
 	Longitud de la cola de A: 1
 	Cola de A: 45 
@@ -3223,7 +3217,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 45
 
 
-1132.30	Se libera A.
+1123.21	Se libera A.
 
 	Longitud de la cola de A: 1
 	Cola de A: 45 
@@ -3233,7 +3227,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 45
 
 
-1133.30	Llega Frame a B.
+1124.21	Llega Frame a B.
 
 	Longitud de la cola de A: 1
 	Cola de A: 45 
@@ -3243,7 +3237,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 45
 
 
-1135.66	Se libera B.
+1127.22	Se libera B.
 	El frame 45 es el que espero.
 
 	Longitud de la cola de A: 1
@@ -3254,7 +3248,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 45
 
 
-1136.66	Llega ACK a A.
+1128.22	Llega ACK a A.
 	Elimino el timer y saco de la cola al id=45
 
 	Longitud de la cola de A: 0
@@ -3265,7 +3259,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 46
 
 
-1154.94	Llega mensaje a A.
+1147.91	Llega mensaje a A.
 
 	Longitud de la cola de A: 1
 	Cola de A: 46 
@@ -3275,7 +3269,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 46
 
 
-1156.45	Se libera A.
+1149.92	Se libera A.
 
 	Longitud de la cola de A: 1
 	Cola de A: 46 
@@ -3285,7 +3279,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 46
 
 
-1157.45	Llega Frame a B.
+1150.92	Llega Frame a B.
 
 	Longitud de la cola de A: 1
 	Cola de A: 46 
@@ -3295,7 +3289,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 46
 
 
-1160.46	Se libera B.
+1153.39	Se libera B.
 	El frame 46 es el que espero.
 
 	Longitud de la cola de A: 1
@@ -3306,7 +3300,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 46
 
 
-1161.46	Llega ACK a A.
+1154.39	Llega ACK a A.
 	Elimino el timer y saco de la cola al id=46
 
 	Longitud de la cola de A: 0
@@ -3317,7 +3311,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 47
 
 
-1177.60	Llega mensaje a A.
+1175.21	Llega mensaje a A.
 
 	Longitud de la cola de A: 1
 	Cola de A: 47 
@@ -3327,8 +3321,8 @@ Tiempo	Info
 	Ultimo ACK recibido: 47
 
 
-1179.31	Se libera A.
-	El frame id=47 se va a perder
+1176.76	Se libera A.
+	El frame id=47 va con error.
 
 	Longitud de la cola de A: 1
 	Cola de A: 47 
@@ -3338,9 +3332,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 47
 
 
-1191.31	Se vence timer.
-	Debo volver a enviar el id=47
-	Preparo el reenvio de id=47
+1177.76	Llega Frame a B.
 
 	Longitud de la cola de A: 1
 	Cola de A: 47 
@@ -3350,7 +3342,8 @@ Tiempo	Info
 	Ultimo ACK recibido: 47
 
 
-1193.75	Se libera A.
+1180.47	Se libera B.
+	El frame 47 viene danado.
 
 	Longitud de la cola de A: 1
 	Cola de A: 47 
@@ -3360,7 +3353,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 47
 
 
-1194.75	Llega Frame a B.
+1181.47	Llega ACK a A.
 
 	Longitud de la cola de A: 1
 	Cola de A: 47 
@@ -3370,7 +3363,27 @@ Tiempo	Info
 	Ultimo ACK recibido: 47
 
 
-1197.88	Se libera B.
+1182.51	Se libera A.
+
+	Longitud de la cola de A: 1
+	Cola de A: 47 
+	Frames correctamente recibidos por B: 47
+	Ultimos frames recibidos por B: 46 45 44 43 42 41 40 39 38 37 36 35 34 33 32 31 30 29 28 27 
+	Ultimo ACK enviado: 47
+	Ultimo ACK recibido: 47
+
+
+1183.51	Llega Frame a B.
+
+	Longitud de la cola de A: 1
+	Cola de A: 47 
+	Frames correctamente recibidos por B: 47
+	Ultimos frames recibidos por B: 46 45 44 43 42 41 40 39 38 37 36 35 34 33 32 31 30 29 28 27 
+	Ultimo ACK enviado: 47
+	Ultimo ACK recibido: 47
+
+
+1186.37	Se libera B.
 	El frame 47 es el que espero.
 
 	Longitud de la cola de A: 1
@@ -3381,7 +3394,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 47
 
 
-1198.88	Llega ACK a A.
+1187.37	Llega ACK a A.
 	Elimino el timer y saco de la cola al id=47
 
 	Longitud de la cola de A: 0
@@ -3392,7 +3405,17 @@ Tiempo	Info
 	Ultimo ACK recibido: 48
 
 
-1202.56	Llega mensaje a A.
+1194.51	Se vence timer.
+
+	Longitud de la cola de A: 0
+	Cola de A: 
+	Frames correctamente recibidos por B: 48
+	Ultimos frames recibidos por B: 47 46 45 44 43 42 41 40 39 38 37 36 35 34 33 32 31 30 29 28 
+	Ultimo ACK enviado: 48
+	Ultimo ACK recibido: 48
+
+
+1197.54	Llega mensaje a A.
 
 	Longitud de la cola de A: 1
 	Cola de A: 48 
@@ -3402,7 +3425,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 48
 
 
-1203.59	Se libera A.
+1200.19	Se libera A.
 
 	Longitud de la cola de A: 1
 	Cola de A: 48 
@@ -3412,7 +3435,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 48
 
 
-1204.59	Llega Frame a B.
+1201.19	Llega Frame a B.
 
 	Longitud de la cola de A: 1
 	Cola de A: 48 
@@ -3422,7 +3445,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 48
 
 
-1207.31	Se libera B.
+1204.10	Se libera B.
 	El frame 48 es el que espero.
 
 	Longitud de la cola de A: 1
@@ -3433,7 +3456,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 48
 
 
-1208.31	Llega ACK a A.
+1205.10	Llega ACK a A.
 	Elimino el timer y saco de la cola al id=48
 
 	Longitud de la cola de A: 0
@@ -3444,7 +3467,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 49
 
 
-1227.46	Llega mensaje a A.
+1221.95	Llega mensaje a A.
 
 	Longitud de la cola de A: 1
 	Cola de A: 49 
@@ -3454,7 +3477,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 49
 
 
-1228.74	Se libera A.
+1223.07	Se libera A.
 
 	Longitud de la cola de A: 1
 	Cola de A: 49 
@@ -3464,7 +3487,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 49
 
 
-1229.74	Llega Frame a B.
+1224.07	Llega Frame a B.
 
 	Longitud de la cola de A: 1
 	Cola de A: 49 
@@ -3474,7 +3497,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 49
 
 
-1232.30	Se libera B.
+1227.09	Se libera B.
 	El frame 49 es el que espero.
 
 	Longitud de la cola de A: 1
@@ -3485,7 +3508,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 49
 
 
-1233.30	Llega ACK a A.
+1228.09	Llega ACK a A.
 	Elimino el timer y saco de la cola al id=49
 
 	Longitud de la cola de A: 0
@@ -3496,7 +3519,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 50
 
 
-1252.24	Llega mensaje a A.
+1248.16	Llega mensaje a A.
 
 	Longitud de la cola de A: 1
 	Cola de A: 50 
@@ -3506,7 +3529,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 50
 
 
-1253.91	Se libera A.
+1249.37	Se libera A.
 
 	Longitud de la cola de A: 1
 	Cola de A: 50 
@@ -3516,7 +3539,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 50
 
 
-1254.91	Llega Frame a B.
+1250.37	Llega Frame a B.
 
 	Longitud de la cola de A: 1
 	Cola de A: 50 
@@ -3526,52 +3549,8 @@ Tiempo	Info
 	Ultimo ACK recibido: 50
 
 
-1257.82	Se libera B.
+1252.64	Se libera B.
 	El frame 50 es el que espero.
-	El ack nAck=51 se va a perder.
-
-	Longitud de la cola de A: 1
-	Cola de A: 50 
-	Frames correctamente recibidos por B: 51
-	Ultimos frames recibidos por B: 50 49 48 47 46 45 44 43 42 41 40 39 38 37 36 35 34 33 32 31 
-	Ultimo ACK enviado: 50
-	Ultimo ACK recibido: 50
-
-
-1265.91	Se vence timer.
-	Debo volver a enviar el id=50
-	Preparo el reenvio de id=50
-
-	Longitud de la cola de A: 1
-	Cola de A: 50 
-	Frames correctamente recibidos por B: 51
-	Ultimos frames recibidos por B: 50 49 48 47 46 45 44 43 42 41 40 39 38 37 36 35 34 33 32 31 
-	Ultimo ACK enviado: 50
-	Ultimo ACK recibido: 50
-
-
-1267.15	Se libera A.
-
-	Longitud de la cola de A: 1
-	Cola de A: 50 
-	Frames correctamente recibidos por B: 51
-	Ultimos frames recibidos por B: 50 49 48 47 46 45 44 43 42 41 40 39 38 37 36 35 34 33 32 31 
-	Ultimo ACK enviado: 50
-	Ultimo ACK recibido: 50
-
-
-1268.15	Llega Frame a B.
-
-	Longitud de la cola de A: 1
-	Cola de A: 50 
-	Frames correctamente recibidos por B: 51
-	Ultimos frames recibidos por B: 50 49 48 47 46 45 44 43 42 41 40 39 38 37 36 35 34 33 32 31 
-	Ultimo ACK enviado: 50
-	Ultimo ACK recibido: 50
-
-
-1271.31	Se libera B.
-	El frame 50 no es el que espero.
 
 	Longitud de la cola de A: 1
 	Cola de A: 50 
@@ -3581,7 +3560,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 50
 
 
-1272.31	Llega ACK a A.
+1253.64	Llega ACK a A.
 	Elimino el timer y saco de la cola al id=50
 
 	Longitud de la cola de A: 0
@@ -3592,7 +3571,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 51
 
 
-1277.89	Llega mensaje a A.
+1272.53	Llega mensaje a A.
 
 	Longitud de la cola de A: 1
 	Cola de A: 51 
@@ -3602,8 +3581,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 51
 
 
-1279.40	Se libera A.
-	El frame id=51 se va a perder
+1274.45	Se libera A.
 
 	Longitud de la cola de A: 1
 	Cola de A: 51 
@@ -3613,9 +3591,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 51
 
 
-1291.40	Se vence timer.
-	Debo volver a enviar el id=51
-	Preparo el reenvio de id=51
+1275.45	Llega Frame a B.
 
 	Longitud de la cola de A: 1
 	Cola de A: 51 
@@ -3625,27 +3601,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 51
 
 
-1292.78	Se libera A.
-
-	Longitud de la cola de A: 1
-	Cola de A: 51 
-	Frames correctamente recibidos por B: 51
-	Ultimos frames recibidos por B: 50 49 48 47 46 45 44 43 42 41 40 39 38 37 36 35 34 33 32 31 
-	Ultimo ACK enviado: 51
-	Ultimo ACK recibido: 51
-
-
-1293.78	Llega Frame a B.
-
-	Longitud de la cola de A: 1
-	Cola de A: 51 
-	Frames correctamente recibidos por B: 51
-	Ultimos frames recibidos por B: 50 49 48 47 46 45 44 43 42 41 40 39 38 37 36 35 34 33 32 31 
-	Ultimo ACK enviado: 51
-	Ultimo ACK recibido: 51
-
-
-1296.60	Se libera B.
+1278.29	Se libera B.
 	El frame 51 es el que espero.
 
 	Longitud de la cola de A: 1
@@ -3656,7 +3612,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 51
 
 
-1297.60	Llega ACK a A.
+1279.29	Llega ACK a A.
 	Elimino el timer y saco de la cola al id=51
 
 	Longitud de la cola de A: 0
@@ -3667,7 +3623,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 52
 
 
-1302.01	Llega mensaje a A.
+1298.69	Llega mensaje a A.
 
 	Longitud de la cola de A: 1
 	Cola de A: 52 
@@ -3677,8 +3633,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 52
 
 
-1303.12	Se libera A.
-	El frame id=52 va con error.
+1299.94	Se libera A.
 
 	Longitud de la cola de A: 1
 	Cola de A: 52 
@@ -3688,7 +3643,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 52
 
 
-1304.12	Llega Frame a B.
+1300.94	Llega Frame a B.
 
 	Longitud de la cola de A: 1
 	Cola de A: 52 
@@ -3698,48 +3653,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 52
 
 
-1306.76	Se libera B.
-	El frame 52 viene danado.
-
-	Longitud de la cola de A: 1
-	Cola de A: 52 
-	Frames correctamente recibidos por B: 52
-	Ultimos frames recibidos por B: 51 50 49 48 47 46 45 44 43 42 41 40 39 38 37 36 35 34 33 32 
-	Ultimo ACK enviado: 52
-	Ultimo ACK recibido: 52
-
-
-1307.76	Llega ACK a A.
-
-	Longitud de la cola de A: 1
-	Cola de A: 52 
-	Frames correctamente recibidos por B: 52
-	Ultimos frames recibidos por B: 51 50 49 48 47 46 45 44 43 42 41 40 39 38 37 36 35 34 33 32 
-	Ultimo ACK enviado: 52
-	Ultimo ACK recibido: 52
-
-
-1308.94	Se libera A.
-
-	Longitud de la cola de A: 1
-	Cola de A: 52 
-	Frames correctamente recibidos por B: 52
-	Ultimos frames recibidos por B: 51 50 49 48 47 46 45 44 43 42 41 40 39 38 37 36 35 34 33 32 
-	Ultimo ACK enviado: 52
-	Ultimo ACK recibido: 52
-
-
-1309.94	Llega Frame a B.
-
-	Longitud de la cola de A: 1
-	Cola de A: 52 
-	Frames correctamente recibidos por B: 52
-	Ultimos frames recibidos por B: 51 50 49 48 47 46 45 44 43 42 41 40 39 38 37 36 35 34 33 32 
-	Ultimo ACK enviado: 52
-	Ultimo ACK recibido: 52
-
-
-1312.76	Se libera B.
+1303.57	Se libera B.
 	El frame 52 es el que espero.
 
 	Longitud de la cola de A: 1
@@ -3750,7 +3664,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 52
 
 
-1313.76	Llega ACK a A.
+1304.57	Llega ACK a A.
 	Elimino el timer y saco de la cola al id=52
 
 	Longitud de la cola de A: 0
@@ -3761,17 +3675,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 53
 
 
-1320.94	Se vence timer.
-
-	Longitud de la cola de A: 0
-	Cola de A: 
-	Frames correctamente recibidos por B: 53
-	Ultimos frames recibidos por B: 52 51 50 49 48 47 46 45 44 43 42 41 40 39 38 37 36 35 34 33 
-	Ultimo ACK enviado: 53
-	Ultimo ACK recibido: 53
-
-
-1327.51	Llega mensaje a A.
+1325.14	Llega mensaje a A.
 
 	Longitud de la cola de A: 1
 	Cola de A: 53 
@@ -3781,7 +3685,8 @@ Tiempo	Info
 	Ultimo ACK recibido: 53
 
 
-1328.74	Se libera A.
+1327.15	Se libera A.
+	El frame id=53 se va a perder
 
 	Longitud de la cola de A: 1
 	Cola de A: 53 
@@ -3791,7 +3696,9 @@ Tiempo	Info
 	Ultimo ACK recibido: 53
 
 
-1329.74	Llega Frame a B.
+1339.15	Se vence timer.
+	Debo volver a enviar el id=53
+	Preparo el reenvio de id=53
 
 	Longitud de la cola de A: 1
 	Cola de A: 53 
@@ -3801,70 +3708,126 @@ Tiempo	Info
 	Ultimo ACK recibido: 53
 
 
-1332.69	Se libera B.
+1340.60	Se libera A.
+
+	Longitud de la cola de A: 1
+	Cola de A: 53 
+	Frames correctamente recibidos por B: 53
+	Ultimos frames recibidos por B: 52 51 50 49 48 47 46 45 44 43 42 41 40 39 38 37 36 35 34 33 
+	Ultimo ACK enviado: 53
+	Ultimo ACK recibido: 53
+
+
+1341.60	Llega Frame a B.
+
+	Longitud de la cola de A: 1
+	Cola de A: 53 
+	Frames correctamente recibidos por B: 53
+	Ultimos frames recibidos por B: 52 51 50 49 48 47 46 45 44 43 42 41 40 39 38 37 36 35 34 33 
+	Ultimo ACK enviado: 53
+	Ultimo ACK recibido: 53
+
+
+1344.75	Se libera B.
 	El frame 53 es el que espero.
+	El ack nAck=54 se va a perder.
 
 	Longitud de la cola de A: 1
 	Cola de A: 53 
 	Frames correctamente recibidos por B: 54
 	Ultimos frames recibidos por B: 53 52 51 50 49 48 47 46 45 44 43 42 41 40 39 38 37 36 35 34 
-	Ultimo ACK enviado: 54
+	Ultimo ACK enviado: 53
 	Ultimo ACK recibido: 53
 
 
-1333.69	Llega ACK a A.
-	Elimino el timer y saco de la cola al id=53
+1350.02	Llega mensaje a A.
 
-	Longitud de la cola de A: 0
-	Cola de A: 
+	Longitud de la cola de A: 2
+	Cola de A: 53 54 
 	Frames correctamente recibidos por B: 54
 	Ultimos frames recibidos por B: 53 52 51 50 49 48 47 46 45 44 43 42 41 40 39 38 37 36 35 34 
-	Ultimo ACK enviado: 54
-	Ultimo ACK recibido: 54
+	Ultimo ACK enviado: 53
+	Ultimo ACK recibido: 53
 
 
-1352.88	Llega mensaje a A.
+1351.65	Se libera A.
 
-	Longitud de la cola de A: 1
-	Cola de A: 54 
+	Longitud de la cola de A: 2
+	Cola de A: 53 54 
 	Frames correctamente recibidos por B: 54
 	Ultimos frames recibidos por B: 53 52 51 50 49 48 47 46 45 44 43 42 41 40 39 38 37 36 35 34 
-	Ultimo ACK enviado: 54
-	Ultimo ACK recibido: 54
+	Ultimo ACK enviado: 53
+	Ultimo ACK recibido: 53
 
 
-1354.63	Se libera A.
+1352.60	Se vence timer.
+	Debo volver a enviar el id=53
+	Debo volver a enviar el id=54
+	Preparo el reenvio de id=53
 
-	Longitud de la cola de A: 1
-	Cola de A: 54 
+	Longitud de la cola de A: 2
+	Cola de A: 53 54 
 	Frames correctamente recibidos por B: 54
 	Ultimos frames recibidos por B: 53 52 51 50 49 48 47 46 45 44 43 42 41 40 39 38 37 36 35 34 
-	Ultimo ACK enviado: 54
-	Ultimo ACK recibido: 54
+	Ultimo ACK enviado: 53
+	Ultimo ACK recibido: 53
 
 
-1355.63	Llega Frame a B.
+1352.65	Llega Frame a B.
 
-	Longitud de la cola de A: 1
-	Cola de A: 54 
+	Longitud de la cola de A: 2
+	Cola de A: 53 54 
 	Frames correctamente recibidos por B: 54
 	Ultimos frames recibidos por B: 53 52 51 50 49 48 47 46 45 44 43 42 41 40 39 38 37 36 35 34 
-	Ultimo ACK enviado: 54
-	Ultimo ACK recibido: 54
+	Ultimo ACK enviado: 53
+	Ultimo ACK recibido: 53
 
 
-1357.93	Se libera B.
+1353.81	Se libera A.
+	El frame id=53 va con error.
+
+	Longitud de la cola de A: 2
+	Cola de A: 53 54 
+	Frames correctamente recibidos por B: 54
+	Ultimos frames recibidos por B: 53 52 51 50 49 48 47 46 45 44 43 42 41 40 39 38 37 36 35 34 
+	Ultimo ACK enviado: 53
+	Ultimo ACK recibido: 53
+
+
+1354.81	Llega Frame a B.
+
+	Longitud de la cola de A: 2
+	Cola de A: 53 54 
+	Frames correctamente recibidos por B: 54
+	Ultimos frames recibidos por B: 53 52 51 50 49 48 47 46 45 44 43 42 41 40 39 38 37 36 35 34 
+	Ultimo ACK enviado: 53
+	Ultimo ACK recibido: 53
+
+
+1355.05	Se libera A.
+	El frame id=54 se va a perder
+
+	Longitud de la cola de A: 2
+	Cola de A: 53 54 
+	Frames correctamente recibidos por B: 54
+	Ultimos frames recibidos por B: 53 52 51 50 49 48 47 46 45 44 43 42 41 40 39 38 37 36 35 34 
+	Ultimo ACK enviado: 53
+	Ultimo ACK recibido: 53
+
+
+1355.67	Se libera B.
 	El frame 54 es el que espero.
 
-	Longitud de la cola de A: 1
-	Cola de A: 54 
+	Longitud de la cola de A: 2
+	Cola de A: 53 54 
 	Frames correctamente recibidos por B: 55
 	Ultimos frames recibidos por B: 54 53 52 51 50 49 48 47 46 45 44 43 42 41 40 39 38 37 36 35 
 	Ultimo ACK enviado: 55
-	Ultimo ACK recibido: 54
+	Ultimo ACK recibido: 53
 
 
-1358.93	Llega ACK a A.
+1356.67	Llega ACK a A.
+	Elimino el timer y saco de la cola al id=53
 	Elimino el timer y saco de la cola al id=54
 
 	Longitud de la cola de A: 0
@@ -3875,80 +3838,155 @@ Tiempo	Info
 	Ultimo ACK recibido: 55
 
 
-1376.81	Llega mensaje a A.
+1358.58	Se libera B.
+	El frame 53 viene danado.
+
+	Longitud de la cola de A: 0
+	Cola de A: 
+	Frames correctamente recibidos por B: 55
+	Ultimos frames recibidos por B: 54 53 52 51 50 49 48 47 46 45 44 43 42 41 40 39 38 37 36 35 
+	Ultimo ACK enviado: 53
+	Ultimo ACK recibido: 55
+
+
+1359.58	Llega ACK a A.
+
+	Longitud de la cola de A: 0
+	Cola de A: 
+	Frames correctamente recibidos por B: 55
+	Ultimos frames recibidos por B: 54 53 52 51 50 49 48 47 46 45 44 43 42 41 40 39 38 37 36 35 
+	Ultimo ACK enviado: 53
+	Ultimo ACK recibido: 53
+
+
+1367.05	Se vence timer.
+
+	Longitud de la cola de A: 0
+	Cola de A: 
+	Frames correctamente recibidos por B: 55
+	Ultimos frames recibidos por B: 54 53 52 51 50 49 48 47 46 45 44 43 42 41 40 39 38 37 36 35 
+	Ultimo ACK enviado: 53
+	Ultimo ACK recibido: 53
+
+
+1376.28	Llega mensaje a A.
 
 	Longitud de la cola de A: 1
 	Cola de A: 55 
 	Frames correctamente recibidos por B: 55
 	Ultimos frames recibidos por B: 54 53 52 51 50 49 48 47 46 45 44 43 42 41 40 39 38 37 36 35 
-	Ultimo ACK enviado: 55
-	Ultimo ACK recibido: 55
+	Ultimo ACK enviado: 53
+	Ultimo ACK recibido: 53
 
 
-1379.00	Se libera A.
+1377.65	Se libera A.
+
+	Longitud de la cola de A: 1
+	Cola de A: 55 
+	Frames correctamente recibidos por B: 55
+	Ultimos frames recibidos por B: 54 53 52 51 50 49 48 47 46 45 44 43 42 41 40 39 38 37 36 35 
+	Ultimo ACK enviado: 53
+	Ultimo ACK recibido: 53
+
+
+1378.65	Llega Frame a B.
+
+	Longitud de la cola de A: 1
+	Cola de A: 55 
+	Frames correctamente recibidos por B: 55
+	Ultimos frames recibidos por B: 54 53 52 51 50 49 48 47 46 45 44 43 42 41 40 39 38 37 36 35 
+	Ultimo ACK enviado: 53
+	Ultimo ACK recibido: 53
+
+
+1381.01	Se libera B.
+	El frame 55 es el que espero.
+	El ack nAck=56 se va a perder.
+
+	Longitud de la cola de A: 1
+	Cola de A: 55 
+	Frames correctamente recibidos por B: 56
+	Ultimos frames recibidos por B: 55 54 53 52 51 50 49 48 47 46 45 44 43 42 41 40 39 38 37 36 
+	Ultimo ACK enviado: 53
+	Ultimo ACK recibido: 53
+
+
+1389.65	Se vence timer.
+	Debo volver a enviar el id=55
+	Preparo el reenvio de id=55
+
+	Longitud de la cola de A: 1
+	Cola de A: 55 
+	Frames correctamente recibidos por B: 56
+	Ultimos frames recibidos por B: 55 54 53 52 51 50 49 48 47 46 45 44 43 42 41 40 39 38 37 36 
+	Ultimo ACK enviado: 53
+	Ultimo ACK recibido: 53
+
+
+1391.31	Se libera A.
 	El frame id=55 va con error.
 
 	Longitud de la cola de A: 1
 	Cola de A: 55 
-	Frames correctamente recibidos por B: 55
-	Ultimos frames recibidos por B: 54 53 52 51 50 49 48 47 46 45 44 43 42 41 40 39 38 37 36 35 
-	Ultimo ACK enviado: 55
-	Ultimo ACK recibido: 55
+	Frames correctamente recibidos por B: 56
+	Ultimos frames recibidos por B: 55 54 53 52 51 50 49 48 47 46 45 44 43 42 41 40 39 38 37 36 
+	Ultimo ACK enviado: 53
+	Ultimo ACK recibido: 53
 
 
-1380.00	Llega Frame a B.
+1392.31	Llega Frame a B.
 
 	Longitud de la cola de A: 1
 	Cola de A: 55 
-	Frames correctamente recibidos por B: 55
-	Ultimos frames recibidos por B: 54 53 52 51 50 49 48 47 46 45 44 43 42 41 40 39 38 37 36 35 
-	Ultimo ACK enviado: 55
-	Ultimo ACK recibido: 55
+	Frames correctamente recibidos por B: 56
+	Ultimos frames recibidos por B: 55 54 53 52 51 50 49 48 47 46 45 44 43 42 41 40 39 38 37 36 
+	Ultimo ACK enviado: 53
+	Ultimo ACK recibido: 53
 
 
-1383.19	Se libera B.
+1394.84	Se libera B.
 	El frame 55 viene danado.
 
 	Longitud de la cola de A: 1
 	Cola de A: 55 
-	Frames correctamente recibidos por B: 55
-	Ultimos frames recibidos por B: 54 53 52 51 50 49 48 47 46 45 44 43 42 41 40 39 38 37 36 35 
+	Frames correctamente recibidos por B: 56
+	Ultimos frames recibidos por B: 55 54 53 52 51 50 49 48 47 46 45 44 43 42 41 40 39 38 37 36 
 	Ultimo ACK enviado: 55
-	Ultimo ACK recibido: 55
+	Ultimo ACK recibido: 53
 
 
-1384.19	Llega ACK a A.
+1395.84	Llega ACK a A.
 
 	Longitud de la cola de A: 1
 	Cola de A: 55 
-	Frames correctamente recibidos por B: 55
-	Ultimos frames recibidos por B: 54 53 52 51 50 49 48 47 46 45 44 43 42 41 40 39 38 37 36 35 
+	Frames correctamente recibidos por B: 56
+	Ultimos frames recibidos por B: 55 54 53 52 51 50 49 48 47 46 45 44 43 42 41 40 39 38 37 36 
 	Ultimo ACK enviado: 55
 	Ultimo ACK recibido: 55
 
 
-1385.77	Se libera A.
+1397.21	Se libera A.
 
 	Longitud de la cola de A: 1
 	Cola de A: 55 
-	Frames correctamente recibidos por B: 55
-	Ultimos frames recibidos por B: 54 53 52 51 50 49 48 47 46 45 44 43 42 41 40 39 38 37 36 35 
+	Frames correctamente recibidos por B: 56
+	Ultimos frames recibidos por B: 55 54 53 52 51 50 49 48 47 46 45 44 43 42 41 40 39 38 37 36 
 	Ultimo ACK enviado: 55
 	Ultimo ACK recibido: 55
 
 
-1386.77	Llega Frame a B.
+1398.21	Llega Frame a B.
 
 	Longitud de la cola de A: 1
 	Cola de A: 55 
-	Frames correctamente recibidos por B: 55
-	Ultimos frames recibidos por B: 54 53 52 51 50 49 48 47 46 45 44 43 42 41 40 39 38 37 36 35 
+	Frames correctamente recibidos por B: 56
+	Ultimos frames recibidos por B: 55 54 53 52 51 50 49 48 47 46 45 44 43 42 41 40 39 38 37 36 
 	Ultimo ACK enviado: 55
 	Ultimo ACK recibido: 55
 
 
-1389.68	Se libera B.
-	El frame 55 es el que espero.
+1400.97	Se libera B.
+	El frame 55 no es el que espero.
 
 	Longitud de la cola de A: 1
 	Cola de A: 55 
@@ -3958,7 +3996,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 55
 
 
-1390.68	Llega ACK a A.
+1401.97	Llega ACK a A.
 	Elimino el timer y saco de la cola al id=55
 
 	Longitud de la cola de A: 0
@@ -3969,178 +4007,110 @@ Tiempo	Info
 	Ultimo ACK recibido: 56
 
 
-1397.77	Se vence timer.
+1402.26	Llega mensaje a A.
+
+	Longitud de la cola de A: 1
+	Cola de A: 56 
+	Frames correctamente recibidos por B: 56
+	Ultimos frames recibidos por B: 55 54 53 52 51 50 49 48 47 46 45 44 43 42 41 40 39 38 37 36 
+	Ultimo ACK enviado: 56
+	Ultimo ACK recibido: 56
+
+
+1403.32	Se libera A.
+
+	Longitud de la cola de A: 1
+	Cola de A: 56 
+	Frames correctamente recibidos por B: 56
+	Ultimos frames recibidos por B: 55 54 53 52 51 50 49 48 47 46 45 44 43 42 41 40 39 38 37 36 
+	Ultimo ACK enviado: 56
+	Ultimo ACK recibido: 56
+
+
+1404.32	Llega Frame a B.
+
+	Longitud de la cola de A: 1
+	Cola de A: 56 
+	Frames correctamente recibidos por B: 56
+	Ultimos frames recibidos por B: 55 54 53 52 51 50 49 48 47 46 45 44 43 42 41 40 39 38 37 36 
+	Ultimo ACK enviado: 56
+	Ultimo ACK recibido: 56
+
+
+1406.94	Se libera B.
+	El frame 56 es el que espero.
+
+	Longitud de la cola de A: 1
+	Cola de A: 56 
+	Frames correctamente recibidos por B: 57
+	Ultimos frames recibidos por B: 56 55 54 53 52 51 50 49 48 47 46 45 44 43 42 41 40 39 38 37 
+	Ultimo ACK enviado: 57
+	Ultimo ACK recibido: 56
+
+
+1407.94	Llega ACK a A.
+	Elimino el timer y saco de la cola al id=56
 
 	Longitud de la cola de A: 0
 	Cola de A: 
-	Frames correctamente recibidos por B: 56
-	Ultimos frames recibidos por B: 55 54 53 52 51 50 49 48 47 46 45 44 43 42 41 40 39 38 37 36 
-	Ultimo ACK enviado: 56
-	Ultimo ACK recibido: 56
+	Frames correctamente recibidos por B: 57
+	Ultimos frames recibidos por B: 56 55 54 53 52 51 50 49 48 47 46 45 44 43 42 41 40 39 38 37 
+	Ultimo ACK enviado: 57
+	Ultimo ACK recibido: 57
 
 
-1402.02	Llega mensaje a A.
+1409.21	Se vence timer.
+
+	Longitud de la cola de A: 0
+	Cola de A: 
+	Frames correctamente recibidos por B: 57
+	Ultimos frames recibidos por B: 56 55 54 53 52 51 50 49 48 47 46 45 44 43 42 41 40 39 38 37 
+	Ultimo ACK enviado: 57
+	Ultimo ACK recibido: 57
+
+
+1427.48	Llega mensaje a A.
 
 	Longitud de la cola de A: 1
-	Cola de A: 56 
-	Frames correctamente recibidos por B: 56
-	Ultimos frames recibidos por B: 55 54 53 52 51 50 49 48 47 46 45 44 43 42 41 40 39 38 37 36 
-	Ultimo ACK enviado: 56
-	Ultimo ACK recibido: 56
+	Cola de A: 57 
+	Frames correctamente recibidos por B: 57
+	Ultimos frames recibidos por B: 56 55 54 53 52 51 50 49 48 47 46 45 44 43 42 41 40 39 38 37 
+	Ultimo ACK enviado: 57
+	Ultimo ACK recibido: 57
 
 
-1403.65	Se libera A.
+1428.92	Se libera A.
 
 	Longitud de la cola de A: 1
-	Cola de A: 56 
-	Frames correctamente recibidos por B: 56
-	Ultimos frames recibidos por B: 55 54 53 52 51 50 49 48 47 46 45 44 43 42 41 40 39 38 37 36 
-	Ultimo ACK enviado: 56
-	Ultimo ACK recibido: 56
+	Cola de A: 57 
+	Frames correctamente recibidos por B: 57
+	Ultimos frames recibidos por B: 56 55 54 53 52 51 50 49 48 47 46 45 44 43 42 41 40 39 38 37 
+	Ultimo ACK enviado: 57
+	Ultimo ACK recibido: 57
 
 
-1404.65	Llega Frame a B.
+1429.92	Llega Frame a B.
 
 	Longitud de la cola de A: 1
-	Cola de A: 56 
-	Frames correctamente recibidos por B: 56
-	Ultimos frames recibidos por B: 55 54 53 52 51 50 49 48 47 46 45 44 43 42 41 40 39 38 37 36 
-	Ultimo ACK enviado: 56
-	Ultimo ACK recibido: 56
-
-
-1407.84	Se libera B.
-	El frame 56 es el que espero.
-	El ack nAck=57 se va a perder.
-
-	Longitud de la cola de A: 1
-	Cola de A: 56 
+	Cola de A: 57 
 	Frames correctamente recibidos por B: 57
 	Ultimos frames recibidos por B: 56 55 54 53 52 51 50 49 48 47 46 45 44 43 42 41 40 39 38 37 
-	Ultimo ACK enviado: 56
-	Ultimo ACK recibido: 56
+	Ultimo ACK enviado: 57
+	Ultimo ACK recibido: 57
 
 
-1415.65	Se vence timer.
-	Debo volver a enviar el id=56
-	Preparo el reenvio de id=56
-
-	Longitud de la cola de A: 1
-	Cola de A: 56 
-	Frames correctamente recibidos por B: 57
-	Ultimos frames recibidos por B: 56 55 54 53 52 51 50 49 48 47 46 45 44 43 42 41 40 39 38 37 
-	Ultimo ACK enviado: 56
-	Ultimo ACK recibido: 56
-
-
-1416.98	Se libera A.
-
-	Longitud de la cola de A: 1
-	Cola de A: 56 
-	Frames correctamente recibidos por B: 57
-	Ultimos frames recibidos por B: 56 55 54 53 52 51 50 49 48 47 46 45 44 43 42 41 40 39 38 37 
-	Ultimo ACK enviado: 56
-	Ultimo ACK recibido: 56
-
-
-1417.98	Llega Frame a B.
-
-	Longitud de la cola de A: 1
-	Cola de A: 56 
-	Frames correctamente recibidos por B: 57
-	Ultimos frames recibidos por B: 56 55 54 53 52 51 50 49 48 47 46 45 44 43 42 41 40 39 38 37 
-	Ultimo ACK enviado: 56
-	Ultimo ACK recibido: 56
-
-
-1421.00	Se libera B.
-	El frame 56 no es el que espero.
-	El ack nAck=57 se va a perder.
-
-	Longitud de la cola de A: 1
-	Cola de A: 56 
-	Frames correctamente recibidos por B: 57
-	Ultimos frames recibidos por B: 56 55 54 53 52 51 50 49 48 47 46 45 44 43 42 41 40 39 38 37 
-	Ultimo ACK enviado: 56
-	Ultimo ACK recibido: 56
-
-
-1427.68	Llega mensaje a A.
-
-	Longitud de la cola de A: 2
-	Cola de A: 56 57 
-	Frames correctamente recibidos por B: 57
-	Ultimos frames recibidos por B: 56 55 54 53 52 51 50 49 48 47 46 45 44 43 42 41 40 39 38 37 
-	Ultimo ACK enviado: 56
-	Ultimo ACK recibido: 56
-
-
-1428.98	Se vence timer.
-	Debo volver a enviar el id=56
-	Debo volver a enviar el id=57
-
-	Longitud de la cola de A: 2
-	Cola de A: 56 57 
-	Frames correctamente recibidos por B: 57
-	Ultimos frames recibidos por B: 56 55 54 53 52 51 50 49 48 47 46 45 44 43 42 41 40 39 38 37 
-	Ultimo ACK enviado: 56
-	Ultimo ACK recibido: 56
-
-
-1430.88	Se libera A.
-
-	Longitud de la cola de A: 2
-	Cola de A: 56 57 
-	Frames correctamente recibidos por B: 57
-	Ultimos frames recibidos por B: 56 55 54 53 52 51 50 49 48 47 46 45 44 43 42 41 40 39 38 37 
-	Ultimo ACK enviado: 56
-	Ultimo ACK recibido: 56
-
-
-1431.88	Llega Frame a B.
-
-	Longitud de la cola de A: 2
-	Cola de A: 56 57 
-	Frames correctamente recibidos por B: 57
-	Ultimos frames recibidos por B: 56 55 54 53 52 51 50 49 48 47 46 45 44 43 42 41 40 39 38 37 
-	Ultimo ACK enviado: 56
-	Ultimo ACK recibido: 56
-
-
-1433.64	Se libera A.
-	El frame id=56 va con error.
-
-	Longitud de la cola de A: 2
-	Cola de A: 56 57 
-	Frames correctamente recibidos por B: 57
-	Ultimos frames recibidos por B: 56 55 54 53 52 51 50 49 48 47 46 45 44 43 42 41 40 39 38 37 
-	Ultimo ACK enviado: 56
-	Ultimo ACK recibido: 56
-
-
-1434.64	Llega Frame a B.
-
-	Longitud de la cola de A: 2
-	Cola de A: 56 57 
-	Frames correctamente recibidos por B: 57
-	Ultimos frames recibidos por B: 56 55 54 53 52 51 50 49 48 47 46 45 44 43 42 41 40 39 38 37 
-	Ultimo ACK enviado: 56
-	Ultimo ACK recibido: 56
-
-
-1434.90	Se libera B.
+1432.98	Se libera B.
 	El frame 57 es el que espero.
 
-	Longitud de la cola de A: 2
-	Cola de A: 56 57 
+	Longitud de la cola de A: 1
+	Cola de A: 57 
 	Frames correctamente recibidos por B: 58
 	Ultimos frames recibidos por B: 57 56 55 54 53 52 51 50 49 48 47 46 45 44 43 42 41 40 39 38 
 	Ultimo ACK enviado: 58
-	Ultimo ACK recibido: 56
+	Ultimo ACK recibido: 57
 
 
-1435.90	Llega ACK a A.
-	Elimino el timer y saco de la cola al id=56
+1433.98	Llega ACK a A.
 	Elimino el timer y saco de la cola al id=57
 
 	Longitud de la cola de A: 0
@@ -4151,58 +4121,79 @@ Tiempo	Info
 	Ultimo ACK recibido: 58
 
 
-1437.97	Se libera B.
-	El frame 56 viene danado.
+1452.99	Llega mensaje a A.
 
-	Longitud de la cola de A: 0
-	Cola de A: 
+	Longitud de la cola de A: 1
+	Cola de A: 58 
 	Frames correctamente recibidos por B: 58
 	Ultimos frames recibidos por B: 57 56 55 54 53 52 51 50 49 48 47 46 45 44 43 42 41 40 39 38 
-	Ultimo ACK enviado: 56
+	Ultimo ACK enviado: 58
 	Ultimo ACK recibido: 58
 
 
-1438.97	Llega ACK a A.
-
-	Longitud de la cola de A: 0
-	Cola de A: 
-	Frames correctamente recibidos por B: 58
-	Ultimos frames recibidos por B: 57 56 55 54 53 52 51 50 49 48 47 46 45 44 43 42 41 40 39 38 
-	Ultimo ACK enviado: 56
-	Ultimo ACK recibido: 56
-
-
-1451.88	Llega mensaje a A.
+1454.44	Se libera A.
+	El frame id=58 va con error.
 
 	Longitud de la cola de A: 1
 	Cola de A: 58 
 	Frames correctamente recibidos por B: 58
 	Ultimos frames recibidos por B: 57 56 55 54 53 52 51 50 49 48 47 46 45 44 43 42 41 40 39 38 
-	Ultimo ACK enviado: 56
-	Ultimo ACK recibido: 56
+	Ultimo ACK enviado: 58
+	Ultimo ACK recibido: 58
 
 
-1453.72	Se libera A.
-
-	Longitud de la cola de A: 1
-	Cola de A: 58 
-	Frames correctamente recibidos por B: 58
-	Ultimos frames recibidos por B: 57 56 55 54 53 52 51 50 49 48 47 46 45 44 43 42 41 40 39 38 
-	Ultimo ACK enviado: 56
-	Ultimo ACK recibido: 56
-
-
-1454.72	Llega Frame a B.
+1455.44	Llega Frame a B.
 
 	Longitud de la cola de A: 1
 	Cola de A: 58 
 	Frames correctamente recibidos por B: 58
 	Ultimos frames recibidos por B: 57 56 55 54 53 52 51 50 49 48 47 46 45 44 43 42 41 40 39 38 
-	Ultimo ACK enviado: 56
-	Ultimo ACK recibido: 56
+	Ultimo ACK enviado: 58
+	Ultimo ACK recibido: 58
 
 
-1457.18	Se libera B.
+1458.11	Se libera B.
+	El frame 58 viene danado.
+
+	Longitud de la cola de A: 1
+	Cola de A: 58 
+	Frames correctamente recibidos por B: 58
+	Ultimos frames recibidos por B: 57 56 55 54 53 52 51 50 49 48 47 46 45 44 43 42 41 40 39 38 
+	Ultimo ACK enviado: 58
+	Ultimo ACK recibido: 58
+
+
+1459.11	Llega ACK a A.
+
+	Longitud de la cola de A: 1
+	Cola de A: 58 
+	Frames correctamente recibidos por B: 58
+	Ultimos frames recibidos por B: 57 56 55 54 53 52 51 50 49 48 47 46 45 44 43 42 41 40 39 38 
+	Ultimo ACK enviado: 58
+	Ultimo ACK recibido: 58
+
+
+1460.86	Se libera A.
+
+	Longitud de la cola de A: 1
+	Cola de A: 58 
+	Frames correctamente recibidos por B: 58
+	Ultimos frames recibidos por B: 57 56 55 54 53 52 51 50 49 48 47 46 45 44 43 42 41 40 39 38 
+	Ultimo ACK enviado: 58
+	Ultimo ACK recibido: 58
+
+
+1461.86	Llega Frame a B.
+
+	Longitud de la cola de A: 1
+	Cola de A: 58 
+	Frames correctamente recibidos por B: 58
+	Ultimos frames recibidos por B: 57 56 55 54 53 52 51 50 49 48 47 46 45 44 43 42 41 40 39 38 
+	Ultimo ACK enviado: 58
+	Ultimo ACK recibido: 58
+
+
+1464.59	Se libera B.
 	El frame 58 es el que espero.
 
 	Longitud de la cola de A: 1
@@ -4210,10 +4201,10 @@ Tiempo	Info
 	Frames correctamente recibidos por B: 59
 	Ultimos frames recibidos por B: 58 57 56 55 54 53 52 51 50 49 48 47 46 45 44 43 42 41 40 39 
 	Ultimo ACK enviado: 59
-	Ultimo ACK recibido: 56
+	Ultimo ACK recibido: 58
 
 
-1458.18	Llega ACK a A.
+1465.59	Llega ACK a A.
 	Elimino el timer y saco de la cola al id=58
 
 	Longitud de la cola de A: 0
@@ -4224,7 +4215,17 @@ Tiempo	Info
 	Ultimo ACK recibido: 59
 
 
-1476.68	Llega mensaje a A.
+1472.86	Se vence timer.
+
+	Longitud de la cola de A: 0
+	Cola de A: 
+	Frames correctamente recibidos por B: 59
+	Ultimos frames recibidos por B: 58 57 56 55 54 53 52 51 50 49 48 47 46 45 44 43 42 41 40 39 
+	Ultimo ACK enviado: 59
+	Ultimo ACK recibido: 59
+
+
+1479.04	Llega mensaje a A.
 
 	Longitud de la cola de A: 1
 	Cola de A: 59 
@@ -4234,7 +4235,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 59
 
 
-1477.80	Se libera A.
+1480.07	Se libera A.
 
 	Longitud de la cola de A: 1
 	Cola de A: 59 
@@ -4244,7 +4245,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 59
 
 
-1478.80	Llega Frame a B.
+1481.07	Llega Frame a B.
 
 	Longitud de la cola de A: 1
 	Cola de A: 59 
@@ -4254,7 +4255,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 59
 
 
-1481.52	Se libera B.
+1483.67	Se libera B.
 	El frame 59 es el que espero.
 
 	Longitud de la cola de A: 1
@@ -4265,7 +4266,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 59
 
 
-1482.52	Llega ACK a A.
+1484.67	Llega ACK a A.
 	Elimino el timer y saco de la cola al id=59
 
 	Longitud de la cola de A: 0
@@ -4276,7 +4277,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 60
 
 
-1502.12	Llega mensaje a A.
+1504.32	Llega mensaje a A.
 
 	Longitud de la cola de A: 1
 	Cola de A: 60 
@@ -4286,8 +4287,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 60
 
 
-1504.07	Se libera A.
-	El frame id=60 va con error.
+1505.34	Se libera A.
 
 	Longitud de la cola de A: 1
 	Cola de A: 60 
@@ -4297,7 +4297,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 60
 
 
-1505.07	Llega Frame a B.
+1506.34	Llega Frame a B.
 
 	Longitud de la cola de A: 1
 	Cola de A: 60 
@@ -4307,93 +4307,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 60
 
 
-1508.22	Se libera B.
-	El frame 60 viene danado.
-
-	Longitud de la cola de A: 1
-	Cola de A: 60 
-	Frames correctamente recibidos por B: 60
-	Ultimos frames recibidos por B: 59 58 57 56 55 54 53 52 51 50 49 48 47 46 45 44 43 42 41 40 
-	Ultimo ACK enviado: 60
-	Ultimo ACK recibido: 60
-
-
-1509.22	Llega ACK a A.
-
-	Longitud de la cola de A: 1
-	Cola de A: 60 
-	Frames correctamente recibidos por B: 60
-	Ultimos frames recibidos por B: 59 58 57 56 55 54 53 52 51 50 49 48 47 46 45 44 43 42 41 40 
-	Ultimo ACK enviado: 60
-	Ultimo ACK recibido: 60
-
-
-1510.43	Se libera A.
-	El frame id=60 va con error.
-
-	Longitud de la cola de A: 1
-	Cola de A: 60 
-	Frames correctamente recibidos por B: 60
-	Ultimos frames recibidos por B: 59 58 57 56 55 54 53 52 51 50 49 48 47 46 45 44 43 42 41 40 
-	Ultimo ACK enviado: 60
-	Ultimo ACK recibido: 60
-
-
-1511.43	Llega Frame a B.
-
-	Longitud de la cola de A: 1
-	Cola de A: 60 
-	Frames correctamente recibidos por B: 60
-	Ultimos frames recibidos por B: 59 58 57 56 55 54 53 52 51 50 49 48 47 46 45 44 43 42 41 40 
-	Ultimo ACK enviado: 60
-	Ultimo ACK recibido: 60
-
-
-1513.93	Se libera B.
-	El frame 60 viene danado.
-	El ack nAck=60 se va a perder.
-
-	Longitud de la cola de A: 1
-	Cola de A: 60 
-	Frames correctamente recibidos por B: 60
-	Ultimos frames recibidos por B: 59 58 57 56 55 54 53 52 51 50 49 48 47 46 45 44 43 42 41 40 
-	Ultimo ACK enviado: 60
-	Ultimo ACK recibido: 60
-
-
-1516.07	Se vence timer.
-	Debo volver a enviar el id=60
-	Preparo el reenvio de id=60
-
-	Longitud de la cola de A: 1
-	Cola de A: 60 
-	Frames correctamente recibidos por B: 60
-	Ultimos frames recibidos por B: 59 58 57 56 55 54 53 52 51 50 49 48 47 46 45 44 43 42 41 40 
-	Ultimo ACK enviado: 60
-	Ultimo ACK recibido: 60
-
-
-1517.13	Se libera A.
-
-	Longitud de la cola de A: 1
-	Cola de A: 60 
-	Frames correctamente recibidos por B: 60
-	Ultimos frames recibidos por B: 59 58 57 56 55 54 53 52 51 50 49 48 47 46 45 44 43 42 41 40 
-	Ultimo ACK enviado: 60
-	Ultimo ACK recibido: 60
-
-
-1518.13	Llega Frame a B.
-
-	Longitud de la cola de A: 1
-	Cola de A: 60 
-	Frames correctamente recibidos por B: 60
-	Ultimos frames recibidos por B: 59 58 57 56 55 54 53 52 51 50 49 48 47 46 45 44 43 42 41 40 
-	Ultimo ACK enviado: 60
-	Ultimo ACK recibido: 60
-
-
-1520.44	Se libera B.
+1509.18	Se libera B.
 	El frame 60 es el que espero.
 
 	Longitud de la cola de A: 1
@@ -4404,7 +4318,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 60
 
 
-1521.44	Llega ACK a A.
+1510.18	Llega ACK a A.
 	Elimino el timer y saco de la cola al id=60
 
 	Longitud de la cola de A: 0
@@ -4415,7 +4329,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 61
 
 
-1525.95	Llega mensaje a A.
+1528.61	Llega mensaje a A.
 
 	Longitud de la cola de A: 1
 	Cola de A: 61 
@@ -4425,7 +4339,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 61
 
 
-1527.03	Se libera A.
+1530.09	Se libera A.
 
 	Longitud de la cola de A: 1
 	Cola de A: 61 
@@ -4435,7 +4349,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 61
 
 
-1528.03	Llega Frame a B.
+1531.09	Llega Frame a B.
 
 	Longitud de la cola de A: 1
 	Cola de A: 61 
@@ -4445,8 +4359,52 @@ Tiempo	Info
 	Ultimo ACK recibido: 61
 
 
-1531.18	Se libera B.
+1533.64	Se libera B.
 	El frame 61 es el que espero.
+	El ack nAck=62 se va a perder.
+
+	Longitud de la cola de A: 1
+	Cola de A: 61 
+	Frames correctamente recibidos por B: 62
+	Ultimos frames recibidos por B: 61 60 59 58 57 56 55 54 53 52 51 50 49 48 47 46 45 44 43 42 
+	Ultimo ACK enviado: 61
+	Ultimo ACK recibido: 61
+
+
+1542.09	Se vence timer.
+	Debo volver a enviar el id=61
+	Preparo el reenvio de id=61
+
+	Longitud de la cola de A: 1
+	Cola de A: 61 
+	Frames correctamente recibidos por B: 62
+	Ultimos frames recibidos por B: 61 60 59 58 57 56 55 54 53 52 51 50 49 48 47 46 45 44 43 42 
+	Ultimo ACK enviado: 61
+	Ultimo ACK recibido: 61
+
+
+1543.63	Se libera A.
+
+	Longitud de la cola de A: 1
+	Cola de A: 61 
+	Frames correctamente recibidos por B: 62
+	Ultimos frames recibidos por B: 61 60 59 58 57 56 55 54 53 52 51 50 49 48 47 46 45 44 43 42 
+	Ultimo ACK enviado: 61
+	Ultimo ACK recibido: 61
+
+
+1544.63	Llega Frame a B.
+
+	Longitud de la cola de A: 1
+	Cola de A: 61 
+	Frames correctamente recibidos por B: 62
+	Ultimos frames recibidos por B: 61 60 59 58 57 56 55 54 53 52 51 50 49 48 47 46 45 44 43 42 
+	Ultimo ACK enviado: 61
+	Ultimo ACK recibido: 61
+
+
+1547.69	Se libera B.
+	El frame 61 no es el que espero.
 
 	Longitud de la cola de A: 1
 	Cola de A: 61 
@@ -4456,7 +4414,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 61
 
 
-1532.18	Llega ACK a A.
+1548.69	Llega ACK a A.
 	Elimino el timer y saco de la cola al id=61
 
 	Longitud de la cola de A: 0
@@ -4467,7 +4425,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 62
 
 
-1550.05	Llega mensaje a A.
+1553.12	Llega mensaje a A.
 
 	Longitud de la cola de A: 1
 	Cola de A: 62 
@@ -4477,7 +4435,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 62
 
 
-1551.35	Se libera A.
+1555.35	Se libera A.
 
 	Longitud de la cola de A: 1
 	Cola de A: 62 
@@ -4487,7 +4445,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 62
 
 
-1552.35	Llega Frame a B.
+1556.35	Llega Frame a B.
 
 	Longitud de la cola de A: 1
 	Cola de A: 62 
@@ -4497,7 +4455,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 62
 
 
-1554.67	Se libera B.
+1558.86	Se libera B.
 	El frame 62 es el que espero.
 
 	Longitud de la cola de A: 1
@@ -4508,7 +4466,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 62
 
 
-1555.67	Llega ACK a A.
+1559.86	Llega ACK a A.
 	Elimino el timer y saco de la cola al id=62
 
 	Longitud de la cola de A: 0
@@ -4519,7 +4477,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 63
 
 
-1575.66	Llega mensaje a A.
+1578.54	Llega mensaje a A.
 
 	Longitud de la cola de A: 1
 	Cola de A: 63 
@@ -4529,7 +4487,8 @@ Tiempo	Info
 	Ultimo ACK recibido: 63
 
 
-1577.40	Se libera A.
+1580.69	Se libera A.
+	El frame id=63 se va a perder
 
 	Longitud de la cola de A: 1
 	Cola de A: 63 
@@ -4539,7 +4498,9 @@ Tiempo	Info
 	Ultimo ACK recibido: 63
 
 
-1578.40	Llega Frame a B.
+1592.69	Se vence timer.
+	Debo volver a enviar el id=63
+	Preparo el reenvio de id=63
 
 	Longitud de la cola de A: 1
 	Cola de A: 63 
@@ -4549,7 +4510,27 @@ Tiempo	Info
 	Ultimo ACK recibido: 63
 
 
-1580.69	Se libera B.
+1593.92	Se libera A.
+
+	Longitud de la cola de A: 1
+	Cola de A: 63 
+	Frames correctamente recibidos por B: 63
+	Ultimos frames recibidos por B: 62 61 60 59 58 57 56 55 54 53 52 51 50 49 48 47 46 45 44 43 
+	Ultimo ACK enviado: 63
+	Ultimo ACK recibido: 63
+
+
+1594.92	Llega Frame a B.
+
+	Longitud de la cola de A: 1
+	Cola de A: 63 
+	Frames correctamente recibidos por B: 63
+	Ultimos frames recibidos por B: 62 61 60 59 58 57 56 55 54 53 52 51 50 49 48 47 46 45 44 43 
+	Ultimo ACK enviado: 63
+	Ultimo ACK recibido: 63
+
+
+1597.79	Se libera B.
 	El frame 63 es el que espero.
 
 	Longitud de la cola de A: 1
@@ -4560,7 +4541,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 63
 
 
-1581.69	Llega ACK a A.
+1598.79	Llega ACK a A.
 	Elimino el timer y saco de la cola al id=63
 
 	Longitud de la cola de A: 0
@@ -4571,7 +4552,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 64
 
 
-1602.08	Llega mensaje a A.
+1603.92	Llega mensaje a A.
 
 	Longitud de la cola de A: 1
 	Cola de A: 64 
@@ -4581,7 +4562,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 64
 
 
-1603.78	Se libera A.
+1605.36	Se libera A.
 
 	Longitud de la cola de A: 1
 	Cola de A: 64 
@@ -4591,7 +4572,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 64
 
 
-1604.78	Llega Frame a B.
+1606.36	Llega Frame a B.
 
 	Longitud de la cola de A: 1
 	Cola de A: 64 
@@ -4601,7 +4582,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 64
 
 
-1607.58	Se libera B.
+1609.43	Se libera B.
 	El frame 64 es el que espero.
 
 	Longitud de la cola de A: 1
@@ -4612,7 +4593,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 64
 
 
-1608.58	Llega ACK a A.
+1610.43	Llega ACK a A.
 	Elimino el timer y saco de la cola al id=64
 
 	Longitud de la cola de A: 0
@@ -4623,7 +4604,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 65
 
 
-1627.71	Llega mensaje a A.
+1628.46	Llega mensaje a A.
 
 	Longitud de la cola de A: 1
 	Cola de A: 65 
@@ -4633,7 +4614,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 65
 
 
-1629.93	Se libera A.
+1630.21	Se libera A.
 
 	Longitud de la cola de A: 1
 	Cola de A: 65 
@@ -4643,7 +4624,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 65
 
 
-1630.93	Llega Frame a B.
+1631.21	Llega Frame a B.
 
 	Longitud de la cola de A: 1
 	Cola de A: 65 
@@ -4653,7 +4634,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 65
 
 
-1633.96	Se libera B.
+1634.16	Se libera B.
 	El frame 65 es el que espero.
 
 	Longitud de la cola de A: 1
@@ -4664,7 +4645,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 65
 
 
-1634.96	Llega ACK a A.
+1635.16	Llega ACK a A.
 	Elimino el timer y saco de la cola al id=65
 
 	Longitud de la cola de A: 0
@@ -4675,7 +4656,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 66
 
 
-1652.23	Llega mensaje a A.
+1653.22	Llega mensaje a A.
 
 	Longitud de la cola de A: 1
 	Cola de A: 66 
@@ -4685,7 +4666,8 @@ Tiempo	Info
 	Ultimo ACK recibido: 66
 
 
-1654.77	Se libera A.
+1654.45	Se libera A.
+	El frame id=66 va con error.
 
 	Longitud de la cola de A: 1
 	Cola de A: 66 
@@ -4695,7 +4677,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 66
 
 
-1655.77	Llega Frame a B.
+1655.45	Llega Frame a B.
 
 	Longitud de la cola de A: 1
 	Cola de A: 66 
@@ -4705,7 +4687,48 @@ Tiempo	Info
 	Ultimo ACK recibido: 66
 
 
-1658.92	Se libera B.
+1658.05	Se libera B.
+	El frame 66 viene danado.
+
+	Longitud de la cola de A: 1
+	Cola de A: 66 
+	Frames correctamente recibidos por B: 66
+	Ultimos frames recibidos por B: 65 64 63 62 61 60 59 58 57 56 55 54 53 52 51 50 49 48 47 46 
+	Ultimo ACK enviado: 66
+	Ultimo ACK recibido: 66
+
+
+1659.05	Llega ACK a A.
+
+	Longitud de la cola de A: 1
+	Cola de A: 66 
+	Frames correctamente recibidos por B: 66
+	Ultimos frames recibidos por B: 65 64 63 62 61 60 59 58 57 56 55 54 53 52 51 50 49 48 47 46 
+	Ultimo ACK enviado: 66
+	Ultimo ACK recibido: 66
+
+
+1660.72	Se libera A.
+
+	Longitud de la cola de A: 1
+	Cola de A: 66 
+	Frames correctamente recibidos por B: 66
+	Ultimos frames recibidos por B: 65 64 63 62 61 60 59 58 57 56 55 54 53 52 51 50 49 48 47 46 
+	Ultimo ACK enviado: 66
+	Ultimo ACK recibido: 66
+
+
+1661.72	Llega Frame a B.
+
+	Longitud de la cola de A: 1
+	Cola de A: 66 
+	Frames correctamente recibidos por B: 66
+	Ultimos frames recibidos por B: 65 64 63 62 61 60 59 58 57 56 55 54 53 52 51 50 49 48 47 46 
+	Ultimo ACK enviado: 66
+	Ultimo ACK recibido: 66
+
+
+1664.93	Se libera B.
 	El frame 66 es el que espero.
 
 	Longitud de la cola de A: 1
@@ -4716,7 +4739,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 66
 
 
-1659.92	Llega ACK a A.
+1665.93	Llega ACK a A.
 	Elimino el timer y saco de la cola al id=66
 
 	Longitud de la cola de A: 0
@@ -4727,7 +4750,17 @@ Tiempo	Info
 	Ultimo ACK recibido: 67
 
 
-1677.86	Llega mensaje a A.
+1672.72	Se vence timer.
+
+	Longitud de la cola de A: 0
+	Cola de A: 
+	Frames correctamente recibidos por B: 67
+	Ultimos frames recibidos por B: 66 65 64 63 62 61 60 59 58 57 56 55 54 53 52 51 50 49 48 47 
+	Ultimo ACK enviado: 67
+	Ultimo ACK recibido: 67
+
+
+1678.53	Llega mensaje a A.
 
 	Longitud de la cola de A: 1
 	Cola de A: 67 
@@ -4737,8 +4770,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 67
 
 
-1678.95	Se libera A.
-	El frame id=67 va con error.
+1679.90	Se libera A.
 
 	Longitud de la cola de A: 1
 	Cola de A: 67 
@@ -4748,7 +4780,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 67
 
 
-1679.95	Llega Frame a B.
+1680.90	Llega Frame a B.
 
 	Longitud de la cola de A: 1
 	Cola de A: 67 
@@ -4758,51 +4790,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 67
 
 
-1682.53	Se libera B.
-	El frame 67 viene danado.
-	El ack nAck=67 se va a perder.
-
-	Longitud de la cola de A: 1
-	Cola de A: 67 
-	Frames correctamente recibidos por B: 67
-	Ultimos frames recibidos por B: 66 65 64 63 62 61 60 59 58 57 56 55 54 53 52 51 50 49 48 47 
-	Ultimo ACK enviado: 67
-	Ultimo ACK recibido: 67
-
-
-1690.95	Se vence timer.
-	Debo volver a enviar el id=67
-	Preparo el reenvio de id=67
-
-	Longitud de la cola de A: 1
-	Cola de A: 67 
-	Frames correctamente recibidos por B: 67
-	Ultimos frames recibidos por B: 66 65 64 63 62 61 60 59 58 57 56 55 54 53 52 51 50 49 48 47 
-	Ultimo ACK enviado: 67
-	Ultimo ACK recibido: 67
-
-
-1692.45	Se libera A.
-
-	Longitud de la cola de A: 1
-	Cola de A: 67 
-	Frames correctamente recibidos por B: 67
-	Ultimos frames recibidos por B: 66 65 64 63 62 61 60 59 58 57 56 55 54 53 52 51 50 49 48 47 
-	Ultimo ACK enviado: 67
-	Ultimo ACK recibido: 67
-
-
-1693.45	Llega Frame a B.
-
-	Longitud de la cola de A: 1
-	Cola de A: 67 
-	Frames correctamente recibidos por B: 67
-	Ultimos frames recibidos por B: 66 65 64 63 62 61 60 59 58 57 56 55 54 53 52 51 50 49 48 47 
-	Ultimo ACK enviado: 67
-	Ultimo ACK recibido: 67
-
-
-1696.17	Se libera B.
+1684.05	Se libera B.
 	El frame 67 es el que espero.
 
 	Longitud de la cola de A: 1
@@ -4813,7 +4801,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 67
 
 
-1697.17	Llega ACK a A.
+1685.05	Llega ACK a A.
 	Elimino el timer y saco de la cola al id=67
 
 	Longitud de la cola de A: 0
@@ -4824,7 +4812,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 68
 
 
-1703.35	Llega mensaje a A.
+1703.75	Llega mensaje a A.
 
 	Longitud de la cola de A: 1
 	Cola de A: 68 
@@ -4834,7 +4822,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 68
 
 
-1704.92	Se libera A.
+1705.15	Se libera A.
 
 	Longitud de la cola de A: 1
 	Cola de A: 68 
@@ -4844,7 +4832,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 68
 
 
-1705.92	Llega Frame a B.
+1706.15	Llega Frame a B.
 
 	Longitud de la cola de A: 1
 	Cola de A: 68 
@@ -4854,7 +4842,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 68
 
 
-1708.49	Se libera B.
+1708.74	Se libera B.
 	El frame 68 es el que espero.
 
 	Longitud de la cola de A: 1
@@ -4865,7 +4853,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 68
 
 
-1709.49	Llega ACK a A.
+1709.74	Llega ACK a A.
 	Elimino el timer y saco de la cola al id=68
 
 	Longitud de la cola de A: 0
@@ -4876,7 +4864,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 69
 
 
-1727.77	Llega mensaje a A.
+1729.59	Llega mensaje a A.
 
 	Longitud de la cola de A: 1
 	Cola de A: 69 
@@ -4886,7 +4874,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 69
 
 
-1729.26	Se libera A.
+1731.19	Se libera A.
 
 	Longitud de la cola de A: 1
 	Cola de A: 69 
@@ -4896,7 +4884,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 69
 
 
-1730.26	Llega Frame a B.
+1732.19	Llega Frame a B.
 
 	Longitud de la cola de A: 1
 	Cola de A: 69 
@@ -4906,7 +4894,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 69
 
 
-1732.74	Se libera B.
+1735.04	Se libera B.
 	El frame 69 es el que espero.
 
 	Longitud de la cola de A: 1
@@ -4917,7 +4905,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 69
 
 
-1733.74	Llega ACK a A.
+1736.04	Llega ACK a A.
 	Elimino el timer y saco de la cola al id=69
 
 	Longitud de la cola de A: 0
@@ -4928,7 +4916,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 70
 
 
-1753.59	Llega mensaje a A.
+1752.95	Llega mensaje a A.
 
 	Longitud de la cola de A: 1
 	Cola de A: 70 
@@ -4938,7 +4926,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 70
 
 
-1754.66	Se libera A.
+1754.63	Se libera A.
 
 	Longitud de la cola de A: 1
 	Cola de A: 70 
@@ -4948,7 +4936,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 70
 
 
-1755.66	Llega Frame a B.
+1755.63	Llega Frame a B.
 
 	Longitud de la cola de A: 1
 	Cola de A: 70 
@@ -4958,7 +4946,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 70
 
 
-1758.90	Se libera B.
+1758.55	Se libera B.
 	El frame 70 es el que espero.
 
 	Longitud de la cola de A: 1
@@ -4969,7 +4957,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 70
 
 
-1759.90	Llega ACK a A.
+1759.55	Llega ACK a A.
 	Elimino el timer y saco de la cola al id=70
 
 	Longitud de la cola de A: 0
@@ -4980,7 +4968,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 71
 
 
-1777.51	Llega mensaje a A.
+1777.08	Llega mensaje a A.
 
 	Longitud de la cola de A: 1
 	Cola de A: 71 
@@ -4990,7 +4978,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 71
 
 
-1778.87	Se libera A.
+1778.54	Se libera A.
 
 	Longitud de la cola de A: 1
 	Cola de A: 71 
@@ -5000,7 +4988,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 71
 
 
-1779.87	Llega Frame a B.
+1779.54	Llega Frame a B.
 
 	Longitud de la cola de A: 1
 	Cola de A: 71 
@@ -5010,7 +4998,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 71
 
 
-1782.72	Se libera B.
+1782.40	Se libera B.
 	El frame 71 es el que espero.
 
 	Longitud de la cola de A: 1
@@ -5021,7 +5009,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 71
 
 
-1783.72	Llega ACK a A.
+1783.40	Llega ACK a A.
 	Elimino el timer y saco de la cola al id=71
 
 	Longitud de la cola de A: 0
@@ -5032,7 +5020,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 72
 
 
-1801.57	Llega mensaje a A.
+1803.23	Llega mensaje a A.
 
 	Longitud de la cola de A: 1
 	Cola de A: 72 
@@ -5042,8 +5030,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 72
 
 
-1803.75	Se libera A.
-	El frame id=72 va con error.
+1804.91	Se libera A.
 
 	Longitud de la cola de A: 1
 	Cola de A: 72 
@@ -5053,7 +5040,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 72
 
 
-1804.75	Llega Frame a B.
+1805.91	Llega Frame a B.
 
 	Longitud de la cola de A: 1
 	Cola de A: 72 
@@ -5063,48 +5050,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 72
 
 
-1807.82	Se libera B.
-	El frame 72 viene danado.
-
-	Longitud de la cola de A: 1
-	Cola de A: 72 
-	Frames correctamente recibidos por B: 72
-	Ultimos frames recibidos por B: 71 70 69 68 67 66 65 64 63 62 61 60 59 58 57 56 55 54 53 52 
-	Ultimo ACK enviado: 72
-	Ultimo ACK recibido: 72
-
-
-1808.82	Llega ACK a A.
-
-	Longitud de la cola de A: 1
-	Cola de A: 72 
-	Frames correctamente recibidos por B: 72
-	Ultimos frames recibidos por B: 71 70 69 68 67 66 65 64 63 62 61 60 59 58 57 56 55 54 53 52 
-	Ultimo ACK enviado: 72
-	Ultimo ACK recibido: 72
-
-
-1810.19	Se libera A.
-
-	Longitud de la cola de A: 1
-	Cola de A: 72 
-	Frames correctamente recibidos por B: 72
-	Ultimos frames recibidos por B: 71 70 69 68 67 66 65 64 63 62 61 60 59 58 57 56 55 54 53 52 
-	Ultimo ACK enviado: 72
-	Ultimo ACK recibido: 72
-
-
-1811.19	Llega Frame a B.
-
-	Longitud de la cola de A: 1
-	Cola de A: 72 
-	Frames correctamente recibidos por B: 72
-	Ultimos frames recibidos por B: 71 70 69 68 67 66 65 64 63 62 61 60 59 58 57 56 55 54 53 52 
-	Ultimo ACK enviado: 72
-	Ultimo ACK recibido: 72
-
-
-1813.58	Se libera B.
+1808.32	Se libera B.
 	El frame 72 es el que espero.
 
 	Longitud de la cola de A: 1
@@ -5115,7 +5061,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 72
 
 
-1814.58	Llega ACK a A.
+1809.32	Llega ACK a A.
 	Elimino el timer y saco de la cola al id=72
 
 	Longitud de la cola de A: 0
@@ -5126,17 +5072,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 73
 
 
-1822.19	Se vence timer.
-
-	Longitud de la cola de A: 0
-	Cola de A: 
-	Frames correctamente recibidos por B: 73
-	Ultimos frames recibidos por B: 72 71 70 69 68 67 66 65 64 63 62 61 60 59 58 57 56 55 54 53 
-	Ultimo ACK enviado: 73
-	Ultimo ACK recibido: 73
-
-
-1826.40	Llega mensaje a A.
+1827.15	Llega mensaje a A.
 
 	Longitud de la cola de A: 1
 	Cola de A: 73 
@@ -5146,7 +5082,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 73
 
 
-1829.50	Se libera A.
+1828.40	Se libera A.
 
 	Longitud de la cola de A: 1
 	Cola de A: 73 
@@ -5156,7 +5092,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 73
 
 
-1830.50	Llega Frame a B.
+1829.40	Llega Frame a B.
 
 	Longitud de la cola de A: 1
 	Cola de A: 73 
@@ -5166,7 +5102,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 73
 
 
-1833.38	Se libera B.
+1832.26	Se libera B.
 	El frame 73 es el que espero.
 	El ack nAck=74 se va a perder.
 
@@ -5178,7 +5114,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 73
 
 
-1841.50	Se vence timer.
+1840.40	Se vence timer.
 	Debo volver a enviar el id=73
 	Preparo el reenvio de id=73
 
@@ -5190,7 +5126,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 73
 
 
-1843.70	Se libera A.
+1841.42	Se libera A.
 
 	Longitud de la cola de A: 1
 	Cola de A: 73 
@@ -5200,7 +5136,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 73
 
 
-1844.70	Llega Frame a B.
+1842.42	Llega Frame a B.
 
 	Longitud de la cola de A: 1
 	Cola de A: 73 
@@ -5210,7 +5146,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 73
 
 
-1847.04	Se libera B.
+1845.62	Se libera B.
 	El frame 73 no es el que espero.
 
 	Longitud de la cola de A: 1
@@ -5221,7 +5157,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 73
 
 
-1848.04	Llega ACK a A.
+1846.62	Llega ACK a A.
 	Elimino el timer y saco de la cola al id=73
 
 	Longitud de la cola de A: 0
@@ -5232,7 +5168,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 74
 
 
-1850.91	Llega mensaje a A.
+1852.57	Llega mensaje a A.
 
 	Longitud de la cola de A: 1
 	Cola de A: 74 
@@ -5242,7 +5178,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 74
 
 
-1852.28	Se libera A.
+1854.50	Se libera A.
 
 	Longitud de la cola de A: 1
 	Cola de A: 74 
@@ -5252,7 +5188,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 74
 
 
-1853.28	Llega Frame a B.
+1855.50	Llega Frame a B.
 
 	Longitud de la cola de A: 1
 	Cola de A: 74 
@@ -5262,7 +5198,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 74
 
 
-1856.08	Se libera B.
+1858.14	Se libera B.
 	El frame 74 es el que espero.
 
 	Longitud de la cola de A: 1
@@ -5273,7 +5209,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 74
 
 
-1857.08	Llega ACK a A.
+1859.14	Llega ACK a A.
 	Elimino el timer y saco de la cola al id=74
 
 	Longitud de la cola de A: 0
@@ -5284,7 +5220,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 75
 
 
-1874.17	Llega mensaje a A.
+1877.23	Llega mensaje a A.
 
 	Longitud de la cola de A: 1
 	Cola de A: 75 
@@ -5294,7 +5230,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 75
 
 
-1875.52	Se libera A.
+1878.93	Se libera A.
 
 	Longitud de la cola de A: 1
 	Cola de A: 75 
@@ -5304,7 +5240,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 75
 
 
-1876.52	Llega Frame a B.
+1879.93	Llega Frame a B.
 
 	Longitud de la cola de A: 1
 	Cola de A: 75 
@@ -5314,7 +5250,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 75
 
 
-1879.16	Se libera B.
+1882.64	Se libera B.
 	El frame 75 es el que espero.
 
 	Longitud de la cola de A: 1
@@ -5325,7 +5261,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 75
 
 
-1880.16	Llega ACK a A.
+1883.64	Llega ACK a A.
 	Elimino el timer y saco de la cola al id=75
 
 	Longitud de la cola de A: 0
@@ -5336,7 +5272,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 76
 
 
-1900.57	Llega mensaje a A.
+1901.40	Llega mensaje a A.
 
 	Longitud de la cola de A: 1
 	Cola de A: 76 
@@ -5346,7 +5282,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 76
 
 
-1902.20	Se libera A.
+1902.80	Se libera A.
 
 	Longitud de la cola de A: 1
 	Cola de A: 76 
@@ -5356,7 +5292,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 76
 
 
-1903.20	Llega Frame a B.
+1903.80	Llega Frame a B.
 
 	Longitud de la cola de A: 1
 	Cola de A: 76 
@@ -5366,7 +5302,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 76
 
 
-1906.40	Se libera B.
+1906.05	Se libera B.
 	El frame 76 es el que espero.
 
 	Longitud de la cola de A: 1
@@ -5377,7 +5313,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 76
 
 
-1907.40	Llega ACK a A.
+1907.05	Llega ACK a A.
 	Elimino el timer y saco de la cola al id=76
 
 	Longitud de la cola de A: 0
@@ -5388,7 +5324,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 77
 
 
-1924.15	Llega mensaje a A.
+1926.49	Llega mensaje a A.
 
 	Longitud de la cola de A: 1
 	Cola de A: 77 
@@ -5398,7 +5334,8 @@ Tiempo	Info
 	Ultimo ACK recibido: 77
 
 
-1926.10	Se libera A.
+1927.51	Se libera A.
+	El frame id=77 se va a perder
 
 	Longitud de la cola de A: 1
 	Cola de A: 77 
@@ -5408,7 +5345,9 @@ Tiempo	Info
 	Ultimo ACK recibido: 77
 
 
-1927.10	Llega Frame a B.
+1939.51	Se vence timer.
+	Debo volver a enviar el id=77
+	Preparo el reenvio de id=77
 
 	Longitud de la cola de A: 1
 	Cola de A: 77 
@@ -5418,70 +5357,134 @@ Tiempo	Info
 	Ultimo ACK recibido: 77
 
 
-1930.17	Se libera B.
+1940.61	Se libera A.
+
+	Longitud de la cola de A: 1
+	Cola de A: 77 
+	Frames correctamente recibidos por B: 77
+	Ultimos frames recibidos por B: 76 75 74 73 72 71 70 69 68 67 66 65 64 63 62 61 60 59 58 57 
+	Ultimo ACK enviado: 77
+	Ultimo ACK recibido: 77
+
+
+1941.61	Llega Frame a B.
+
+	Longitud de la cola de A: 1
+	Cola de A: 77 
+	Frames correctamente recibidos por B: 77
+	Ultimos frames recibidos por B: 76 75 74 73 72 71 70 69 68 67 66 65 64 63 62 61 60 59 58 57 
+	Ultimo ACK enviado: 77
+	Ultimo ACK recibido: 77
+
+
+1944.62	Se libera B.
 	El frame 77 es el que espero.
+	El ack nAck=78 se va a perder.
 
 	Longitud de la cola de A: 1
 	Cola de A: 77 
 	Frames correctamente recibidos por B: 78
 	Ultimos frames recibidos por B: 77 76 75 74 73 72 71 70 69 68 67 66 65 64 63 62 61 60 59 58 
-	Ultimo ACK enviado: 78
+	Ultimo ACK enviado: 77
 	Ultimo ACK recibido: 77
 
 
-1931.17	Llega ACK a A.
-	Elimino el timer y saco de la cola al id=77
+1950.75	Llega mensaje a A.
 
-	Longitud de la cola de A: 0
-	Cola de A: 
+	Longitud de la cola de A: 2
+	Cola de A: 77 78 
 	Frames correctamente recibidos por B: 78
 	Ultimos frames recibidos por B: 77 76 75 74 73 72 71 70 69 68 67 66 65 64 63 62 61 60 59 58 
-	Ultimo ACK enviado: 78
-	Ultimo ACK recibido: 78
+	Ultimo ACK enviado: 77
+	Ultimo ACK recibido: 77
 
 
-1949.58	Llega mensaje a A.
+1952.34	Se libera A.
 
-	Longitud de la cola de A: 1
-	Cola de A: 78 
+	Longitud de la cola de A: 2
+	Cola de A: 77 78 
 	Frames correctamente recibidos por B: 78
 	Ultimos frames recibidos por B: 77 76 75 74 73 72 71 70 69 68 67 66 65 64 63 62 61 60 59 58 
-	Ultimo ACK enviado: 78
-	Ultimo ACK recibido: 78
+	Ultimo ACK enviado: 77
+	Ultimo ACK recibido: 77
 
 
-1951.24	Se libera A.
+1952.61	Se vence timer.
+	Debo volver a enviar el id=77
+	Debo volver a enviar el id=78
+	Preparo el reenvio de id=77
 
-	Longitud de la cola de A: 1
-	Cola de A: 78 
+	Longitud de la cola de A: 2
+	Cola de A: 77 78 
 	Frames correctamente recibidos por B: 78
 	Ultimos frames recibidos por B: 77 76 75 74 73 72 71 70 69 68 67 66 65 64 63 62 61 60 59 58 
-	Ultimo ACK enviado: 78
-	Ultimo ACK recibido: 78
+	Ultimo ACK enviado: 77
+	Ultimo ACK recibido: 77
 
 
-1952.24	Llega Frame a B.
+1953.34	Llega Frame a B.
 
-	Longitud de la cola de A: 1
-	Cola de A: 78 
+	Longitud de la cola de A: 2
+	Cola de A: 77 78 
 	Frames correctamente recibidos por B: 78
 	Ultimos frames recibidos por B: 77 76 75 74 73 72 71 70 69 68 67 66 65 64 63 62 61 60 59 58 
-	Ultimo ACK enviado: 78
-	Ultimo ACK recibido: 78
+	Ultimo ACK enviado: 77
+	Ultimo ACK recibido: 77
 
 
-1954.92	Se libera B.
+1953.88	Se libera A.
+
+	Longitud de la cola de A: 2
+	Cola de A: 77 78 
+	Frames correctamente recibidos por B: 78
+	Ultimos frames recibidos por B: 77 76 75 74 73 72 71 70 69 68 67 66 65 64 63 62 61 60 59 58 
+	Ultimo ACK enviado: 77
+	Ultimo ACK recibido: 77
+
+
+1954.88	Llega Frame a B.
+
+	Longitud de la cola de A: 2
+	Cola de A: 77 78 
+	Frames correctamente recibidos por B: 78
+	Ultimos frames recibidos por B: 77 76 75 74 73 72 71 70 69 68 67 66 65 64 63 62 61 60 59 58 
+	Ultimo ACK enviado: 77
+	Ultimo ACK recibido: 77
+
+
+1955.03	Se libera A.
+
+	Longitud de la cola de A: 2
+	Cola de A: 77 78 
+	Frames correctamente recibidos por B: 78
+	Ultimos frames recibidos por B: 77 76 75 74 73 72 71 70 69 68 67 66 65 64 63 62 61 60 59 58 
+	Ultimo ACK enviado: 77
+	Ultimo ACK recibido: 77
+
+
+1956.02	Se libera B.
 	El frame 78 es el que espero.
 
-	Longitud de la cola de A: 1
-	Cola de A: 78 
+	Longitud de la cola de A: 2
+	Cola de A: 77 78 
 	Frames correctamente recibidos por B: 79
 	Ultimos frames recibidos por B: 78 77 76 75 74 73 72 71 70 69 68 67 66 65 64 63 62 61 60 59 
 	Ultimo ACK enviado: 79
-	Ultimo ACK recibido: 78
+	Ultimo ACK recibido: 77
 
 
-1955.92	Llega ACK a A.
+1956.03	Llega Frame a B.
+
+	Longitud de la cola de A: 2
+	Cola de A: 77 78 
+	Frames correctamente recibidos por B: 79
+	Ultimos frames recibidos por B: 78 77 76 75 74 73 72 71 70 69 68 67 66 65 64 63 62 61 60 59 
+	Ultimo ACK enviado: 79
+	Ultimo ACK recibido: 77
+
+
+1957.02	Llega ACK a A.
+	Elimino el timer y saco de la cola al id=77
 	Elimino el timer y saco de la cola al id=78
 
 	Longitud de la cola de A: 0
@@ -5492,7 +5495,59 @@ Tiempo	Info
 	Ultimo ACK recibido: 79
 
 
-1974.93	Llega mensaje a A.
+1959.11	Se libera B.
+	El frame 77 no es el que espero.
+
+	Longitud de la cola de A: 0
+	Cola de A: 
+	Frames correctamente recibidos por B: 79
+	Ultimos frames recibidos por B: 78 77 76 75 74 73 72 71 70 69 68 67 66 65 64 63 62 61 60 59 
+	Ultimo ACK enviado: 79
+	Ultimo ACK recibido: 79
+
+
+1960.11	Llega ACK a A.
+
+	Longitud de la cola de A: 0
+	Cola de A: 
+	Frames correctamente recibidos por B: 79
+	Ultimos frames recibidos por B: 78 77 76 75 74 73 72 71 70 69 68 67 66 65 64 63 62 61 60 59 
+	Ultimo ACK enviado: 79
+	Ultimo ACK recibido: 79
+
+
+1961.64	Se libera B.
+	El frame 78 no es el que espero.
+
+	Longitud de la cola de A: 0
+	Cola de A: 
+	Frames correctamente recibidos por B: 79
+	Ultimos frames recibidos por B: 78 77 76 75 74 73 72 71 70 69 68 67 66 65 64 63 62 61 60 59 
+	Ultimo ACK enviado: 79
+	Ultimo ACK recibido: 79
+
+
+1962.64	Llega ACK a A.
+
+	Longitud de la cola de A: 0
+	Cola de A: 
+	Frames correctamente recibidos por B: 79
+	Ultimos frames recibidos por B: 78 77 76 75 74 73 72 71 70 69 68 67 66 65 64 63 62 61 60 59 
+	Ultimo ACK enviado: 79
+	Ultimo ACK recibido: 79
+
+
+1967.03	Se vence timer.
+
+	Longitud de la cola de A: 0
+	Cola de A: 
+	Frames correctamente recibidos por B: 79
+	Ultimos frames recibidos por B: 78 77 76 75 74 73 72 71 70 69 68 67 66 65 64 63 62 61 60 59 
+	Ultimo ACK enviado: 79
+	Ultimo ACK recibido: 79
+
+
+1974.77	Llega mensaje a A.
 
 	Longitud de la cola de A: 1
 	Cola de A: 79 
@@ -5502,7 +5557,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 79
 
 
-1976.59	Se libera A.
+1976.12	Se libera A.
 
 	Longitud de la cola de A: 1
 	Cola de A: 79 
@@ -5512,7 +5567,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 79
 
 
-1977.59	Llega Frame a B.
+1977.12	Llega Frame a B.
 
 	Longitud de la cola de A: 1
 	Cola de A: 79 
@@ -5522,7 +5577,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 79
 
 
-1980.35	Se libera B.
+1979.51	Se libera B.
 	El frame 79 es el que espero.
 
 	Longitud de la cola de A: 1
@@ -5533,7 +5588,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 79
 
 
-1981.35	Llega ACK a A.
+1980.51	Llega ACK a A.
 	Elimino el timer y saco de la cola al id=79
 
 	Longitud de la cola de A: 0
@@ -5544,7 +5599,7 @@ Tiempo	Info
 	Ultimo ACK recibido: 80
 
 
-2000.91	Llega mensaje a A.
+2000.90	Llega mensaje a A.
 
 	Longitud de la cola de A: 1
 	Cola de A: 80 
