@@ -1,0 +1,14 @@
+Estadisticas de la simulacion #1
+Tamano promedio de la cola A: 1.24
+Tiempo promedio de permanencia de mensajes en el sistema: 2.67
+Tiempo promedio de transmision: 2.52
+Tiempo promedio de servicio: 0.16
+Eficiencia: 15.84
+
+Estadisticas generales
+Tamano promedio de la cola A: 1.24
+Tiempo promedio de permanencia de mensajes en el sistema: 2.67
+Tiempo promedio de transmision: 2.52
+Tiempo promedio de servicio: 0.16
+Eficiencia: 15.84
+Intervalo de Confianza: [�, �]

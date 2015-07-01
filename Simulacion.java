@@ -4,12 +4,12 @@ import java.util.Random;
 import java.lang.Math;
 import java.text.NumberFormat;
 import java.text.DecimalFormat;
+import javax.swing.*;
 
 public class Simulacion{
 
   // variables determinadas por constructor
   int     maxReloj;
-  int     timer;
   boolean modoLento;
 
   // constantes
@@ -44,8 +44,7 @@ public class Simulacion{
   Scanner      scanner;
   Archivo      archivoRegistros;
 
-  public Simulacion(int timer, int relojMax, boolean modoLento, Archivo archivoRegistros){
-    this.timer = timer;
+  public Simulacion(int relojMax, boolean modoLento, Archivo archivoRegistros){
     this.maxReloj = relojMax;
     this.modoLento = modoLento;
     this.archivoRegistros = archivoRegistros;
@@ -107,18 +106,7 @@ public class Simulacion{
       for(int i = 0, s=colaMensaje.size(); i<s && i<20;i++){
         aux += colaMensaje.elementAt(i).nSecuencia + " ";
       }
-      this.imprimir(aux);
-
-      this.imprimir("\tFrames correctamente recibidos por B: "+framesRecibidos.size());
-
-      aux = "\tUltimos frames recibidos por B: ";
-      for(int i = 0, j = framesRecibidos.size()-1; i<20&&j>0;i++){
-        aux += framesRecibidos.elementAt(j) + " ";
-        j--;
-      }
-
-      this.imprimir(aux);
-      this.imprimir("\n");
+      this.imprimir(aux+"\n");
 
       if(modoLento){
         try {
@@ -142,11 +130,8 @@ public class Simulacion{
       tiempoPromedioMsj += (colaMuertes.elementAt(i) - colaNacimientos.elementAt(i));
     }
     tiempoPromedioMsj = tiempoPromedioMsj/ mensajesEnviados;
-    double tiempoPromTrans = tiemposTransmision/mensajesEnviados;
-    double tiempoPromServicio = tiempoPromedioMsj - tiempoPromTrans;
-    double eficiencia = tiempoPromTrans/tiempoPromServicio;
 
-    Estadistica e = new Estadistica(tamanoPromedioColaA, tiempoPromedioMsj, tiempoPromTrans, tiempoPromServicio, eficiencia);
+    Estadistica e = new Estadistica(tamanoPromedioColaA, tiempoPromedioMsj);
 
     colaMensaje.clear();
     colaFrames.clear();
@@ -183,12 +168,17 @@ public class Simulacion{
   }
 
   public double estimarTiempoNuevoMensaje(){
-    // normal con media 25 y var 1
+    // normal con media 2 y var 0.001
     double x, z, r1, r2;
     r1 = rn.nextDouble() ;
     r2 = rn.nextDouble() ;
     z=(Math.sqrt(-2*Math.log(r1)))*Math.sin(2*Math.PI*r2);
     x=0.001*z+2; //x = varianza*z+media
+
+    if(x<0){
+      JOptionPane.showMessageDialog(null,
+    "Eggs are not supposed to be green.");
+    }
     return x;
   }
 
@@ -204,7 +194,7 @@ public class Simulacion{
   public void seLiberaA(){
     reloj = la;
     this.imprimir(f.format(reloj) + "\tSe libera A.");
-    mensajeEnPreparacion.necesitaEnviarse = false;
+    colaMensaje.remove(0); // esto elimina el primer elemento de una vez
 
     Frame nuevoFrame = new Frame(mensajeEnPreparacion.nSecuencia, mensajeEnPreparacion.data);
 
@@ -216,11 +206,10 @@ public class Simulacion{
     tiemposTransmision++; // segundo de propagacion
 
     // hay otro que deba enviar
-    Mensaje proxMensaje = buscarMensajeParaEnviar();
-    if(proxMensaje != null){
+    if(colaMensaje.size() > 0){
       double tiempoTrans = estimarTiempoPrepararMensaje();
       la = reloj + tiempoTrans + 1;
-      mensajeEnPreparacion = proxMensaje;
+      mensajeEnPreparacion = colaMensaje.elementAt(0);
 
       tiemposTransmision += tiempoTrans+1;
     }else{
@@ -230,17 +219,9 @@ public class Simulacion{
 
   }
 
-  public Mensaje buscarMensajeParaEnviar(){
-    Mensaje m = null;
-    for(int i = 0, s = colaMensaje.size(); i<s && m == null; i++){
-      if(colaMensaje.elementAt(i).necesitaEnviarse)
-        m = colaMensaje.elementAt(i);
-    }
-    return m;
-  }
-
   public void llegaFrameB(){
     reloj = lfb;
+    colaMuertes.add(reloj);
     this.imprimir(f.format(reloj) + "\tLlega Frame a B.");
     if(EB == false){
       lb = reloj + estimarTiempoRevisaFrame();

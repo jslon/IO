@@ -1,0 +1,76 @@
+Estadisticas de la simulacion #1
+Tamano promedio de la cola A: 501.00
+Tiempo promedio de permanencia de mensajes en el sistema: 0.00
+Tiempo promedio de transmision: 2.50
+Tiempo promedio de servicio: -2.50
+Eficiencia: -1.00
+
+Estadisticas de la simulacion #2
+Tamano promedio de la cola A: 501.00
+Tiempo promedio de permanencia de mensajes en el sistema: 0.00
+Tiempo promedio de transmision: 2.53
+Tiempo promedio de servicio: -2.53
+Eficiencia: -1.00
+
+Estadisticas de la simulacion #3
+Tamano promedio de la cola A: 501.00
+Tiempo promedio de permanencia de mensajes en el sistema: 0.00
+Tiempo promedio de transmision: 2.49
+Tiempo promedio de servicio: -2.49
+Eficiencia: -1.00
+
+Estadisticas de la simulacion #4
+Tamano promedio de la cola A: 501.00
+Tiempo promedio de permanencia de mensajes en el sistema: 0.00
+Tiempo promedio de transmision: 2.51
+Tiempo promedio de servicio: -2.51
+Eficiencia: -1.00
+
+Estadisticas de la simulacion #5
+Tamano promedio de la cola A: 501.00
+Tiempo promedio de permanencia de mensajes en el sistema: 0.00
+Tiempo promedio de transmision: 2.49
+Tiempo promedio de servicio: -2.49
+Eficiencia: -1.00
+
+Estadisticas de la simulacion #6
+Tamano promedio de la cola A: 501.00
+Tiempo promedio de permanencia de mensajes en el sistema: 0.00
+Tiempo promedio de transmision: 2.51
+Tiempo promedio de servicio: -2.51
+Eficiencia: -1.00
+
+Estadisticas de la simulacion #7
+Tamano promedio de la cola A: 501.00
+Tiempo promedio de permanencia de mensajes en el sistema: 0.00
+Tiempo promedio de transmision: 2.50
+Tiempo promedio de servicio: -2.50
+Eficiencia: -1.00
+
+Estadisticas de la simulacion #8
+Tamano promedio de la cola A: 501.00
+Tiempo promedio de permanencia de mensajes en el sistema: 0.00
+Tiempo promedio de transmision: 2.49
+Tiempo promedio de servicio: -2.49
+Eficiencia: -1.00
+
+Estadisticas de la simulacion #9
+Tamano promedio de la cola A: 501.00
+Tiempo promedio de permanencia de mensajes en el sistema: 0.00
+Tiempo promedio de transmision: 2.48
+Tiempo promedio de servicio: -2.48
+Eficiencia: -1.00
+
+Estadisticas de la simulacion #10
+Tamano promedio de la cola A: 501.00
+Tiempo promedio de permanencia de mensajes en el sistema: 0.00
+Tiempo promedio de transmision: 2.52
+Tiempo promedio de servicio: -2.52
+Eficiencia: -1.00
+
+Estadisticas generales
+Tamano promedio de la cola A: 501.00
+Tiempo promedio de permanencia de mensajes en el sistema: 0.00
+Tiempo promedio de transmision: 2.50
+Tiempo promedio de servicio: -2.50
+Eficiencia: -1.00
