@@ -25,7 +25,7 @@ public class Main{
       Simulacion simulacion = new Simulacion(relojMax, modoLento, archivoRegistro);
     */
     Simulacion simulacion = new Simulacion(2000, false, archivoRegistro);
-    int nSimulaciones = 10;
+    int nSimulaciones = 50;
 
     Vector<Estadistica> estadisticas = new Vector<Estadistica>();
     
@@ -49,8 +49,15 @@ public class Main{
       archivoRegistro.agregarEstadistica("");
     }
 
-    Estadistica estadisticaPromedio = estadisticas.elementAt(0).calcularPromedioEstadisticas(estadisticas);
-    System.out.println("Estadisticas generales");
+    boolean normal = nSimulaciones >= 50;
+
+    Estadistica estadisticaPromedio = estadisticas.elementAt(0).calcularPromedioEstadisticas(normal, estadisticas);
+    
+    if(normal)
+      System.out.println("Estadisticas generales (distribucion normal para intervalo de confianza)");
+    else
+      System.out.println("Estadisticas generales (distribucion t-student para intervalo de confianza)");
+
     archivoRegistro.agregarEstadistica("Estadisticas generales");
     estadisticaPromedio.imprimirEstadistica(archivoRegistro);
 

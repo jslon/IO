@@ -1,0 +1,404 @@
+Estadisticas de la simulacion #1
+Tamano promedio de la cola A: 1,27
+Tiempo promedio de permanencia de mensajes en el sistema: 2,74
+
+Estadisticas de la simulacion #2
+Tamano promedio de la cola A: 1,24
+Tiempo promedio de permanencia de mensajes en el sistema: 2,61
+
+Estadisticas de la simulacion #3
+Tamano promedio de la cola A: 1,23
+Tiempo promedio de permanencia de mensajes en el sistema: 2,61
+
+Estadisticas de la simulacion #4
+Tamano promedio de la cola A: 1,22
+Tiempo promedio de permanencia de mensajes en el sistema: 2,63
+
+Estadisticas de la simulacion #5
+Tamano promedio de la cola A: 1,22
+Tiempo promedio de permanencia de mensajes en el sistema: 2,65
+
+Estadisticas de la simulacion #6
+Tamano promedio de la cola A: 1,22
+Tiempo promedio de permanencia de mensajes en el sistema: 2,65
+
+Estadisticas de la simulacion #7
+Tamano promedio de la cola A: 1,22
+Tiempo promedio de permanencia de mensajes en el sistema: 2,63
+
+Estadisticas de la simulacion #8
+Tamano promedio de la cola A: 1,22
+Tiempo promedio de permanencia de mensajes en el sistema: 2,67
+
+Estadisticas de la simulacion #9
+Tamano promedio de la cola A: 1,22
+Tiempo promedio de permanencia de mensajes en el sistema: 2,61
+
+Estadisticas de la simulacion #10
+Tamano promedio de la cola A: 1,22
+Tiempo promedio de permanencia de mensajes en el sistema: 2,67
+
+Estadisticas de la simulacion #11
+Tamano promedio de la cola A: 1,22
+Tiempo promedio de permanencia de mensajes en el sistema: 2,61
+
+Estadisticas de la simulacion #12
+Tamano promedio de la cola A: 1,22
+Tiempo promedio de permanencia de mensajes en el sistema: 2,73
+
+Estadisticas de la simulacion #13
+Tamano promedio de la cola A: 1,22
+Tiempo promedio de permanencia de mensajes en el sistema: 2,63
+
+Estadisticas de la simulacion #14
+Tamano promedio de la cola A: 1,22
+Tiempo promedio de permanencia de mensajes en el sistema: 2,61
+
+Estadisticas de la simulacion #15
+Tamano promedio de la cola A: 1,22
+Tiempo promedio de permanencia de mensajes en el sistema: 2,61
+
+Estadisticas de la simulacion #16
+Tamano promedio de la cola A: 1,22
+Tiempo promedio de permanencia de mensajes en el sistema: 2,63
+
+Estadisticas de la simulacion #17
+Tamano promedio de la cola A: 1,22
+Tiempo promedio de permanencia de mensajes en el sistema: 2,61
+
+Estadisticas de la simulacion #18
+Tamano promedio de la cola A: 1,22
+Tiempo promedio de permanencia de mensajes en el sistema: 2,67
+
+Estadisticas de la simulacion #19
+Tamano promedio de la cola A: 1,22
+Tiempo promedio de permanencia de mensajes en el sistema: 2,64
+
+Estadisticas de la simulacion #20
+Tamano promedio de la cola A: 1,22
+Tiempo promedio de permanencia de mensajes en el sistema: 2,64
+
+Estadisticas de la simulacion #21
+Tamano promedio de la cola A: 1,22
+Tiempo promedio de permanencia de mensajes en el sistema: 2,69
+
+Estadisticas de la simulacion #22
+Tamano promedio de la cola A: 1,22
+Tiempo promedio de permanencia de mensajes en el sistema: 2,74
+
+Estadisticas de la simulacion #23
+Tamano promedio de la cola A: 1,22
+Tiempo promedio de permanencia de mensajes en el sistema: 2,59
+
+Estadisticas de la simulacion #24
+Tamano promedio de la cola A: 1,22
+Tiempo promedio de permanencia de mensajes en el sistema: 2,62
+
+Estadisticas de la simulacion #25
+Tamano promedio de la cola A: 1,22
+Tiempo promedio de permanencia de mensajes en el sistema: 2,60
+
+Estadisticas de la simulacion #26
+Tamano promedio de la cola A: 1,22
+Tiempo promedio de permanencia de mensajes en el sistema: 2,61
+
+Estadisticas de la simulacion #27
+Tamano promedio de la cola A: 1,22
+Tiempo promedio de permanencia de mensajes en el sistema: 2,58
+
+Estadisticas de la simulacion #28
+Tamano promedio de la cola A: 1,22
+Tiempo promedio de permanencia de mensajes en el sistema: 2,63
+
+Estadisticas de la simulacion #29
+Tamano promedio de la cola A: 1,22
+Tiempo promedio de permanencia de mensajes en el sistema: 2,58
+
+Estadisticas de la simulacion #30
+Tamano promedio de la cola A: 1,22
+Tiempo promedio de permanencia de mensajes en el sistema: 2,59
+
+Estadisticas de la simulacion #31
+Tamano promedio de la cola A: 1,22
+Tiempo promedio de permanencia de mensajes en el sistema: 2,67
+
+Estadisticas de la simulacion #32
+Tamano promedio de la cola A: 1,22
+Tiempo promedio de permanencia de mensajes en el sistema: 2,66
+
+Estadisticas de la simulacion #33
+Tamano promedio de la cola A: 1,22
+Tiempo promedio de permanencia de mensajes en el sistema: 2,63
+
+Estadisticas de la simulacion #34
+Tamano promedio de la cola A: 1,22
+Tiempo promedio de permanencia de mensajes en el sistema: 2,62
+
+Estadisticas de la simulacion #35
+Tamano promedio de la cola A: 1,22
+Tiempo promedio de permanencia de mensajes en el sistema: 2,65
+
+Estadisticas de la simulacion #36
+Tamano promedio de la cola A: 1,22
+Tiempo promedio de permanencia de mensajes en el sistema: 2,69
+
+Estadisticas de la simulacion #37
+Tamano promedio de la cola A: 1,22
+Tiempo promedio de permanencia de mensajes en el sistema: 2,60
+
+Estadisticas de la simulacion #38
+Tamano promedio de la cola A: 1,22
+Tiempo promedio de permanencia de mensajes en el sistema: 2,64
+
+Estadisticas de la simulacion #39
+Tamano promedio de la cola A: 1,22
+Tiempo promedio de permanencia de mensajes en el sistema: 2,67
+
+Estadisticas de la simulacion #40
+Tamano promedio de la cola A: 1,22
+Tiempo promedio de permanencia de mensajes en el sistema: 2,66
+
+Estadisticas de la simulacion #41
+Tamano promedio de la cola A: 1,22
+Tiempo promedio de permanencia de mensajes en el sistema: 2,59
+
+Estadisticas de la simulacion #42
+Tamano promedio de la cola A: 1,22
+Tiempo promedio de permanencia de mensajes en el sistema: 2,59
+
+Estadisticas de la simulacion #43
+Tamano promedio de la cola A: 1,22
+Tiempo promedio de permanencia de mensajes en el sistema: 2,66
+
+Estadisticas de la simulacion #44
+Tamano promedio de la cola A: 1,22
+Tiempo promedio de permanencia de mensajes en el sistema: 2,68
+
+Estadisticas de la simulacion #45
+Tamano promedio de la cola A: 1,22
+Tiempo promedio de permanencia de mensajes en el sistema: 2,62
+
+Estadisticas de la simulacion #46
+Tamano promedio de la cola A: 1,22
+Tiempo promedio de permanencia de mensajes en el sistema: 2,63
+
+Estadisticas de la simulacion #47
+Tamano promedio de la cola A: 1,22
+Tiempo promedio de permanencia de mensajes en el sistema: 2,59
+
+Estadisticas de la simulacion #48
+Tamano promedio de la cola A: 1,22
+Tiempo promedio de permanencia de mensajes en el sistema: 2,80
+
+Estadisticas de la simulacion #49
+Tamano promedio de la cola A: 1,22
+Tiempo promedio de permanencia de mensajes en el sistema: 2,63
+
+Estadisticas de la simulacion #50
+Tamano promedio de la cola A: 1,22
+Tiempo promedio de permanencia de mensajes en el sistema: 2,63
+
+Estadisticas de la simulacion #51
+Tamano promedio de la cola A: 1,22
+Tiempo promedio de permanencia de mensajes en el sistema: 2,63
+
+Estadisticas de la simulacion #52
+Tamano promedio de la cola A: 1,22
+Tiempo promedio de permanencia de mensajes en el sistema: 2,64
+
+Estadisticas de la simulacion #53
+Tamano promedio de la cola A: 1,22
+Tiempo promedio de permanencia de mensajes en el sistema: 2,57
+
+Estadisticas de la simulacion #54
+Tamano promedio de la cola A: 1,22
+Tiempo promedio de permanencia de mensajes en el sistema: 2,61
+
+Estadisticas de la simulacion #55
+Tamano promedio de la cola A: 1,22
+Tiempo promedio de permanencia de mensajes en el sistema: 2,60
+
+Estadisticas de la simulacion #56
+Tamano promedio de la cola A: 1,22
+Tiempo promedio de permanencia de mensajes en el sistema: 2,56
+
+Estadisticas de la simulacion #57
+Tamano promedio de la cola A: 1,22
+Tiempo promedio de permanencia de mensajes en el sistema: 2,66
+
+Estadisticas de la simulacion #58
+Tamano promedio de la cola A: 1,22
+Tiempo promedio de permanencia de mensajes en el sistema: 2,71
+
+Estadisticas de la simulacion #59
+Tamano promedio de la cola A: 1,22
+Tiempo promedio de permanencia de mensajes en el sistema: 2,59
+
+Estadisticas de la simulacion #60
+Tamano promedio de la cola A: 1,22
+Tiempo promedio de permanencia de mensajes en el sistema: 2,60
+
+Estadisticas de la simulacion #61
+Tamano promedio de la cola A: 1,22
+Tiempo promedio de permanencia de mensajes en el sistema: 2,57
+
+Estadisticas de la simulacion #62
+Tamano promedio de la cola A: 1,22
+Tiempo promedio de permanencia de mensajes en el sistema: 2,57
+
+Estadisticas de la simulacion #63
+Tamano promedio de la cola A: 1,22
+Tiempo promedio de permanencia de mensajes en el sistema: 2,64
+
+Estadisticas de la simulacion #64
+Tamano promedio de la cola A: 1,22
+Tiempo promedio de permanencia de mensajes en el sistema: 2,58
+
+Estadisticas de la simulacion #65
+Tamano promedio de la cola A: 1,22
+Tiempo promedio de permanencia de mensajes en el sistema: 2,62
+
+Estadisticas de la simulacion #66
+Tamano promedio de la cola A: 1,22
+Tiempo promedio de permanencia de mensajes en el sistema: 2,68
+
+Estadisticas de la simulacion #67
+Tamano promedio de la cola A: 1,22
+Tiempo promedio de permanencia de mensajes en el sistema: 2,64
+
+Estadisticas de la simulacion #68
+Tamano promedio de la cola A: 1,22
+Tiempo promedio de permanencia de mensajes en el sistema: 2,65
+
+Estadisticas de la simulacion #69
+Tamano promedio de la cola A: 1,22
+Tiempo promedio de permanencia de mensajes en el sistema: 2,67
+
+Estadisticas de la simulacion #70
+Tamano promedio de la cola A: 1,22
+Tiempo promedio de permanencia de mensajes en el sistema: 2,62
+
+Estadisticas de la simulacion #71
+Tamano promedio de la cola A: 1,22
+Tiempo promedio de permanencia de mensajes en el sistema: 2,60
+
+Estadisticas de la simulacion #72
+Tamano promedio de la cola A: 1,22
+Tiempo promedio de permanencia de mensajes en el sistema: 2,65
+
+Estadisticas de la simulacion #73
+Tamano promedio de la cola A: 1,22
+Tiempo promedio de permanencia de mensajes en el sistema: 2,63
+
+Estadisticas de la simulacion #74
+Tamano promedio de la cola A: 1,22
+Tiempo promedio de permanencia de mensajes en el sistema: 2,54
+
+Estadisticas de la simulacion #75
+Tamano promedio de la cola A: 1,22
+Tiempo promedio de permanencia de mensajes en el sistema: 2,68
+
+Estadisticas de la simulacion #76
+Tamano promedio de la cola A: 1,22
+Tiempo promedio de permanencia de mensajes en el sistema: 2,59
+
+Estadisticas de la simulacion #77
+Tamano promedio de la cola A: 1,22
+Tiempo promedio de permanencia de mensajes en el sistema: 2,75
+
+Estadisticas de la simulacion #78
+Tamano promedio de la cola A: 1,22
+Tiempo promedio de permanencia de mensajes en el sistema: 2,71
+
+Estadisticas de la simulacion #79
+Tamano promedio de la cola A: 1,22
+Tiempo promedio de permanencia de mensajes en el sistema: 2,63
+
+Estadisticas de la simulacion #80
+Tamano promedio de la cola A: 1,22
+Tiempo promedio de permanencia de mensajes en el sistema: 2,62
+
+Estadisticas de la simulacion #81
+Tamano promedio de la cola A: 1,22
+Tiempo promedio de permanencia de mensajes en el sistema: 2,62
+
+Estadisticas de la simulacion #82
+Tamano promedio de la cola A: 1,22
+Tiempo promedio de permanencia de mensajes en el sistema: 2,70
+
+Estadisticas de la simulacion #83
+Tamano promedio de la cola A: 1,22
+Tiempo promedio de permanencia de mensajes en el sistema: 2,68
+
+Estadisticas de la simulacion #84
+Tamano promedio de la cola A: 1,22
+Tiempo promedio de permanencia de mensajes en el sistema: 2,61
+
+Estadisticas de la simulacion #85
+Tamano promedio de la cola A: 1,22
+Tiempo promedio de permanencia de mensajes en el sistema: 2,61
+
+Estadisticas de la simulacion #86
+Tamano promedio de la cola A: 1,22
+Tiempo promedio de permanencia de mensajes en el sistema: 2,66
+
+Estadisticas de la simulacion #87
+Tamano promedio de la cola A: 1,22
+Tiempo promedio de permanencia de mensajes en el sistema: 2,63
+
+Estadisticas de la simulacion #88
+Tamano promedio de la cola A: 1,22
+Tiempo promedio de permanencia de mensajes en el sistema: 2,65
+
+Estadisticas de la simulacion #89
+Tamano promedio de la cola A: 1,22
+Tiempo promedio de permanencia de mensajes en el sistema: 2,60
+
+Estadisticas de la simulacion #90
+Tamano promedio de la cola A: 1,22
+Tiempo promedio de permanencia de mensajes en el sistema: 2,63
+
+Estadisticas de la simulacion #91
+Tamano promedio de la cola A: 1,22
+Tiempo promedio de permanencia de mensajes en el sistema: 2,59
+
+Estadisticas de la simulacion #92
+Tamano promedio de la cola A: 1,22
+Tiempo promedio de permanencia de mensajes en el sistema: 2,66
+
+Estadisticas de la simulacion #93
+Tamano promedio de la cola A: 1,22
+Tiempo promedio de permanencia de mensajes en el sistema: 2,66
+
+Estadisticas de la simulacion #94
+Tamano promedio de la cola A: 1,22
+Tiempo promedio de permanencia de mensajes en el sistema: 2,63
+
+Estadisticas de la simulacion #95
+Tamano promedio de la cola A: 1,22
+Tiempo promedio de permanencia de mensajes en el sistema: 2,60
+
+Estadisticas de la simulacion #96
+Tamano promedio de la cola A: 1,22
+Tiempo promedio de permanencia de mensajes en el sistema: 2,60
+
+Estadisticas de la simulacion #97
+Tamano promedio de la cola A: 1,22
+Tiempo promedio de permanencia de mensajes en el sistema: 2,59
+
+Estadisticas de la simulacion #98
+Tamano promedio de la cola A: 1,22
+Tiempo promedio de permanencia de mensajes en el sistema: 2,64
+
+Estadisticas de la simulacion #99
+Tamano promedio de la cola A: 1,22
+Tiempo promedio de permanencia de mensajes en el sistema: 2,68
+
+Estadisticas de la simulacion #100
+Tamano promedio de la cola A: 1,22
+Tiempo promedio de permanencia de mensajes en el sistema: 2,69
+
+Estadisticas generales
+Tamano promedio de la cola A: 1,22
+Tiempo promedio de permanencia de mensajes en el sistema: 2,63
+Intervalo de Confianza: [2,63, 2,64]

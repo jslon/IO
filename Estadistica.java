@@ -19,7 +19,7 @@ public class Estadistica{
   }
 
   public Estadistica(double tamPromCola, double tiempoPromPerm, double confianzaA, double confianzaB){
-    f = new DecimalFormat("#0.00");
+    f = new DecimalFormat("#0.00000");
     this.tiempoPromPerm = tiempoPromPerm;
     this.tamPromCola = tamPromCola;
 
@@ -44,7 +44,7 @@ public class Estadistica{
     
   }
 
-  public Estadistica calcularPromedioEstadisticas(Vector<Estadistica> v){
+  public Estadistica calcularPromedioEstadisticas(boolean normal, Vector<Estadistica> v){
     int cantSim = v.size();
 
     double tamPromCola = 0.0;
@@ -65,9 +65,15 @@ public class Estadistica{
     }
     varMuestral /= (cantSim-1);
 
-    double intervaloConfianzaA = tiempoPromPerm - 2.26*Math.sqrt(varMuestral/cantSim);
-    double intervaloConfianzaB = tiempoPromPerm + 2.26*Math.sqrt(varMuestral/cantSim);
-
+    double intervaloConfianzaA, intervaloConfianzaB;
+    if(normal){
+      intervaloConfianzaA = tiempoPromPerm - 1.96*Math.sqrt(varMuestral/cantSim);
+      intervaloConfianzaB = tiempoPromPerm + 1.96*Math.sqrt(varMuestral/cantSim);
+    }else{
+      intervaloConfianzaA = tiempoPromPerm - 2.26*Math.sqrt(varMuestral/cantSim);
+      intervaloConfianzaB = tiempoPromPerm + 2.26*Math.sqrt(varMuestral/cantSim);  
+    }
+    
     return new Estadistica(tamPromCola, tiempoPromPerm, intervaloConfianzaA, intervaloConfianzaB);
   }
 
